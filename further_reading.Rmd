@@ -1,0 +1,17 @@
+---
+title: <br><br><br> 8. Further reading
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+---
+
+<b>The Aqua Book: guidance on producing quality analysis for government</b>, <i> HM Treasury, 2015 </i>
+[https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government)
+
+<b>Communicating quality, uncertainty and change Guidance for producers of official statistics</b>, <i>Government Statistical Service, 2018</i> [https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/Communicating_Quality_Uncertainty_and_Change_for_publication.pdf](https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/Communicating_Quality_Uncertainty_and_Change_for_publication.pdf)
+
+<b>Communicating Risk</b>, <i>Parliamentary Office for Science and Technology, 2017</i> [http://researchbriefings.files.parliament.uk/documents/POST-PN-0564/POST-PN-0564.pdf](http://researchbriefings.files.parliament.uk/documents/POST-PN-0564/POST-PN-0564.pdf)
+
+<b>Uncertainty and graphicacy; How statisticians, journalists, and designers reveal uncertainty in graphics for public consumption</b>, <i>Alberto Cairo, 2017</i> [https://ec.europa.eu/eurostat/cros/powerfromstatistics/OR/PfS-OutlookReport-Cairo.pdf](https://ec.europa.eu/eurostat/cros/powerfromstatistics/OR/PfS-OutlookReport-Cairo.pdf)

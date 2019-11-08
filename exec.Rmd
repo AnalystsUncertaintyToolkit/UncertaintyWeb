@@ -1,0 +1,134 @@
+---
+title: <br><br><br> 9. Decision maker summary
+---
+
+<style type="text/css">
+
+#TOC {
+margin-top: 100px;
+}
+
+.leftA{
+float: left;
+width: 100%;
+font-weight: bold;
+}
+
+.rightA{
+float:right;
+width: 75%;
+}
+
+.leftB{
+float: left;
+width: 23%;
+text-align: right;
+}
+</style>
+
+<div class = "leftB">
+All analysis is uncertain
+</div>
+
+<div class = "rightA">
+Analysis is based on a model of the real word. Whether we are looking at statistics about the past, measurements of the present, or forecasts of the future, there will always be a degree of uncertainty in the outputs.
+</div>
+
+<div class = "rightA">
+Making  decisions using uncertain information can be uncomfortable – decisions would be far easier if we knew for sure what the consequences of each choice would be – but this is an unavoidable position, so analysts aspire to provide honest and practical advice on uncertainty.
+</div>
+
+<div class = "rightA">
+Taking account of uncertainty – and being seen to do so – is important for public trust. We must not pretend that the consequences of a policy or decision are certain: they are always uncertain to some degree. For each option, a range of outcomes are possible. Implying certainty about one particular outcome can damage public trust when things turn out differently.
+</div>
+
+
+<div class = "leftB">
+Why does it matter?
+</div>
+
+<div class = "rightA">
+Red River Flood, Grand Forks USA, 1997
+</div>
+
+<div class = "leftB">
+<b>Example</b>
+</div>
+
+<div class = "rightA">
+The National Weather Service (NWS) predicted, 2 months in advance, the Red River to crest 49 feet.
+</div>
+
+<div class = "rightA">
+In response, the levees were built to handle a flood of 51 feet
+</div>
+
+<div class = "rightA">
+The actual flood level was 54 feet
+</div>
+
+<div class = "rightA">
+Had the NWS communicated their uncertainty (+/- 9 feet) the several $billion damages could have been avoided
+</div>
+
+<div style="clear: both;"></div>
+
+```{r fig.align="center", echo=FALSE}
+
+comb2pngs <- function(imgs, bottom_text = NULL){
+  img1 <-  grid::rasterGrob(as.raster(png::readPNG(imgs[1])),
+                            interpolate = FALSE)
+  img2 <-  grid::rasterGrob(as.raster(png::readPNG(imgs[2])),
+                            interpolate = FALSE)
+  pdp::grid.arrange(img1, img2, ncol = 2, bottom = bottom_text)
+}
+
+png1_dest <- "images/Flood_uncertainty.png"
+png2_dest <- "images/Flood_damage.png"
+
+comb2pngs(c(png1_dest, png2_dest))
+
+
+```
+
+<div style="clear: both;"></div>
+
+<div class = "leftB">
+Relying on best estimates may lead to the wrong decision being made
+</div>
+
+<div class = "rightA">
+This uncertainty can be critically important to any decisions based on the analysis, as ‘best estimates’ are generally not enough to make an informed decision. For example, Option A may appear better than Option B when looking at the most likely outcome of each, but if the uncertainty in A is greater than in B then it might carry an unacceptable chance of much worse outcomes.
+</div>
+
+<div class = "rightA">
+The  presence of uncertainty in analysis may not always inspire confidence, but the absence of uncertainty is even worse. Since uncertainty is ever-present, omitting it from analysis leaves it unacknowledged and unassessed. It could be of any size, leaving the true range of possible outcomes entirely unknown. A proper assessment of analytical uncertainty should reassure you that the analysts have considered the limitations in their data and methodology, as well as the inherent randomness in the world, in order to provide an honest assessment of the range of possible outcomes – rather than presenting misplaced confidence in an impossibly accurate estimate.
+</div>
+
+<div class = "rightA">
+Decision makers have a critical role working with analysts to agree what the analysis should focus on in relation to the decision being made (for example, a range around an estimate may be less useful than understanding what the percentage take up should be a policy for the policy to be a benefit), helping to identify sources of uncertainty, discussing how the results inform the decision being made.
+</div>
+
+<div class = "leftB">
+Decision makes have a critical role 
+</div>
+
+<div class = "rightA">
+<ul>
+<li> Consider the full range of possible outcomes when using analysis to inform decisions, not just the ‘best estimate’.</li>
+<li> Challenge analysts where information on uncertainty is absent or inadequate. </li>
+<li> Ask questions about how to interpret the uncertainty and its implications. </li>
+<li> Provide feedback to analysts on the usefulness and effectiveness of how they communicate uncertainty. </li></ul>
+</div>
+
+<div class = "leftB">
+Key points to remember
+</div>
+
+<div class = "rightA">
+This toolkit has been written for analysts to help them understand and assess the uncertainty in their work, and then to communicate that to the users of their analysis in an effective and helpful way. Feedback from those users – those who commission the work and make decisions informed by it – is crucial to helping refine and improve this guidance.
+</div>
+
+<div class = "leftB">
+This toolkit
+</div>

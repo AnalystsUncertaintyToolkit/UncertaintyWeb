@@ -1,0 +1,16 @@
+---
+title: <br><br><br> Download pdf
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+---
+
+You can download pdf versions of each chapter by going to this [link](https://github.com/RosieA1/UncertaintyWeb/tree/master/PDF_chapters), clicking on the chapter you wish to download and then clicking the download button
+
+```{r fig.align="center", echo=FALSE, out.width='100%'}
+
+knitr::include_graphics("images/Download_demo.png")
+
+```

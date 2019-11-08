@@ -1,0 +1,74 @@
+---
+title: <br><br><br> Home Page
+---
+
+<style type="text/css">
+
+#TOC {
+margin-top: 100px;
+}
+
+.leftA{
+float: left;
+width: 100%;
+font-weight: bold;
+}
+
+.rightA{
+float:right;
+width: 75%;
+}
+
+.leftB{
+float: left;
+text-align: right;
+width: 23%;
+}
+</style>
+
+
+<div class = "rightA">
+A cross government group has worked together to create a communicating and assessing uncertainty toolkit.
+</div>
+
+<div class = "rightA">
+This toolkit sets out good, not best, practice, as analysis and communication must always be tailored to the audience and decision being made. 
+</div>
+
+<div class = "rightA">
+<b>The toolkit is presented in the first instance as a suggested set of guidelines and we will be consulting with experts from Government, the academic community and other external bodies to develop thinking in line with the latest evidence on communicating uncertainty.</b> We welcome feedback on the content. You can get in touch by emailing: <b>placeholder for email address </b>
+</div>
+
+<div style="clear: both;"></div>
+
+<div class = "leftB">
+Is this toolkit for you?
+</div>
+
+<div class = "rightA">
+This toolkit is aimed at all analysts, whether you are new to the Government or an experienced analyst looking to develop the way you communicate uncertainty to stakeholders. 
+</div>
+
+<div class = "rightA">
+This document sits alongside the Aqua Book guidance on quality analysis. The Aqua Book should be read first as it describes the principles of uncertainty analysis and the processes that should be used in considering it. This is a supplementary document providing additional information for identifying, estimating and communicating uncertainty in analysis to support decisions and decision-makers.  
+</div>
+
+<div class = "rightA">
+We have also provided a [one-page summary](https://rosiea1.github.io/UncertaintyWeb/exec.html) of key messages for analysts to be shared with decision-makers.
+</div>
+
+<div class = "rightA">
+1. Introduction
+2. Jointly agreeing how uncertainty should be used
+3. Defining and identifying uncertainty
+4. Understanding and measuring uncertainty
+5. Presenting and communicating uncertainty
+6. Conclusion
+7. Case studies
+8. Further reading
+9. Decision maker summary on analytical uncertainty
+</div>
+
+
+
+

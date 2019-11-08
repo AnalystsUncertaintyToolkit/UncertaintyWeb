@@ -1,0 +1,141 @@
+---
+title: <br><br><br> Introduction
+---
+
+
+<style type="text/css">
+
+#TOC {
+margin-top: 100px;
+}
+
+.leftA{
+float: left;
+width: 100%;
+font-weight: bold;
+}
+
+.rightA{
+float:right;
+width: 75%;
+}
+
+.leftB{
+float: left;
+width: 23%;
+text-align: right;
+}
+</style>
+
+<div style="clear: both;"></div>
+
+<br>
+
+<div class = "leftB">
+Uncertainty analysis: understanding what you don't know
+</div>
+
+<div class = "rightA">
+Uncertainty is unavoidable when making predictions about future events or impacts of decisions. Our knowledge of the present is typically  incomplete; and we can’t be sure what will happen in the future. We can reduce uncertainty due to lack of knowledge by obtaining more information, or asking experts for advice. However, we can’t eliminate uncertainty entirely, so we must find ways to describe and communicate it.
+</div>
+
+<div class = "rightA">
+There is a difference between uncertainty and risk; risk typically refers to the likelihood of a future unplanned event or unintended consequence that can be assigned a numeric probability. Forecasts of risk, like other forecasts, are themselves subject to uncertainty. For example, UK Met Office predictions of the risk of rain are uncertain as to whether it will rain at all, as well as uncertainty about how much it will rain. This uncertainty is described using a range from running several forecasts from equally likely initial conditions.
+</div>
+
+<div class = "rightA">
+Taking account of uncertainty – and being seen to do so – is important for public trust. We must not pretend that the consequences of a policy or decision are certain: they are always uncertain to some degree. For each option, a range of outcomes are possible. Implying certainty about one particular outcome can damage public trust when things turn out differently.
+</div>
+
+
+<div class = "leftB">
+Why does it matter?
+</div>
+
+<div class = "rightA">
+Red River Flood, Grand Forks USA, 1997
+</div>
+
+<div class = "leftB">
+<b>Example</b>
+</div>
+
+<div class = "rightA">
+The National Weather Service (NWS) predicted, 2 months in advance, the Red River to crest 49 feet.
+</div>
+
+<div class = "rightA">
+In response, the levees were built to handle a flood of 51 feet
+</div>
+
+<div class = "rightA">
+The actual flood level was 54 feet.
+</div>
+
+<div class = "rightA">
+Had the NWS communicated their uncertainty (+/- 9 feet) the several $billion damages as well as the huge personal impact could have been avoided.
+</div>
+
+<div style="clear: both;"></div>
+
+```{r fig.align="center", echo=FALSE}
+
+comb2pngs <- function(imgs, bottom_text = NULL){
+  img1 <-  grid::rasterGrob(as.raster(png::readPNG(imgs[1])),
+                            interpolate = FALSE)
+  img2 <-  grid::rasterGrob(as.raster(png::readPNG(imgs[2])),
+                            interpolate = FALSE)
+  pdp::grid.arrange(img1, img2, ncol = 2, bottom = bottom_text)
+}
+
+png1_dest <- "images/Flood_uncertainty.png"
+png2_dest <- "images/Flood_damage.png"
+
+comb2pngs(c(png1_dest, png2_dest))
+
+
+```
+
+
+<div class = "rightA">
+This toolkit contains the following chapters:
+</div>
+
+<div class = "rightA">
+Before conducting any uncertainty analysis, it is important to check that you understand how the analysis will be used. What type of decision is being made? Are you informing a debate or a final decision? This will frame how you approach the analysis and how you communicate it to your customers. 
+</div>
+
+<div class = "leftB">
+1. Jointly agreeing how uncertainty should be used
+</div>
+
+<div class = "rightA">
+Considering the whole system that influences your analysis helps identify all possible areas where uncertainty can arise. Ensure you understand what is causing the uncertainty in your inputs and outputs, and whether this can be quantified.
+</div>
+
+<div class = "leftB">
+2. Defining and identifying uncertainty
+</div>
+
+<div class = "rightA">
+Before conducting uncertainty analysis, you should consider the range of possibletechniques. We provide a list of the most common techniques with some examples for reference.
+</div>
+
+<div class = "leftB">
+3. Understanding and measuring uncertainty
+</div>
+
+<div class = "rightA">
+There is little point conducting any analysis if it has no impact, so this is perhaps the most important section. It is important to engage with your decision makers so they take account of uncertainty in any decisions they make. You should think about how you interact with the audience, tailoring your communication to different groups. This will help them to understand the consequences of uncertainty and why they should be interested in it.
+</div>
+
+<div class = "leftB">
+4. Presenting and communicating uncertainty
+</div>
+
+
+
+
+
+
+
