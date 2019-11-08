@@ -346,8 +346,8 @@ Understanding and measuring uncertainty:
 </div>
 
 <div class = "leftC4">
-<ul><li> Through sensitivity analysis on each parameter, the use of partial postcodes was found to be the most significant source of uncertainty and so [Dominant uncertainty](https://rosiea1.github.io/UncertaintyWeb/chapter_3.html#focussing_on_the_dominant_uncertainty) was chosen. </li>
-<li> A [Monte Carlo](https://rosiea1.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques) approach would have been a more complete analysis but was not viable in the available time. </li>
+<ul><li> Through sensitivity analysis on each parameter, the use of partial postcodes was found to be the most significant source of uncertainty and so [Dominant uncertainty](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#focussing_on_the_dominant_uncertainty) was chosen. </li>
+<li> A [Monte Carlo](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques) approach would have been a more complete analysis but was not viable in the available time. </li>
 <li> A sample of postcode districts were reviewed to calculate: 
   - The journey time from the centre of the postcode; 
   - The shortest possible journey from within that postcode;
@@ -373,8 +373,8 @@ Presenting and communicating uncertainty analysis
 </div>
 
 <div class = "leftC2">
-<ul><li> A [cumulative distribution](https://rosiea1.github.io/UncertaintyWeb/chapter_4.html#cumulative_density_functions_(cdfs)) of journey times along with uncertainty bounds clearly presented how many journey times were estimated to be within the crucial threshold of 90 minutes.</li>
-<li> [Bar graph ranges](https://rosiea1.github.io/UncertaintyWeb/chapter_4.html#error_bars) were presented to the senior move managers, to show how journey times compared between location – the central estimate wasn’t plotted to avoid the reader putting too much significance on it.</li>
+<ul><li> A [cumulative distribution](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#cumulative_density_functions_(cdfs)) of journey times along with uncertainty bounds clearly presented how many journey times were estimated to be within the crucial threshold of 90 minutes.</li>
+<li> [Bar graph ranges](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#error_bars) were presented to the senior move managers, to show how journey times compared between location – the central estimate wasn’t plotted to avoid the reader putting too much significance on it.</li>
 <li> Prose sentences were used to clearly present the key results. </li>
 <li> Unquantified uncertainties were communicated e.g. the assumption of no delays.</li>
 <li> The communication of the uncertainty made clear the case for obtaining exact postcodes, allowing the analysis to be repeated with less postcode uncertainty.</li></ul>
@@ -441,7 +441,7 @@ Understanding and measuring uncertainty:
 </div>
 
 <div class = "leftC2">
-<ul><li> A [Monte Carlo](https://rosiea1.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques) approach was used due to the large number of sources of uncertainty, its suitability in microsimulation, the (assumed) lack of correlation between sources, and availability of time. Given that the model was likely to be reused many times, it was worth investing the time to build a full probabilistic uncertainty assessment into the model. </li>
+<ul><li> A [Monte Carlo](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques) approach was used due to the large number of sources of uncertainty, its suitability in microsimulation, the (assumed) lack of correlation between sources, and availability of time. Given that the model was likely to be reused many times, it was worth investing the time to build a full probabilistic uncertainty assessment into the model. </li>
 <li> Most numerical assumptions in the model (including dates) can be entered as a distribution (exact, uniform, or triangular, along with some bespoke distributions for specific purposes). </li>
 <li> This resulted in a full probability distribution of the range of possible outcomes.</li></ul>
 </div>
@@ -459,9 +459,9 @@ Presenting and communicating uncertainty analysis
 <div class = "leftC2">
 <ul><li> All major uncertainties were quantified, and presented (with any unquantified sources noted elsewhere).</li>
 <li> The key output was simply the likelihood of remaining within budget, using positive and negative framing (e.g. “We have an 70% chance of staying within budget, and a 30% chance of exceeding our budget”)</li>
-<li> As the budget holder was an analyst, we chose to present the full [probability density profile](https://rosiea1.github.io/UncertaintyWeb/chapter_4.html#probability_density_functions_(pdfs)) to illustrate the range of possible over-/under-spends. </li>
+<li> As the budget holder was an analyst, we chose to present the full [probability density profile](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#probability_density_functions_(pdfs)) to illustrate the range of possible over-/under-spends. </li>
 <li> Alongside, simple prose descriptions of the 90% prediction intervals to describe the likely range of the over-/under-spend</li>
-<li> A further graph was used to show how performance against budget was predicted to evolve over the year, using [multiple line graphs](https://rosiea1.github.io/UncertaintyWeb/chapter_4.html#multiple_line_charts) to show the 90% prediction intervals.</li></ul>
+<li> A further graph was used to show how performance against budget was predicted to evolve over the year, using [multiple line graphs](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#multiple_line_charts) to show the 90% prediction intervals.</li></ul>
 </div>
 
 <div style="clear: both;"></div>

@@ -54,7 +54,7 @@ This document sits alongside the Aqua Book guidance on quality analysis. The Aqu
 </div>
 
 <div class = "rightA">
-We have also provided a [one-page summary](https://rosiea1.github.io/UncertaintyWeb/exec.html) of key messages for analysts to be shared with decision-makers.
+We have also provided a [one-page summary](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/exec.html) of key messages for analysts to be shared with decision-makers.
 </div>
 
 <div class = "rightA">

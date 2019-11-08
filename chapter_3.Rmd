@@ -248,6 +248,8 @@ Now that we have explored how to assess uncertainties in individual analytical i
 
 <br><br>
 
+<div style="clear: both;"></div>
+
 ### Monte Carlo Techniques
 
 <div style="clear: both;"></div>
@@ -304,7 +306,7 @@ This should be repeated until the key outputs are stable and reproducible at the
 <ul><li>Can help assess overall uncertainty when you have uncertainty around many aspects of your model</li>
 <li>Assess uncertainty around a fund forecast</li>
 <li>Estimate the uncertainty around assumptions used in policy costings</li>
-<li>An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided [here](https://github.com/RosieA1/UncertaintyWeb/tree/master/Monte%20Carlo%20template) </b></li></ul>
+<li>An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided [here](https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/blob/master/Monte%20Carlo%20template/Monte%20Carlo%20Template.xlsm) </b></li></ul>
 
 
 <br><br>
@@ -316,6 +318,8 @@ knitr::include_graphics("images/Monte_carlo.png")
 ```
 
 <br><br>
+
+<div style="clear: both;"></div>
 
 ### Convolution
 
@@ -369,6 +373,8 @@ Any situation where you're combining two probability distributions using simple 
 
 <br><br>
 
+<div style="clear: both;"></div>
+
 ### Summing Uncorrelated Uncertainties in Quadrature
 
 <div style="clear: both;"></div>
@@ -415,6 +421,9 @@ Also useful for quickly estimating the uncertainty when changing the timeframe o
 
 <br><br>
 
+<div style="clear: both;"></div>
+
+
 ### Using Past Variance to Estimate Future Uncertainty
 
 <div style="clear: both;"></div>
@@ -457,11 +466,14 @@ Repeat for the variance at each subsequent time period to produce e.g. a fan for
 
 <b>Example:</b> 
 <br><br>
-<b>[MoJ prison population forecasting](https://rosiea1.github.io/UncertaintyWeb/case_studies.html#estimating_uncertainty_in_prison_population_projections)</b> 
+<b>[MoJ prison population forecasting](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html#estimating_uncertainty_in_prison_population_projections)</b> 
 
 <div style="clear: both;"></div>
 
 <br><br>
+
+<div style="clear: both;"></div>
+
 
 ### Focussing on the Dominant Uncertainty
 
@@ -520,6 +532,9 @@ knitr::include_graphics("images/Dominant.png")
 
 <br><br>
 
+<div style="clear: both;"></div>
+
+
 ### Scenario analysis
 
 <div style="clear: both;"></div>
@@ -568,6 +583,8 @@ Forecasting where a range of policy options are being considered, particularly w
 <div style="clear: both;"></div>
 
 <br><br>
+
+<div style="clear: both;"></div>
 
 ### Judgement
 
@@ -634,6 +651,8 @@ knitr::include_graphics("images/Judgement.png")
 <div style="clear: both;"></div>
 
 <br><br>
+
+<div style="clear: both;"></div>
 
 
 ## Quality assuring uncertainty analysis and accounting for wider uncertainties

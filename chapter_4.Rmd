@@ -275,7 +275,7 @@ An exception to this is where there is an established system that your audience 
 </div>
 
 <div class = "rightA">
-Presenting the likelihood of success [may be perceived differently](https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf) to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this. See [infographics section](https://rosiea1.github.io/UncertaintyWeb/chapter_4.html#infographics) for more details.
+Presenting the likelihood of success [may be perceived differently](https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf) to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this. See [infographics section](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#infographics) for more details.
 </div>
 
 <div class = "leftB">
@@ -335,7 +335,7 @@ Stating a range may be perceived as a uniform distribution across the range. Con
 </div>
 
 <div class = "rightA">
-Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see [Agreeing how uncertainty should be used to help answer the question](https://rosiea1.github.io/UncertaintyWeb/chapter_1.html) section), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.
+Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see [Agreeing how uncertainty should be used to help answer the question](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_1.html) section), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.
 </div>
 
 <div class = "leftB">
