@@ -288,7 +288,7 @@ Undertake appropriate AQA
 </div>
 
 <div class= "rightA">
-An additional, but important source of analytical uncertainty is in the analysis itself, with verification and validation of models. Good Analytical Quality Assurance (AQA) practices can help identify the restricted uses of analytical outputs and help minimise the possibility of errors. However, mistakes can still be made, so being clear with decision makers about the extent to which analysis has been quality assured can help them understand how far they may rely on analytical results in support of their decision making. Please see the AQuA  book for more information.
+An additional, but important source of analytical uncertainty is in the analysis itself. With verification and validation of models, good Analytical Quality Assurance (AQA) practices can help identify the restricted uses of analytical outputs and help minimise the possibility of errors. However, mistakes can still be made, so being clear with decision makers about the extent to which analysis has been quality assured can help them understand how far they may rely on analytical results in support of their decision making. Please see the AQuA  book for more information.
 </div>
 
 <div style="clear: both;"></div>
