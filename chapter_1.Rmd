@@ -1,11 +1,11 @@
 ---
-title: <br><br><br> #Agreeing how uncertainty should be used to help answer the question
+title: "<br><br><br>"
 output:
   html_document:
-    toc: true
-    toc_float:
-          collapsed: false
+    toc: yes
     toc_depth: 2
+    toc_float:
+      collapsed: no
 ---
 
 <style type="text/css">

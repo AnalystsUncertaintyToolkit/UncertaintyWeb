@@ -1,11 +1,11 @@
 ---
-title: <br><br><br> # Presenting and communicating uncertainty
+title: "<br><br><br>"
 output:
   html_document:
-    toc: true
-    toc_float:
-          collapsed: false
+    toc: yes
     toc_depth: 2
+    toc_float:
+      collapsed: no
 ---
 
 <style type="text/css">
@@ -82,7 +82,7 @@ text-align: right;
 <br><br>
 
 <div class = "rightA"> 
-We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively. A wealth of additional information can be found on the <a href=https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/Communicating_Quality_Uncertainty_and_Change_for_publication.pdf> GSS website </a>
+We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively. A wealth of additional information can be found on the [GSS website](https://gss.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/)
 </div>
 
 <div style="clear: both;"></div>
@@ -253,6 +253,7 @@ As mentioned earlier, knowing who your audience is, what their interest is in th
 <div class = "rightA">
 How something is written has a major impact on how people perceive the uncertainty. [Research shows](https://www.tandfonline.com/doi/abs/10.1080/17457289.2018.1465061) that analysis is seen as less reliable if the outputs are conveyed only in words.  Numbers should be presented within a sentence if possible as this helps give context, making them easier to read and understand.
 </div>
+
 
 <div class = "leftB">
 Assess whether to describe uncertainty in words or attach figures
