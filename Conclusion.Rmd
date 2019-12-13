@@ -24,4 +24,7 @@ This toolkit has set out good, not best, practice, as analysis and communication
 
 <br><br>
 
-Please get in touch if you have any comments
+Please get in touch if you have any comments.
+<br>You can get in touch by emailing: <a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk </a> 
+<br>We also welcome your feedback via our [short survey](https://www.smartsurvey.co.uk/s/P0DS1/)
+</div>

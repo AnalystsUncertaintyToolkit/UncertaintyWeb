@@ -118,7 +118,7 @@ Considering the whole system that influences your analysis helps identify all po
 </div>
 
 <div class = "rightA">
-Before conducting uncertainty analysis, you should consider the range of possibletechniques. We provide a list of the most common techniques with some examples for reference.
+Before conducting uncertainty analysis, you should consider the range of possible techniques. We provide a list of the most common techniques with some examples for reference.
 </div>
 
 <div class = "leftB">
