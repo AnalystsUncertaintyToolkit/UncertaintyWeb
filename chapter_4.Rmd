@@ -82,7 +82,7 @@ text-align: right;
 <br><br>
 
 <div class = "rightA"> 
-We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively. A wealth of additional information can be found on the [GSS website](https://gss.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/)
+We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively. A wealth of additional information can be found on the GSS website (https://gss.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/).
 </div>
 
 <div style="clear: both;"></div>
