@@ -1,6 +1,6 @@
 name: "my-website"
 navbar: 
-  title: "Uncertainty Group"
+  title: "Uncertainty Toolkit for Analysts in Government"
   left:
     - text: "Home"
       href: index.html
