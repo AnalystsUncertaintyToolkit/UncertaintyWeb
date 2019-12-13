@@ -38,7 +38,7 @@ This toolkit sets out good, not best, practice, as analysis and communication mu
 <div class = "rightA">
 <b>The toolkit is presented in the first instance as a suggested set of guidelines and we will be consulting with experts from Government, the academic community and other external bodies to develop thinking in line with the latest evidence on communicating uncertainty.</b> We welcome feedback on the content. 
 <br>You can get in touch by emailing: <a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk </a> 
-<br>We also welcome your feedback via our [short survey](https://www.smartsurvey.co.uk/s/P0DS1/)
+<br>We also welcome your feedback via our [short survey](https://www.smartsurvey.co.uk/s/P0DS1/).
 </div>
 
 <div style="clear: both;"></div>

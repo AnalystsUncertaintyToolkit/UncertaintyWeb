@@ -8,23 +8,18 @@ output:
 ---
 
 This toolkit is designed to provide guidance to analysts on how to incorporate uncertainty analysis into their work, as well as setting out some high level advice to decision makers, so they know what to expect when commissioning analysis and interpreting analytical results. 
+<br>
 
-<br><br>
+See the Case Studies for examples of applying and communicating some of the techniques listed [here](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html).
+<br>
 
-See the Case Studies for examples of applying and communicating some of the techniques listed here.
-
-<br><br>
-
-Additional papers that may be of interest are presented in the Further Reading tab. 
+Additional papers that may be of interest are presented in the [Further Reading](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/further_reading.html) tab. 
 Your department may also have an uncertainty group who can advise on specific techniques and their implementation.
-
-<br><br>
+<br>
 
 This toolkit has set out good, not best, practice, as analysis and communication must always be tailored to the audience and decision being made.
+<br>
 
-<br><br>
-
-Please get in touch if you have any comments.
-<br>You can get in touch by emailing: <a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk </a> 
+Please get in touch if you have any comments by emailing: <a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk </a> 
 <br>We also welcome your feedback via our [short survey](https://www.smartsurvey.co.uk/s/P0DS1/)
 </div>

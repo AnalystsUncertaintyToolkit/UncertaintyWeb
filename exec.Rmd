@@ -127,6 +127,7 @@ Key points to remember
 
 <div class = "rightA">
 This toolkit has been written for analysts to help them understand and assess the uncertainty in their work, and then to communicate that to the users of their analysis in an effective and helpful way. Feedback from those users – those who commission the work and make decisions informed by it – is crucial to helping refine and improve this guidance.
+We welcome any comments by emailing: <a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk.</a> We also welcome your feedback via our [short survey](https://www.smartsurvey.co.uk/s/P0DS1/).
 </div>
 
 <div class = "leftB">
