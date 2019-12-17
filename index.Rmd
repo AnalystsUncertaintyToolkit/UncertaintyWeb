@@ -36,9 +36,17 @@ This toolkit sets out good, not best, practice, as analysis and communication mu
 </div>
 
 <div class = "rightA">
-<b>The toolkit is presented in the first instance as a suggested set of guidelines and we will be consulting with experts from Government, the academic community and other external bodies to develop thinking in line with the latest evidence on communicating uncertainty.</b> We welcome feedback on the content. 
-<br>You can get in touch by emailing: <a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk </a> 
+<b>The toolkit is presented in the first instance as a suggested set of guidelines and we will be consulting with experts from Government, the academic community and other external bodies to develop thinking in line with the latest evidence on communicating uncertainty.</b> 
+</div>
+<br>
+
+<div class = "rightA">
+We welcome feedback on the content by 28 February 2020. You can get in touch by emailing: <br><a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk </a> 
 <br>We also welcome your feedback via our [short survey](https://www.smartsurvey.co.uk/s/P0DS1/).
+</div>
+
+<div class = "leftB">
+Feedback
 </div>
 
 <div style="clear: both;"></div>
@@ -60,15 +68,15 @@ We have also provided a [one-page summary](https://analystsuncertaintytoolkit.gi
 </div>
 
 <div class = "rightA">
-1. Introduction
-2. Jointly agreeing how uncertainty should be used
-3. Defining and identifying uncertainty
-4. Understanding and measuring uncertainty
-5. Presenting and communicating uncertainty
-6. Conclusion
-7. Case studies
-8. Further reading
-9. Decision maker summary on analytical uncertainty
+1. [Introduction](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/introduction.html)
+2. [Jointly agreeing how uncertainty should be used](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/index.html)
+3. [Defining and identifying uncertainty](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_2.html)
+4. [Understanding and measuring uncertainty](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html)
+5. [Presenting and communicating uncertainty](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html)
+6. [Conclusion](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/Conclusion.html)
+7. [Case studies](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html)
+8. [Further reading](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/further_reading.html)
+9. [Decision-maker summary on analytical uncertainty](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/exec.html)
 </div>
 
 
