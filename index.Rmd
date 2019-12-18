@@ -41,21 +41,27 @@ This toolkit sets out good, not best, practice, as analysis and communication mu
 <br>
 
 <div class = "rightA">
+<br>
 We welcome feedback on the content by 28 February 2020. You can get in touch by emailing: <br><a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk </a> 
 <br>We also welcome your feedback via our [short survey](https://www.smartsurvey.co.uk/s/P0DS1/).
+<br>
 </div>
 
 <div class = "leftB">
+<br>
 Feedback
+<br>
 </div>
 
 <div style="clear: both;"></div>
 
 <div class = "leftB">
+<br>
 Is this toolkit for you?
 </div>
 
 <div class = "rightA">
+<br>
 This toolkit is aimed at all analysts, whether you are new to the Government or an experienced analyst looking to develop the way you communicate uncertainty to stakeholders. 
 </div>
 
