@@ -6,13 +6,22 @@ output:
     toc_depth: 2
     toc_float:
       collapsed: no
+    
 ---
 
 <style type="text/css">
 
+:lang(en) {
+}
+
+
 #TOC{
 margin-top: 100px;
 }
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+background-color: DARKBLUE;
+}  
 
 body {
 counter-reset : h1;
@@ -75,6 +84,14 @@ width: 23%;
 text-align: right;
 }
 
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
 .
 </style>
 
@@ -127,7 +144,7 @@ Once the key questions have been agreed, analysts and decision-makers should dis
 <div style="clear: both;"></div>
 
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
+```{r fig.align="center", echo=FALSE, out.width='100%', alt=""}
 
 knitr::include_graphics("images/Question.png")
 
@@ -166,7 +183,7 @@ Now that we know what the question is and the context in which the analysis will
 </div>
 
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
+```{r fig.align="center", echo=FALSE, out.width='100%', alt = ""}
 
 knitr::include_graphics("images/Outputs_use.png")
 
@@ -192,7 +209,7 @@ We can help the decision-maker to understand how information about the uncertain
 </div>
 
 <div class = "rightA">
-We can assess the impact of uncertainty using many different techniques. Not all will be appropriate for a given piece of analysis. A poor choice of technique may even give misleading results. For example, if there are many sources of uncertainty, the use of 95% confidence intervals to describe just one limited part of this uncertainty may be misleading, and modelling a range of described scenarios may be more appropriate. Appropriate presentation, such as rounding, is equally important to avoid spurious accuracy and impling better precision than is actually the case. Communication is covered further in the [Presenting and communicating uncertainty](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html) section.  
+We can assess the impact of uncertainty using many different techniques. Not all will be appropriate for a given piece of analysis. A poor choice of technique may even give misleading results. For example, if there are many sources of uncertainty, the use of 95% confidence intervals to describe just one limited part of this uncertainty may be misleading, and modelling a range of described scenarios may be more appropriate. Appropriate presentation, such as rounding, is equally important to avoid spurious accuracy and impling better precision than is actually the case. Communication is covered further in the <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html" style="color: DARKBLUE";> <b>presenting and communicating uncertainty section</b></a>.
 </div>
 
 <div class = "leftB">
@@ -221,3 +238,12 @@ Operational decision makers may not want to see a range of results, but instead 
 <div class = "rightA">
 Financial decision makers may be interested in understanding the likelihood of receiving a certain level of income, or that risks and opportunities will materialise. For example, HMRC might want to know the likelihood of receiving a certain level from tax receipts. Here, the analysis would need to go hand in hand with financial risk management to mitigate the risks materialising or crystallise the opportunities.
 </div>
+
+<div class="footer">
+<b>Useful links:</b>
+<br><br>
+<a href="accessibility.html">Click here to see the accessibility statement</a>
+<br><br>
+<a href="index.html">Click here to return to home page</a>
+</div>
+

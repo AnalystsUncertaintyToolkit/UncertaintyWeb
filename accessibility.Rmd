@@ -1,0 +1,23 @@
+---
+title: <br><br><br> Accessibility statement
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+---
+
+<style type="text/css">
+
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+.
+</style>
+
+<p>Accessibility statement to follow.</p>

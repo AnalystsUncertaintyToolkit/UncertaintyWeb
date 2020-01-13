@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -72,9 +72,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -88,7 +86,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -193,8 +190,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -239,6 +234,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -251,48 +247,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -306,6 +263,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -341,8 +304,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -351,6 +312,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -426,11 +397,25 @@ div.tocify {
 </div>
 
 
+<style type="text/css">
+
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+.
+</style>
 <p>This toolkit is designed to provide guidance to analysts on how to incorporate uncertainty analysis into their work, as well as setting out some high level advice to decision makers, so they know what to expect when commissioning analysis and interpreting analytical results. <br></p>
-<p>See the Case Studies for examples of applying and communicating some of the techniques listed <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html">here</a>. <br></p>
-<p>Additional papers that may be of interest are presented in the <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/further_reading.html">Further Reading</a> tab. Your department may also have an uncertainty group who can advise on specific techniques and their implementation. <br></p>
+<p>See the Case Studies for examples of applying and communicating some of the techniques listed <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html" style="color: DARKBLUE";> <b>here</b></a>. <br></p>
+<p>Additional papers that may be of interest are presented in the <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/further_reading.html" style="color: DARKBLUE";> <b>Further Reading</b></a> tab. Your department may also have an uncertainty group who can advise on specific techniques and their implementation. <br></p>
 <p>This toolkit has set out good, not best, practice, as analysis and communication must always be tailored to the audience and decision being made. <br></p>
-Please get in touch if you have any comments by emailing: <a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk </a> <br>We also welcome your feedback via our <a href="https://www.smartsurvey.co.uk/s/P0DS1/">short survey</a>
+<p>Please get in touch if you have any comments by emailing: <a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color:DARKBLUE";> <b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a> <br>We also welcome your feedback via our <a href="https://www.smartsurvey.co.uk/s/P0DS1/" style="color: DARKBLUE";> <b>short feedback survey</b></a></p>
+<div class="footer">
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
 </div>
 
 
@@ -451,6 +436,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

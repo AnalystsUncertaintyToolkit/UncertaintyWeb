@@ -1,4 +1,4 @@
-name: "my-website"
+name: "Uncertainty Toolkit"
 navbar: 
   title: "Uncertainty Toolkit for Analysts in Government"
   left:
@@ -24,8 +24,10 @@ navbar:
       href: exec.html
     - text: "Download pdf"
       href: Download_pdf.html
-
+     
 
 output:
   html_document:
     theme: yeti
+    \*include: 
+      \*after_body: _footer.html

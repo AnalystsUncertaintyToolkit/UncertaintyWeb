@@ -14,6 +14,10 @@ output:
 margin-top: 100px;
 }
 
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+background-color: DARKBLUE;
+} 
+
 body {
 counter-reset : h1;
 }
@@ -80,8 +84,20 @@ float: left;
 width: 23%;
 text-align: right;
 }
+
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+
+.
 </style>
 
+<div class="pageContentWrapper">
 
 # Defining and identifying uncertainty
 
@@ -98,8 +114,11 @@ We encounter uncertainty throughout the decision making process and in the analy
 <br>
 
 <div class = "rightA"> 
-Try to identify and record all the potential sources of uncertainty in your analysis at an early stage.  Early identification of uncertainty is important; if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis. See the [Presenting and communicating uncertainty](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html) section for Tornado diagrams that are a useful way to communicate the size of uncertainty.
+Try to identify and record all the potential sources of uncertainty in your analysis at an early stage.  Early identification of uncertainty is important; if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis. See the <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html" style="color: DARKBLUE";> <b>presenting and communicating uncertainty</b></a> section for Tornado diagrams that are a useful way to communicate the size of uncertainty.
 </div>
+
+
+
 
 <div class = "leftB"> 
 Early identification is important 
@@ -129,7 +148,7 @@ A common classification divides uncertainty into known knowns, known unknowns, a
 </div>
 
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
+```{r fig.align="center", echo=FALSE, out.width='100%', alt = ""}
 
 knitr::include_graphics("images/magnify.png")
 
@@ -265,7 +284,7 @@ What don’t you know?
 </div>
 
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
+```{r fig.align="center", echo=FALSE, out.width='100%', alt = ""}
 
 knitr::include_graphics("images/assumptions.png")
 
@@ -292,3 +311,12 @@ An additional, but important source of analytical uncertainty is in the analysis
 </div>
 
 <div style="clear: both;"></div>
+
+<div class="footer">
+<b>Useful links:</b>
+<br><br>
+<a href="accessibility.html">Click here to see the accessibility statement</a>
+<br><br>
+<a href="index.html">Click here to return to home page</a>
+</div>
+

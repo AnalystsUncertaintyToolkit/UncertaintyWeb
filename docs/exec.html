@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,9 +69,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -85,7 +83,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -190,8 +187,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -236,6 +231,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -248,20 +244,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -350,7 +343,20 @@ float: left;
 width: 23%;
 text-align: right;
 }
+
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+.
 </style>
+.
+</style>
+<div class="pageContentWrapper">
 <div class="leftB">
 <p>All analysis is uncertain</p>
 </div>
@@ -404,7 +410,7 @@ text-align: right;
 <p>Decision makers have a critical role working with analysts to agree what the analysis should focus on in relation to the decision being made (for example, a range around an estimate may be less useful than understanding what the percentage take up should be a policy for the policy to be a benefit), helping to identify sources of uncertainty, discussing how the results inform the decision being made.</p>
 </div>
 <div class="leftB">
-<p>Decision makes have a critical role</p>
+<p>Decision makers have a critical role</p>
 </div>
 <div class="rightA">
 <ul>
@@ -426,10 +432,13 @@ Provide feedback to analysts on the usefulness and effectiveness of how they com
 <p>Key points to remember</p>
 </div>
 <div class="rightA">
-<p>This toolkit has been written for analysts to help them understand and assess the uncertainty in their work, and then to communicate that to the users of their analysis in an effective and helpful way. Feedback from those users – those who commission the work and make decisions informed by it – is crucial to helping refine and improve this guidance. We welcome any comments by emailing: <a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> <a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a>.</a> We also welcome your feedback via our <a href="https://www.smartsurvey.co.uk/s/P0DS1/">short survey</a>.</p>
+<p>This toolkit has been written for analysts to help them understand and assess the uncertainty in their work, and then to communicate that to the users of their analysis in an effective and helpful way. Feedback from those users – those who commission the work and make decisions informed by it – is crucial to helping refine and improve this guidance. We welcome any comments by emailing: <a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color:DARKBLUE";> <b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>. We also welcome your feedback via our <a href="https://www.smartsurvey.co.uk/s/P0DS1/" style="color: DARKBLUE";> <b>short survey</b></a> by 20th March 2020.</p>
 </div>
 <div class="leftB">
-<p>This toolkit</p>
+<p>We welcome your feedback</p>
+</div>
+<div class="footer">
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
 </div>
 
 
@@ -449,6 +458,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

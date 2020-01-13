@@ -15,6 +15,10 @@ output:
 margin-top: 100px;
 }
 
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+background-color: DARKBLUE;
+} 
+
 body {
 counter-reset : h1;
 }
@@ -86,8 +90,18 @@ float: centre;
 colour: white;
 }
 
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+.
 </style>
 
+<div class="pageContentWrapper">
 
 # Understanding and measuring uncertainty
 
@@ -102,7 +116,7 @@ This section presents some approaches at a high level then in more detail for qu
 </div>
 
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
+```{r fig.align="center", echo=FALSE, out.width='100%', alt = ""}
 
 knitr::include_graphics("images/measure.png")
 
@@ -223,7 +237,7 @@ Break-even analysis helps people understand how much the input has to change bef
 </div>
 
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
+```{r fig.align="center", echo=FALSE, out.width='100%', alt = ""}
 
 knitr::include_graphics("images/cablecar.png")
 
@@ -306,12 +320,12 @@ This should be repeated until the key outputs are stable and reproducible at the
 <ul><li>Can help assess overall uncertainty when you have uncertainty around many aspects of your model</li>
 <li>Assess uncertainty around a fund forecast</li>
 <li>Estimate the uncertainty around assumptions used in policy costings</li>
-<li>An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided [here](https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/blob/master/Monte%20Carlo%20template/Monte%20Carlo%20Template.xlsm) </b></li></ul>
+<li>An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided <a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/blob/master/Monte%20Carlo%20template/Monte%20Carlo%20Template.xlsm" style="color: DARKBLUE";> <b>here</b></a> </b></li></ul>
 
 
 <br><br>
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
+```{r fig.align="center", echo=FALSE, out.width='100%', alt = ""}
 
 knitr::include_graphics("images/Monte_carlo.png")
 
@@ -466,7 +480,7 @@ Repeat for the variance at each subsequent time period to produce e.g. a fan for
 
 <b>Example:</b> 
 <br><br>
-<b>[MoJ prison population forecasting](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html#estimating_uncertainty_in_prison_population_projections)</b> 
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html#estimating_uncertainty_in_prison_population_projections" style="color: DARKBLUE";> <b>MoJ prison population forecasting</b></a>
 
 <div style="clear: both;"></div>
 
@@ -517,11 +531,11 @@ This is not a robust way of estimating overall uncertainty, as it ignores all bu
 
 <b>Example:</b> 
 <br><br>
-The Accuracy Tracking Tool <b>link to DfE Accuracy tracking tool</b> can be used to estimate the residual uncertainty once the dominant uncertainty has been modelled. This tool assesses the accuracy of different forecast elements and allows you to see the percentage which both the dominant and residual uncertainty contribute to the total error.
+The Accuracy Tracking Tool <b>(link to DfE Accuracy tracking tool to come)</b> can be used to estimate the residual uncertainty once the dominant uncertainty has been modelled. This tool assesses the accuracy of different forecast elements and allows you to see the percentage which both the dominant and residual uncertainty contribute to the total error.
 
 <br><br>
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
+```{r fig.align="center", echo=FALSE, out.width='100%', alt = ""}
 
 knitr::include_graphics("images/Dominant.png")
 
@@ -641,7 +655,7 @@ Analysis where the expected range of results would lead to the same outcome
 <br><br>
 
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
+```{r fig.align="center", echo=FALSE, out.width='100%', alt = ""}
 
 knitr::include_graphics("images/Judgement.png")
 
@@ -693,3 +707,10 @@ One element you may not be able to test in your analysis is the effect of unknow
 Accounting for uncertainties that analysis cannot capture 
 </div>
 
+<div class="footer">
+<b>Useful links:</b>
+<br><br>
+<a href="accessibility.html">Click here to see the accessibility statement</a>
+<br><br>
+<a href="index.html">Click here to return to home page</a>
+</div>

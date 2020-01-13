@@ -25,6 +25,16 @@ float: left;
 width: 23%;
 text-align: right;
 }
+
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+.
 </style>
 
 <div style="clear: both;"></div>
@@ -133,9 +143,11 @@ There is little point conducting any analysis if it has no impact, so this is pe
 4. Presenting and communicating uncertainty
 </div>
 
-
-
-
-
-
+<div class="footer">
+<b>Useful links:</b>
+<br><br>
+<a href="accessibility.html">Click here to see the accessibility statement</a>
+<br><br>
+<a href="index.html">Click here to return to home page</a>
+</div>
 

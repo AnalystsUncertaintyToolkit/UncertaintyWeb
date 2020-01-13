@@ -14,6 +14,10 @@ output:
 margin-top: 100px;
 }
 
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+background-color: DARKBLUE;
+} 
+
 body {
 counter-reset : h1;
 }
@@ -75,14 +79,26 @@ float: left;
 width: 23%;
 text-align: right;
 }
+
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+
+.
 </style>
 
+<div class="pageContentWrapper">
 # Presenting and communicating uncertainty
 
 <br><br>
 
 <div class = "rightA"> 
-We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively. A wealth of additional information can be found on the GSS website (https://gss.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/).
+We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively. A wealth of additional information can be found on the<a href="https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/Communicating_Quality_Uncertainty_and_Change_for_publication.pdf" style="color: DARKBLUE";> <b>GSS website (pdf)</b></a>.
 </div>
 
 <div style="clear: both;"></div>
@@ -101,7 +117,7 @@ We now consider how to choose <i>what</i> messages about uncertainty we should c
 The analysis of uncertainty is often complex. We need to choose carefully the key messages about uncertainty to communicate to decision makers – ensuring they receive enough information to understand the key points, without receiving so much that it clouds the central issue. <br><br> You should also consider the onward communication of your message to ensure that when your work is passed on to others its core message and integrity are maintained. Consider what decision makers <i>must</i>, <i>should</i>, or <i>could</i> know.
 </div>
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/Odd_tulip.png")
 
@@ -251,7 +267,7 @@ As mentioned earlier, knowing who your audience is, what their interest is in th
 </div>
 
 <div class = "rightA">
-How something is written has a major impact on how people perceive the uncertainty. [Research shows](https://www.tandfonline.com/doi/abs/10.1080/17457289.2018.1465061) that analysis is seen as less reliable if the outputs are conveyed only in words.  Numbers should be presented within a sentence if possible as this helps give context, making them easier to read and understand.
+How something is written has a major impact on how people perceive the uncertainty. <a href="https://www.tandfonline.com/doi/abs/10.1080/17457289.2018.1465061" style="color: DARKBLUE";> <b>Research shows</b></a> that analysis is seen as less reliable if the outputs are conveyed only in words.  Numbers should be presented within a sentence if possible as this helps give context, making them easier to read and understand.
 </div>
 
 
@@ -260,7 +276,7 @@ Assess whether to describe uncertainty in words or attach figures
 </div>
 
 <div class = "rightA">
-Descriptive terms such as ‘low risk’ or ‘very likely’ can be interpreted very differently by [different people](https://www.tandfonline.com/doi/full/10.1080/02684527.2014.994955). If possible, it is best to attach a numerical probability and use these words in support.
+Descriptive terms such as ‘low risk’ or ‘very likely’ can be interpreted very differently by <a href="https://www.tandfonline.com/doi/full/10.1080/02684527.2014.994955" style="color: DARKBLUE";> <b>different people</b></a>. If possible, it is best to attach a numerical probability and use these words in support.
 </div>
 
 <div class = "leftB">
@@ -271,12 +287,12 @@ Be careful when using descriptive terms and adhere to an established system if p
 
 <div class = "rightA">
 An exception to this is where there is an established system that your audience is used to for attaching terminology to probabilities, one that can be assumed to be well-understood by the intended audience. For example:
-<ul><li> [According to the IPCC (Intergovernmental Panel on Climate Change)](https://wg1.ipcc.ch/SR/documents/ar5_uncertainty-guidance-note.pdf), “very likely” means 90-100% probability. </li>
-<li> [According to NICE (National Institute for Health and Care Excellence)](https://bnf.nice.org.uk/guidance/adverse-reactions-to-drugs.html), probabilities of between 1 in 100 and 1 in 10 are referred to as “common”. </li></ul>
+<ul><li> <a href="https://wg1.ipcc.ch/SR/documents/ar5_uncertainty-guidance-note.pdf" style="color: DARKBLUE";> <b>According to the IPCC (Intergovernmental Panel on Climate Change) (pdf)</b></a>, “very likely” means 90-100% probability. </li>
+<li> <a href="https://bnf.nice.org.uk/guidance/adverse-reactions-to-drugs.html" style="color: DARKBLUE";> <b>According to NICE (National Institute for Health and Care Excellence)</b></a>, probabilities of between 1 in 100 and 1 in 10 are referred to as “common”. </li></ul>
 </div>
 
 <div class = "rightA">
-Presenting the likelihood of success [may be perceived differently](https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf) to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this. See [infographics section](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#infographics) for more details.
+Presenting the likelihood of success <a href="https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf" style="color: DARKBLUE";> <b>may be perceived differently (pdf)</b></a> to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this. See <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#infographics" style="color: DARKBLUE";> <b>infographics section</b></a> for more details.
 </div>
 
 <div class = "leftB">
@@ -284,7 +300,7 @@ Use positive and negative framing
 </div>
 
 <div class = "rightA">
-Research shows that there is no clear preference for choosing between probabilities and fractions (e.g. 10% probability, or 1 out of 10). Given this, [the usual preferences of the audience or the ‘norm’ within the organisation should be followed](https://www.annualreviews.org/doi/pdf/10.1146/annurev-statistics-010814-020148). Note, that some people are more familiar with percentages than fractions or ratios.
+Research shows that there is no clear preference for choosing between probabilities and fractions (e.g. 10% probability, or 1 out of 10). Given this, <a href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-statistics-010814-020148" style="color: DARKBLUE";> <b>the usual preferences of the audience or the ‘norm’ within the organisation should be followed (pdf)</b></a>. Note, that some people are more familiar with percentages than fractions or ratios.
 </div>
 
 <div class = "leftB">
@@ -292,7 +308,7 @@ Decide how to present your numbers
 </div>
 
 <div class = "rightA">
-If using fractions, [keep the denominator constant](https://www.ncbi.nlm.nih.gov/pubmed/24625237) (e.g. “1 in 100 vs. 2 in 100”, rather than “1 in 100 vs. 1 in 50”) and as small as possible while keeping to integers (e.g. “1 in 100” rather than “10 in 1,000”), rounding if appropriate.
+If using fractions, <a href="https://www.ncbi.nlm.nih.gov/pubmed/24625237" style="color: DARKBLUE";> <b>keep the denominator constant</b></a> (e.g. “1 in 100 vs. 2 in 100”, rather than “1 in 100 vs. 1 in 50”) and as small as possible while keeping to integers (e.g. “1 in 100” rather than “10 in 1,000”), rounding if appropriate.
 </div>
 
 <div class = "rightA">
@@ -336,7 +352,7 @@ Stating a range may be perceived as a uniform distribution across the range. Con
 </div>
 
 <div class = "rightA">
-Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see [Agreeing how uncertainty should be used to help answer the question](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_1.html) section), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.
+Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_1.html" style="color: DARKBLUE";> <b>Agreeing how uncertainty should be used to help answer the question</b></a> section), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.
 </div>
 
 <div class = "leftB">
@@ -475,14 +491,14 @@ If the output data are 2-dimensional, then you can apply error bars in 2 dimensi
 
 
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/error_bars.png")
 
 ```
 
 <div class = "rightA">
-<i>Example: <b>[Actual and projected performance against carbon budgets, BEIS](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/794590/updated-energy-and-emissions-projections-2018.pdf)</b> For future emissions, vertical bars show uncertainty in the projections and indicate 95% confidence intervals for the uncertainties that have been modelled.</i>
+<i>Example: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/794590/updated-energy-and-emissions-projections-2018.pdf" style="color: DARKBLUE";> <b>Actual and projected performance against carbon budgets, BEIS (pdf)</b></a> For future emissions, vertical bars show uncertainty in the projections and indicate 95% confidence intervals for the uncertainties that have been modelled.</i>
 </div>
 
 <div style="clear: both;"></div>
@@ -522,14 +538,14 @@ Box plots may not be widely understood by non-analysts, so think carefully about
 </div>
 
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/box_plots.png")
 
 ```
 
 <div class = "rightA">
-<i>Example: <b> [Deaths in the usual place of residence, Public Health England](https://www.gov.uk/government/publications/end-of-life-care-profiles-july-2018-data-update/statistical-commentary-end-of-life-care-profiles-july-2018-update) </b> The graph depicts the percentage of individual that die in their usual place of residence. Box plots are used to show the variation between different Clinical Commissioning Groups, and district and local authorities. A labelled box plot is presented to explain what the ranges mean. </i>
+<i>Example: <a href="https://www.gov.uk/government/publications/end-of-life-care-profiles-july-2018-data-update/statistical-commentary-end-of-life-care-profiles-july-2018-update" style="color: DARKBLUE";> <b>Deaths in the usual place of residence, Public Health England</b></a> The graph depicts the percentage of individual that die in their usual place of residence. Box plots are used to show the variation between different Clinical Commissioning Groups, and district and local authorities. A labelled box plot is presented to explain what the ranges mean. </i>
 </div>
 
 <div style="clear: both;"></div>
@@ -599,14 +615,14 @@ If there are only 2 or 3 these can be overlaid to make it easy to compare. With 
 </div>
 
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/pdf.png")
 
 ```
 
 <div class = "rightA">
-<i>Example: <b> [Change in Air Temperature for 2080-2099, Met Office](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/ukcp/ukcp18-guidance---how-to-use-the-cdf-and-pdf-plots.pdf)</b> The graph shows the expected change in air temperature in 2080-99 compared to 1981-2000 for a medium emission scenario. </i>
+<i>Example: <a href="https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/ukcp/ukcp18-guidance---how-to-use-the-cdf-and-pdf-plots.pdf" style="color: DARKBLUE";> <b>Change in Air Temperature for 2080-2099, Met Office (pdf)</b></a> The graph shows the expected change in air temperature in 2080-99 compared to 1981-2000 for a medium emission scenario. </i>
 </div>
 
 <div style="clear: both;"></div>
@@ -642,14 +658,14 @@ However, features such as the mode are less clear on a CDF (shown by the steepes
 <div style="clear: both;"></div>
 
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/cdf.png")
 
 ```
 
 <div class = "rightA">
-<i>Example: <b>[Change in Air Temperature for 2080-2099, Met Office](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/ukcp/ukcp18-guidance---how-to-use-the-cdf-and-pdf-plots.pdf)</b> The graph shows the same information as the PDF example above. The grey dotted lines indicated there is a 10% probability of a mean temperature change of less that 0.7C. The blue dotted line indicated that there is a 90% probability of a mean temperature change being less than 3.5C. </i>
+<i>Example: <a href="https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/ukcp/ukcp18-guidance---how-to-use-the-cdf-and-pdf-plots.pdf" style="color: DARKBLUE";> <b>Change in Air Temperature for 2080-2099, Met Office (pdf)</b></a> The graph shows the same information as the PDF example above. The grey dotted lines indicated there is a 10% probability of a mean temperature change of less that 0.7C. The blue dotted line indicated that there is a 90% probability of a mean temperature change being less than 3.5C. </i>
 </div>
 
 <div style="clear: both;"></div>
@@ -683,14 +699,14 @@ Often a central ‘best estimate’ is not included, to avoid the viewer focussi
 </div>
 
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/fan_chart.png")
 
 ```
 
 <div class = "rightA">
-<i>Example: <b> [CPI inflation projection, Bank of England](https://www.bankofengland.co.uk/-/media/boe/files/inflation-report/2019/may/inflation-report-may-2019.pdf?la=en&hash=D4985F6D513BF04EB81A28C53F6DB0CFB8CC09FB) </b> The graph depicts probability of various outcomes for CPI inflation in the future. The fan charts are constructed so that outturns of inflation are also expected to lie within darkest central band and each pair of the lighter red areas on 30 occasions. In any particular quarter of the forecast period, inflation is therefore expected to lie somewhere within the fans on 90 out of 100 occasions. And on the remaining 10 out of 100 occasions inflation can fall anywhere outside the red area of the fan chart (grey area). </i>
+<i>Example: <a href="https://www.bankofengland.co.uk/-/media/boe/files/inflation-report/2019/may/inflation-report-may-2019.pdf?la=en&hash=D4985F6D513BF04EB81A28C53F6DB0CFB8CC09FB" style="color: DARKBLUE";> <b>CPI inflation projection, Bank of England (pdf)</b></a> The graph depicts probability of various outcomes for CPI inflation in the future. The fan charts are constructed so that outturns of inflation are also expected to lie within darkest central band and each pair of the lighter red areas on 30 occasions. In any particular quarter of the forecast period, inflation is therefore expected to lie somewhere within the fans on 90 out of 100 occasions. And on the remaining 10 out of 100 occasions inflation can fall anywhere outside the red area of the fan chart (grey area). </i>
 </div>
 
 <div style="clear: both;"></div>
@@ -729,14 +745,14 @@ Avoid a middle "most likely" scenario
 Try to include an even number of scenarios, to avoid having a middle option that may be misinterpreted as the ‘most likely’ scenario.
 </div>
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/multiple_line.png")
 
 ```
 
 <div class = "rightA">
-<i>Example: <b>[Employment Projections, OBR](http://cdn.obr.uk/FSR-July-2018.pdf).</b> The graph presents future employment levels for different demographic scenarios. Each scenario is represented by a separate line plot. The graph does not attempt to show the probability of each scenario occurring.  </i>
+<i>Example: <a href="http://cdn.obr.uk/FSR-July-2018.pdf" style="color: DARKBLUE";> <b>Employment Projections, OBR (pdf)</b></a> The graph presents future employment levels for different demographic scenarios. Each scenario is represented by a separate line plot. The graph does not attempt to show the probability of each scenario occurring.  </i>
 </div>
 
 <div style="clear: both;"></div>
@@ -783,14 +799,14 @@ Tornado diagrams can be misleading in complex models
 One limitation of the format is that only one parameter is changed at a time. There are some situations where the uncertainty due to one variable may appear small initially but becomes much more prominent if a second variable takes on a slightly different value (e.g. think of a workflow model with a bottleneck. A tornado diagram might show the bottleneck parameter to be the overwhelming uncertainty. However, if this parameter is increased slightly then the bottleneck may move elsewhere, completely changing the picture)
 </div>
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/tornado.png")
 
 ```
 
 <div class = "rightA">
-<i>Example: <b> [Nuclear Levelized Cost of Electricity, BEIS](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/566567/BEIS_Electricity_Generation_Cost_Report.pdf) .</b> The graph presents the change in the levelized cost of nuclear electricity (&#163;/MWh) that would result from changes in input parameters. Impacts are shown from both 10% upward or downward movement in central estimates and from predetermined parameters ranges (high/low data range). Yellow bars represent an increase in the parameter, blue bar represent a decrease in the parameter.  </i>
+<i>Example: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/566567/BEIS_Electricity_Generation_Cost_Report.pdf" style="color: DARKBLUE";> <b>Nuclear Levelized Cost of Electricity, BEIS (pdf)</b></a> . The graph presents the change in the levelized cost of nuclear electricity (&#163;/MWh) that would result from changes in input parameters. Impacts are shown from both 10% upward or downward movement in central estimates and from predetermined parameters ranges (high/low data range). Yellow bars represent an increase in the parameter, blue bar represent a decrease in the parameter.  </i>
 </div>
 
 <div style="clear: both;"></div>
@@ -810,7 +826,7 @@ Infographics can be useful for public facing communications
 </div>
 
 <div class = "rightA">
-Infographics are graphic visual representations of information, data or knowledge intended to present information quickly and clearly. [They can improve people’s understanding](http://ptgmedia.pearsoncmg.com/images/9780789749499/samplepages/0789749491.pdf) by using graphics to enhance peoples’ ability to see patterns and trends.
+Infographics are graphic visual representations of information, data or knowledge intended to present information quickly and clearly. <a href="http://ptgmedia.pearsoncmg.com/images/9780789749499/samplepages/0789749491.pdf" style="color: DARKBLUE";> <b>They can improve people’s understanding (pdf)</b></a> by using graphics to enhance peoples’ ability to see patterns and trends.
 </div>
 
 <div style="clear: both;"></div>
@@ -836,17 +852,17 @@ Watch out for common pitfalls and follow best practice for the design
 </div>
 
 <div class = "rightA">
-Like all graphs and visualisation you should ensure the information is presented clearly and truthfully. With infographics there is additional the risk that visual design elements detract from the key message. Consider the final audience for the information to determine if an infographic is the right choice and [follow best practice](https://gss.civilservice.gov.uk/wp-content/uploads/2012/12/infographics-guidelines.pdf).
+Like all graphs and visualisation you should ensure the information is presented clearly and truthfully. With infographics there is additional the risk that visual design elements detract from the key message. Consider the final audience for the information to determine if an infographic is the right choice and <a href="https://gss.civilservice.gov.uk/wp-content/uploads/2012/12/infographics-guidelines.pdf" style="color: DARKBLUE";> <b>follow best practice (pdf)</b></a>.
 </div>
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/infographic.png")
 
 ```
 
 <div class = "rightA">
-<i>Example: <b> [Reoffending Behaviour After Receiving Treatment, MoJ](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/747467/Key4Life_Report.pdf).</b> The infographic uses people icons rather than a bar chart to show the number of reoffenders in a sample. An uncertainty in the form of confidence intervals is included in the infographic </i>
+<i>Example: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/747467/Key4Life_Report.pdf" style="color: DARKBLUE";> <b>Reoffending Behaviour After Receiving Treatment, MoJ (pdf)</b></a>. The infographic uses people icons rather than a bar chart to show the number of reoffenders in a sample. An uncertainty in the form of confidence intervals is included in the infographic </i>
 </div>
 
 <div style="clear: both;"></div>
@@ -901,12 +917,20 @@ Or, if there are several key assumptions that impact the result a chart may be c
 Being able to see what would happen if an underlying assumption was to change is a powerful way to demonstrate the level of uncertainty in a given result.
 </div>
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 knitr::include_graphics("images/interactive.png")
 
 ```
 
 <div class = "rightA">
-<i>Example: The [DECC 2050 Calculator](https://www.gov.uk/guidance/2050-pathways-analysis) is an award-winning, user-friendly tool that helps users to explore the choices available to meet the 2050 carbon target. Whilst it doesn’t explicitly cover the uncertainty in the underlying data it does allow the user to create their own set of policies to try to reach the target. This engaging tool was helpful in demonstrating to users how difficult some of the options are and the relative impact of each choice. </i>
+<i>Example: The <a href="https://www.gov.uk/guidance/2050-pathways-analysis" style="color: DARKBLUE";> <b>DECC 2050 Calculator</b></a> is an award-winning, user-friendly tool that helps users to explore the choices available to meet the 2050 carbon target. Whilst it doesn’t explicitly cover the uncertainty in the underlying data it does allow the user to create their own set of policies to try to reach the target. This engaging tool was helpful in demonstrating to users how difficult some of the options are and the relative impact of each choice. </i>
+</div>
+
+<div class="footer">
+<b>Useful links:</b>
+<br><br>
+<a href="accessibility.html">Click here to see the accessibility statement</a>
+<br><br>
+<a href="index.html">Click here to return to home page</a>
 </div>

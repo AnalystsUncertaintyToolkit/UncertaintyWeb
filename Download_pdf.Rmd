@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> Download pdf
+title: <br><br><br> Download website as pdf
 output:
   html_document:
     toc: true
@@ -7,10 +7,30 @@ output:
     toc_depth: 2
 ---
 
-You can download pdf versions of each chapter by going to this [link](https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/tree/master/PDF_chapters), clicking on the chapter you wish to download or the full download and then clicking the download button
+<style type="text/css">
+
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+.
+</style>
+
+You can download pdf versions of each chapter by going to this <a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/tree/master/PDF_chapters" style="color: DARKBLUE";> <b>link</b></a>, clicking on the chapter you wish to download or the full download and then clicking the download button
 
 ```{r fig.align="center", echo=FALSE, out.width='100%'}
 
 knitr::include_graphics("images/Download_demo.png")
 
 ```
+
+<div class="footer">
+<b>Useful links:</b>
+<br><br>
+<a href="accessibility.html">Click here to see the accessibility statement</a>
+<br><br>
+<a href="index.html">Click here to return to home page</a>
+</div>

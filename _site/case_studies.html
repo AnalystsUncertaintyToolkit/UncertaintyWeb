@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -72,9 +72,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -88,7 +86,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -193,8 +190,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -239,6 +234,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -251,48 +247,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -306,6 +263,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -341,8 +304,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -351,6 +312,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -432,6 +403,10 @@ div.tocify {
 margin-top: 100px;
 }
 
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+background-color: DARKBLUE;
+} 
+
 .section h2{
 float:left;
 width: 75%;
@@ -464,7 +439,7 @@ width: 23%;
 float: left;
 width: 100%;
 font-weight: bold;
-color: DodgerBlue;
+color: DarkBlue;
 }
 
 .leftC2{
@@ -486,7 +461,7 @@ width: 65%;
 float: left;
 width: 50%;
 font-weight: bold;
-color: DodgerBlue;
+color: DarkBlue;
 }
 
 .leftD2{
@@ -503,7 +478,7 @@ width: 75%;
 float: right;
 width: 50%;
 font-weight: bold;
-color: DodgerBlue;
+color: DarkBlue;
 }
 
 .rightB2{
@@ -545,6 +520,15 @@ width: 48%;
 float: right;
 }
 
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+.
 </style>
 <div id="estimating-the-impact-of-evidence-volumes-in-legal-aid-spend" class="section level2">
 <h2>Estimating the impact of evidence volumes in Legal Aid spend</h2>
@@ -820,10 +804,10 @@ Assumptions for transfer times, walking speeds etc.
 <div class="leftC4">
 <ul>
 <li>
-Through sensitivity analysis on each parameter, the use of partial postcodes was found to be the most significant source of uncertainty and so <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#focussing_on_the_dominant_uncertainty">Dominant uncertainty</a> was chosen.
+Through sensitivity analysis on each parameter, the use of partial postcodes was found to be the most significant source of uncertainty and so <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#focussing_on_the_dominant_uncertainty" style="color: DARKBLUE";> <b>Dominant uncertainty</b></a> was chosen.
 </li>
 <li>
-A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques">Monte Carlo</a> approach would have been a more complete analysis but was not viable in the available time.
+A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques" style="color: DARKBLUE";> <b>Monte Carlo</b></a> approach would have been a more complete analysis but was not viable in the available time.
 </li>
 <li>
 A sample of postcode districts were reviewed to calculate: - The journey time from the centre of the postcode; - The shortest possible journey from within that postcode; - The longest possible journey from within that postcode.
@@ -844,10 +828,10 @@ Producing an uncertainty estimate of 90% of journey times to be within ± 25 min
 <div class="leftC2">
 <ul>
 <li>
-A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#cumulative_density_functions_(cdfs)">cumulative distribution</a> of journey times along with uncertainty bounds clearly presented how many journey times were estimated to be within the crucial threshold of 90 minutes.
+A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#cumulative_density_functions_(cdfs)" style="color: DARKBLUE";> <b>cumulative distribution</b></a> of journey times along with uncertainty bounds clearly presented how many journey times were estimated to be within the crucial threshold of 90 minutes.
 </li>
 <li>
-<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#error_bars">Bar graph ranges</a> were presented to the senior move managers, to show how journey times compared between location – the central estimate wasn’t plotted to avoid the reader putting too much significance on it.
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#error_bars" style="color: DARKBLUE";> <b>Bar graph ranges</b></a> were presented to the senior move managers, to show how journey times compared between location – the central estimate wasn’t plotted to avoid the reader putting too much significance on it.
 </li>
 <li>
 Prose sentences were used to clearly present the key results.
@@ -929,7 +913,7 @@ Variation in pay awards based on staff performance
 <div class="leftC2">
 <ul>
 <li>
-A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques">Monte Carlo</a> approach was used due to the large number of sources of uncertainty, its suitability in microsimulation, the (assumed) lack of correlation between sources, and availability of time. Given that the model was likely to be reused many times, it was worth investing the time to build a full probabilistic uncertainty assessment into the model.
+A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques" style="color: DARKBLUE";> <b>Monte Carlo</b></a> approach was used due to the large number of sources of uncertainty, its suitability in microsimulation, the (assumed) lack of correlation between sources, and availability of time. Given that the model was likely to be reused many times, it was worth investing the time to build a full probabilistic uncertainty assessment into the model.
 </li>
 <li>
 Most numerical assumptions in the model (including dates) can be entered as a distribution (exact, uniform, or triangular, along with some bespoke distributions for specific purposes).
@@ -952,18 +936,21 @@ All major uncertainties were quantified, and presented (with any unquantified so
 The key output was simply the likelihood of remaining within budget, using positive and negative framing (e.g. “We have an 70% chance of staying within budget, and a 30% chance of exceeding our budget”)
 </li>
 <li>
-As the budget holder was an analyst, we chose to present the full <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#probability_density_functions_(pdfs)">probability density profile</a> to illustrate the range of possible over-/under-spends.
+As the budget holder was an analyst, we chose to present the full <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#probability_density_functions_(pdfs)" style="color: DARKBLUE";> <b>probability density profile</b></a> to illustrate the range of possible over-/under-spends.
 </li>
 <li>
 Alongside, simple prose descriptions of the 90% prediction intervals to describe the likely range of the over-/under-spend
 </li>
 <li>
-A further graph was used to show how performance against budget was predicted to evolve over the year, using <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#multiple_line_charts">multiple line graphs</a> to show the 90% prediction intervals.
+A further graph was used to show how performance against budget was predicted to evolve over the year, using <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#multiple_line_charts" style="color: DARKBLUE";> <b>multiple line graphs</b></a> to show the 90% prediction intervals.
 </li>
 </ul>
 </div>
 <div style="clear: both;">
 
+</div>
+<div class="footer">
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
 </div>
 </div>
 
@@ -985,6 +972,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

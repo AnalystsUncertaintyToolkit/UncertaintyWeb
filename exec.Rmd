@@ -24,8 +24,22 @@ float: left;
 width: 23%;
 text-align: right;
 }
+
+.footer{
+  position: relative; 
+  margin-top: 1000px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+.
 </style>
 
+.
+</style>
+
+<div class="pageContentWrapper">
 <div class = "leftB">
 All analysis is uncertain
 </div>
@@ -73,7 +87,7 @@ Had the NWS communicated their uncertainty (+/- 9 feet) the several $billion dam
 
 <div style="clear: both;"></div>
 
-```{r fig.align="center", echo=FALSE}
+```{r fig.align="center", echo=FALSE, alt = ""}
 
 comb2pngs <- function(imgs, bottom_text = NULL){
   img1 <-  grid::rasterGrob(as.raster(png::readPNG(imgs[1])),
@@ -110,7 +124,7 @@ Decision makers have a critical role working with analysts to agree what the ana
 </div>
 
 <div class = "leftB">
-Decision makes have a critical role 
+Decision makers have a critical role 
 </div>
 
 <div class = "rightA">
@@ -127,9 +141,17 @@ Key points to remember
 
 <div class = "rightA">
 This toolkit has been written for analysts to help them understand and assess the uncertainty in their work, and then to communicate that to the users of their analysis in an effective and helpful way. Feedback from those users – those who commission the work and make decisions informed by it – is crucial to helping refine and improve this guidance.
-We welcome any comments by emailing: <a href=mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk> AnalystsUncertaintyToolkit@homeoffice.gov.uk.</a> We also welcome your feedback via our [short survey](https://www.smartsurvey.co.uk/s/P0DS1/).
+We welcome any comments by emailing: <a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color:DARKBLUE";> <b>AnalystsUncertaintyToolkit@homeoffice.gov.uk</b></a>. We also welcome your feedback via our <a href="https://www.smartsurvey.co.uk/s/P0DS1/" style="color: DARKBLUE";> <b>short survey</b></a> by 20th March 2020.
 </div>
 
 <div class = "leftB">
-This toolkit
+We welcome your feedback
+</div>
+
+<div class="footer">
+<b>Useful links:</b>
+<br><br>
+<a href="accessibility.html">Click here to see the accessibility statement</a>
+<br><br>
+<a href="index.html">Click here to return to home page</a>
 </div>
