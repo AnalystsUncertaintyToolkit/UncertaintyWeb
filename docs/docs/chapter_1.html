@@ -11,7 +11,7 @@
 
 
 
-<title>    Accessibility statement</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -310,6 +310,12 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
 
@@ -392,12 +398,85 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore"><br><br><br> Accessibility statement</h1>
+<h1 class="title toc-ignore"><br><br><br></h1>
 
 </div>
 
 
 <style type="text/css">
+
+:lang(en) {
+}
+
+
+#TOC{
+margin-top: 100px;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+background-color: DARKBLUE;
+}  
+
+body {
+counter-reset : h1;
+}
+
+h1 {
+  counter-reset:h2;
+}
+
+h2 {
+counter-reset : h3;
+}
+
+h1:before{
+  content : "2" ". ";
+  counter-increment: h1;
+}
+
+h2:before {
+content : "2" "." counter(h2,decimal) ". ";
+counter-increment : h2;
+}
+
+h2.nocount:before {
+content : "";
+counter-increment : none;
+}
+
+.section h2{
+padding-top: 200px;
+float:right;
+width: 75%;
+}
+
+.section h3{
+float:right;
+width: 75%;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: right;
+} 
+
+.rightA{
+float:right;
+width: 75%;
+}
+
+.leftB{
+float: left;
+width: 23%;
+text-align: right;
+}
 
 .footer{
   position: relative; 
@@ -409,129 +488,118 @@ div.tocify {
 
 .
 </style>
-<div class="call-to-action">
-This website is run by the DfE, MoJ and Home Office. We want as many people as possible to be able to use this website. For example, that means you should be able to:
-<ul>
-<li>
-change colours, contrast levels and fonts
-</li>
-<li>
-zoom in up to 300% without the text spilling off the screen
-</li>
-<li>
-navigate most of the website using just a keyboard
-</li>
-<li>
-navigate most of the website using speech recognition software
-</li>
-<li>
-listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
-</li>
-</ul>
-<p>
-We’ve also made the website text as simple as possible to understand.
-</p>
-<p>
-<a href="https://mcmw.abilitynet.org.uk/" style="color: DARKBLUE";><b>AbilityNet</b></a> has advice on making your device easier to use if you have a disability.
-</p>
+<div id="jointly-agreeing-how-uncertainty-should-be-used" class="section level1">
+<h1>Jointly agreeing how uncertainty should be used</h1>
+<p><br></p>
+<div class="rightA">
+<p>Decision-makers need information about uncertainty in the impacts of their decisions. This section looks at the steps to ensure that analysts and decision-makers agree on the question being asked, how analytical outputs will be used in the decision-making process, and how to appropriately incorporate uncertainty into the analysis.</p>
 </div>
-<h3 id="how-accessible-this-website-is">
-How accessible this website is
-</h3>
-<div class="call-to-action">
-We know some parts of this website are not fully accessible:
+<div id="understanding-the-problem" class="section level2">
+<h2>Understanding the problem</h2>
+<div style="clear: both;">
+
 </div>
-<div class="call-to-action">
-<ul>
-<li>
-the text will not reflow in a single column when you change the size of the browser window
-</li>
-<li>
-you cannot modify the line height or spacing of text
-</li>
-<li>
-you cannot skip to the main content when using a screen reader
-</li>
-</ul>
+<hr>
+<div style="clear: both;">
+
 </div>
-<h3 id="what-to-do-if-you-cannot-access-parts-of-this-website">
-What to do if you cannot access parts of this website
-</h3>
-<p>
-If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille:
-</p>
-<ul>
-<li>
-email:<a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE";><b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>
-</li>
-</ul>
-<p>
-We’ll consider your request and get back to you as soon as is practicably possible.
-</p>
-<h3 id="reporting-accessibility-problems-with-this-website">
-Reporting accessibility problems with this website
-</h3>
-<p>
-We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, contact us by email on: <a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE";><b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>
-</p>
-<h3 id="enforcement-procedure">
-Enforcement procedure
-</h3>
-<p>
-The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint,<a href="https://www.equalityadvisoryservice.com/" style="color: DARKBLUE";><b>contact the Equality Advisory and Support Service (EASS)</b></a>.
-</p>
-<h2 id="technical-information-about-this-websites-accessibility">
-Technical information about this website’s accessibility
-</h2>
-<div class="call-to-action">
-<p>
-This website is partially compliant with the<a href="https://www.w3.org/TR/WCAG21/" style="color: DARKBLUE";><b>Web Content Accessibility Guidelines version 2.1</b></a>AA standard, due to the non-compliances listed below.
-</p>
+<p><br></p>
+<div class="leftB">
+<p>Clarify what the real question is</p>
 </div>
-<h2 id="non-accessible-content">
-Non accessible content
-</h2>
-<div class="call-to-action">
-<p>
-The content listed below is non-accessible for the following reasons:
-</p>
-<p>
-….
-</p>
+<div class="rightA">
+<p>It is important to ensure that the question is correctly framed to address the problem. For example, are we really interested in ‘how much money is this new policy likely to save?’, or should we be asking ‘how certain can we that this policy would save more than £x?’.</p>
 </div>
-<h3 id="non-compliance-with-the-accessibility-regulations">
-Non compliance with the accessibility regulations
-</h3>
-<div class="call-to-action">
-<p>
-Some images do not have a text alternative, so people using a screen reader cannot access the information. This fails WCAG 2.1 success criterion 1.1.1 (non-text content).
-</p>
-<p>
-We plan to add text alternatives for all images by September 2020. When we publish new content we’ll make sure our use of images meets accessibility standards.
-</p>
+<p><br></p>
+<div class="rightA">
+<p>As well as clearly defining the question, we should also ensure that any important detailed questions to support the analysis are appropriately thought through. For example, are we interested in uncertainty on a calendar year or financial year basis?</p>
 </div>
-<h3 id="disproportionate-burden">
-Disproportionate burden
-</h3>
-<div class="call-to-action">
-(to add)
+<div class="rightA">
+<p>You may also want to jointly identify sources of uncertainty that are so deep that little or nothing can be said quantitatively about their impact on the outcome. An example might be the impact of a natural disaster on a particular policy. Deep uncertainties can have major implications for decision making, and may call for a descriptive approach to the analysis and presentation of options.</p>
 </div>
-<h2 id="how-we-tested-this-website">
-How we tested this website
-</h2>
-<p>
-This website (<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/, style="color: DARKBLUE";"><b><a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/" class="uri">https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/</a></b></a>) was last tested in January 2020. The test was carried out by the Ministry of Justice and Department for Education.
-</p>
-<h2 id="what-were-doing-to-improve-accessibility">
-What we’re doing to improve accessibility
-</h2>
-<div class="call-to-action">
-<p>
-We will monitor the accessibility of this website on an on-going basis and fix any accessibility issues reported to us.
-</p>
+<div class="leftB">
+<p>Identify the important details</p>
+</div>
+<p><br></p>
+<div class="rightA">
+<p>Once the key questions have been agreed, analysts and decision-makers should discuss how the outputs will be used. Understanding the role of the analysis in the decision-making process will help to inform which uncertainty techniques are appropriate and proportionate.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+<p><img src="images/Question.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="how-will-outputs-be-used" class="section level2">
+<h2>How will outputs be used?</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br></p>
+<div class="leftB">
+<p>Discuss the role for the analysis</p>
+</div>
+<div class="rightA">
+<p>Will the decision be based purely on the results of the analysis, or is it just one of a wider set of considerations informing the decision? The more influential the analysis is, the more important it is to build in robust uncertainty analysis.</p>
+</div>
+<p><br></p>
+<div class="rightA">
+<p>If the output is to be fed into ‘downstream’ models, then it is important to understand the requirements of those models. For example, if <i>scenarios</i> are used to illustrate uncertainty in your model, then these may not be suitable inputs for a Monte Carlo simulation in a dependent model.</p>
+</div>
+<div class="leftB">
+<p>Are there dependent models drawing on the analysis?</p>
+</div>
+<div class="rightA">
+<p>Now that we know what the question is and the context in which the analysis will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to ask the decision maker what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the uncertainty analysis will be conducted.</p>
+</div>
+<p><img src="images/Outputs_use.png" width="100%" style="display: block; margin: auto;" /></p>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="work-with-the-decision-maker-to-inform-their-decision-at-the-right-time" class="section level2">
+<h2>Work with the decision maker to inform their decision at the right time</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<div class="leftB">
+<p>Explain how the uncertainty can be used to better inform decisions</p>
+</div>
+<div class="rightA">
+<p>We can help the decision-maker to understand how information about the uncertainty present in the analysis supports a better informed and more robust decision. It’s important to make it clear that not all sources of uncertainty will be quantifiable and/or supported by robust evidence, and we should jointly prioritise the key sources of uncertainty that need to be included in the model.</p>
+</div>
+<div class="rightA">
+<p>We can assess the impact of uncertainty using many different techniques. Not all will be appropriate for a given piece of analysis. A poor choice of technique may even give misleading results. For example, if there are many sources of uncertainty, the use of 95% confidence intervals to describe just one limited part of this uncertainty may be misleading, and modelling a range of described scenarios may be more appropriate. Appropriate presentation, such as rounding, is equally important to avoid spurious accuracy and impling better precision than is actually the case. Communication is covered further in the <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html" style="color: DARKBLUE";> <b>presenting and communicating uncertainty section</b></a>.</p>
+</div>
+<div class="leftB">
+<p>Avoid misleading results or spurious accuracy by choosing the appropriate presentation</p>
+</div>
+<div class="rightA">
+<p>Discuss with the decision-maker what level of uncertainty is acceptable. Do they want to know how wrong the forecast would need to be in order to change or rethink the policy? Or are they simply interested in an output “range”? If so, what does that “range” actually mean?</p>
+</div>
+<div class="leftB">
+<p>Discuss how the uncertainty will inform the decision-maker’s judgement</p>
+</div>
+<div class="rightA">
+<p>Examples can be very helpful when discussing the analysis with the decision maker. An answer to the question of the net benefits of a policy may be £3m, with uncertainty analysis giving a broad range of £0.5-5.5m. You could discuss with the decision maker how they want to be able to frame the analysis, for example: <br> <i>“A range of £0.5-5.5m”; <br> “The estimated benefits are £3m, with analysis showing a 90% likelihood that benefits will be between £1-5m”; <br> “Analysis shows that there is an 80% likelihood that the net benefits will be greater than £2m”; <br> “The policy needs to have X amount of takeup in order to break even”</i></p>
+</div>
+<div class="rightA">
+<p>Operational decision makers may not want to see a range of results, but instead want to plan to a certain level of confidence, such as 65% or 95% rather than 50%. For example, when planning the number of schools, prison places or GPs we’ll need over the next 5 years, it may be more appropriate to plan to a higher level of confidence than 50%.</p>
+</div>
+<div class="rightA">
+<p>Financial decision makers may be interested in understanding the likelihood of receiving a certain level of income, or that risks and opportunities will materialise. For example, HMRC might want to know the likelihood of receiving a certain level from tax receipts. Here, the analysis would need to go hand in hand with financial risk management to mitigate the risks materialising or crystallise the opportunities.</p>
 </div>
 <div class="footer">
-<p><b>Useful links:</b> <br><br> <a href="index.html">Click here to return to home page</a></p>
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+</div>
+</div>
 </div>
 
 
@@ -589,7 +657,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
+    options.showAndHide = false;
     options.smoothScroll = true;
 
     // tocify
