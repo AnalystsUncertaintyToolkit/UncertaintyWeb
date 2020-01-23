@@ -28,7 +28,7 @@ text-align: right;
 
 .footer{
   position: relative; 
-  margin-top: 1000px; 
+  margin-top: 450px; 
   height = 100px; 
   width: 100%;
   text-align: left

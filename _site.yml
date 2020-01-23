@@ -24,6 +24,8 @@ navbar:
       href: exec.html
     - text: "Download pdf"
       href: Download_pdf.html
+    - text: "Accessibility statement"
+      href: accessibility.html
      
 
 output:

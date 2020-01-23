@@ -11,7 +11,7 @@ output:
 
 .footer{
   position: relative; 
-  margin-top: 1000px; 
+  margin-top: 100px; 
   height = 100px; 
   width: 100%;
   text-align: left
@@ -44,7 +44,7 @@ output:
 <li>we need to define language (= English) for each HTML page for the benefit of a screen reader</li>
 <li>all images need amending so that the screen reader doesn’t read out the file name</li>
 <li>the content isn’t as usable when you enlarge the text</li>
-<p>We were advised by accessibility colleagues that a sitemap was not required in this instance.</p>
+<div class="call-to-action">We were advised by accessibility colleagues that a sitemap was not required in this instance.</div>
 </ul>
 </div>
 
