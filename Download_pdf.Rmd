@@ -18,7 +18,7 @@ output:
 }
 .
 </style>
-You can download the whole website as a pdf by going to this <a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/tree/master/PDF_chapters/Uncertainty_Toolkit_for_Analysts_in_Government_-_full_content.pdf" style="color: DARKBLUE";> <b>link</b></a>.
+You can download the whole website as a pdf by going to this <a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/raw/master/PDF_chapters/Uncertainty_Toolkit_for_Analysts_in_Government_-_full_content.pdf" style="color: DARKBLUE";> <b>link</b></a>.
 
 
 
