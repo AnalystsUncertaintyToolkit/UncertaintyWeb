@@ -23,6 +23,12 @@ float:left;
 width: 75%;
 }
 
+.section h4{
+color:DARKBLUE;
+font-weight: bold;
+}
+
+
 hr { 
   display: block;
   margin-top: 0.5em;
@@ -152,7 +158,7 @@ float: right;
 
 
 <div class = "leftC1">
-The situation: 
+<h4>The situation:</h4>
 </div>
 
 <br>
@@ -166,11 +172,11 @@ However, there was no information to determine for how long these increases coul
 </div>
 
 <div class = "leftD1">
-The analytical approach:
+<h4>The analytical approach:</h4>
 </div>
 
 <div class = "rightB1">
-Asking the right question:
+<h4>Asking the right question:</h4>
 </div>
 
 <div class = "leftD2">
@@ -183,7 +189,7 @@ The existing model takes predicted court activity and calculates expected bill v
 </div>
 
 <div class = "leftC1">
-Defining and identifying uncertainty:
+<h4>Defining and identifying uncertainty:</h4>
 </div>
 
 <div class = "leftC2">
@@ -193,7 +199,7 @@ Defining and identifying uncertainty:
 </div>
 
 <div class = "leftC1">
-Understanding and measuring uncertainty:
+<h4>Understanding and measuring uncertainty:</h4>
 </div>
 
 <div class = "leftC2">
@@ -233,7 +239,7 @@ Presenting and communicating uncertainty analysis
 <div style="clear: both;"></div>
 
 <div class = "leftC1">
-The situation: 
+<h4>The situation:</h4> 
 </div>
 
 <br>
@@ -243,11 +249,11 @@ Prison population projections are the end result of a number of criminal justice
 </div>
 
 <div class = "leftD1">
-The analytical approach:
+<h4>The analytical approach:</h4>
 </div>
 
 <div class = "rightB1">
-Asking the right question:
+<h4>Asking the right question:</h4>
 </div>
 
 <div class = "leftD2">
@@ -260,7 +266,7 @@ Court demand and sentencing and forecasts were used within a prison population m
 </div>
 
 <div class = "leftC1">
-Defining and identifying uncertainty:
+<h4>Defining and identifying uncertainty:</h4>
 </div>
 
 <div class = "leftC2">
@@ -272,7 +278,7 @@ Defining and identifying uncertainty:
 </div>
 
 <div class = "leftC1">
-Understanding and measuring uncertainty:
+<h4>Understanding and measuring uncertainty:</h4>
 </div>
 
 <div class = "leftC2">
@@ -308,7 +314,7 @@ Presenting and communicating uncertainty analysis
 <div style="clear: both;"></div>
 
 <div class = "leftC1">
-The situation: 
+<h4>The situation:</h4> 
 </div>
 
 <br>
@@ -318,11 +324,11 @@ Alternative government office locations were being considered and their on staff
 </div>
 
 <div class = "leftD1">
-The analytical approach:
+<h4>The analytical approach:</h4>
 </div>
 
 <div class = "rightB1">
-Asking the right question:
+<h4>Asking the right question:</h4>
 </div>
 
 <div class = "leftD2">
@@ -335,7 +341,7 @@ Google maps API was used to estimate journey times from each home address to eac
 </div>
 
 <div class = "leftC1">
-Defining and identifying uncertainty:
+<h4>Defining and identifying uncertainty:</h4>
 </div>
 
 <div class = "leftC3">
@@ -355,7 +361,7 @@ knitr::include_graphics("images/Case_study_3.1.png")
 ```
 
 <div class = "leftC1">
-Understanding and measuring uncertainty:
+<h4>Understanding and measuring uncertainty:</h4>
 </div>
 
 <div class = "leftC4">
@@ -405,7 +411,7 @@ Presenting and communicating uncertainty analysis
 <div style="clear: both;"></div>
 
 <div class = "leftC1">
-The situation: 
+<h4>The situation:</h4> 
 </div>
 
 <br>
@@ -415,11 +421,11 @@ Each department has to manage their pay costs to ensure they stay within their b
 </div>
 
 <div class = "leftD1">
-The analytical approach:
+<h4>The analytical approach:</h4>
 </div>
 
 <div class = "rightB1">
-Asking the right question:
+<h4>Asking the right question:</h4>
 </div>
 
 <div class = "leftD2">
@@ -432,7 +438,7 @@ Use a microsimulation to model staff members over time, with departures, promoti
 </div>
 
 <div class = "leftC1">
-Defining and identifying uncertainty:
+<h4>Defining and identifying uncertainty:</h4>
 </div>
 
 <div class = "leftC3">
@@ -451,7 +457,7 @@ knitr::include_graphics("images/Case_study_4.1.png")
 ```
 
 <div class = "leftC1">
-Understanding and measuring uncertainty:
+<h4>Understanding and measuring uncertainty:</h4>
 </div>
 
 <div class = "leftC2">

@@ -19,7 +19,7 @@ output:
 .
 </style>
 
-You can download pdf versions of each chapter by going to this <a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/tree/master/PDF_chapters" style="color: DARKBLUE";> <b>link</b></a>, clicking on the chapter you wish to download or the full download and then clicking the download button
+You can download pdf versions of each chapter by going to this <a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/tree/master/PDF_chapters" style="color: DARKBLUE";> <b>link</b></a>, clicking on the chapter you wish to download or the full download and then clicking the download button.
 
 ```{r fig.align="center", echo=FALSE, out.width='100%'}
 

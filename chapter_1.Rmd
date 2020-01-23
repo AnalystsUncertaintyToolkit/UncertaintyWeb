@@ -103,7 +103,7 @@ text-align: right;
 Decision-makers need information about uncertainty in the impacts of their decisions. This section looks at the steps to ensure that analysts and decision-makers agree on the question being asked, how analytical outputs will be used in the decision-making process, and how to appropriately incorporate uncertainty into the analysis.
 </div>
 
-## Understanding the problem 
+## Understanding the problem
 
 <div style="clear: both;"></div>
 
@@ -150,7 +150,7 @@ knitr::include_graphics("images/Question.png")
 
 ```
 
-## How will outputs be used? 
+## How will outputs be used?
 
 <div style="clear: both;"></div>
 

@@ -79,7 +79,7 @@ This document sits alongside the Aqua Book guidance on quality analysis. The Aqu
 </div>
 
 <div class = "rightA">
-We have also provided a <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/exec.html" style="color: DARKBLUE";><b>one-page summary</b></a>
+We have also provided a <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/exec.html" style="color: DARKBLUE";><b>one-page summary</b></a>.
 </div>
 
 <div class = "rightA">
