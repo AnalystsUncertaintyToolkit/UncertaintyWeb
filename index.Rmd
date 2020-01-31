@@ -37,7 +37,7 @@ width: 23%;
 </style>
 
 <div class = "rightA">
-A cross government group has worked together to create a communicating and assessing uncertainty toolkit.
+A cross government group has worked together to create an assessing and communicating uncertainty toolkit.
 </div>
 
 <div class = "rightA">
