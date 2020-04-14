@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Uncertainty Toolkit for Analysts in Government</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="introduction.html">1. Introduction</a>
+</li>
+<li>
+  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+</li>
+<li>
+  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+</li>
+<li>
+  <a href="chapter_3.html">4. Understanding and measuring uncertainty</a>
+</li>
+<li>
+  <a href="chapter_4.html">5. Presenting and communicating uncertainty</a>
+</li>
+<li>
+  <a href="Conclusion.html">6. Conclusion</a>
+</li>
+<li>
+  <a href="case_studies.html">7. Case studies</a>
+</li>
+<li>
+  <a href="further_reading.html">8. Further reading</a>
+</li>
+<li>
+  <a href="exec.html">9. Decision maker summary</a>
+</li>
+<li>
+  <a href="Download_pdf.html">Download pdf</a>
+</li>
+<li>
+  <a href="accessibility.html">Accessibility statement</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore"><br><br><br></h1>
+
+</div>
+
+
+<style type="text/css">
+
+#TOC {
+margin-top: 100px;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+background-color: DARKBLUE;
+} 
+
+body {
+counter-reset : h1;
+}
+
+h1 {
+  counter-reset:h2;
+}
+
+h2 {
+counter-reset : h3;
+}
+
+h1:before{
+  content : "4" ". ";
+  counter-increment: h1;
+}
+
+h2:before {
+content : "4" "." counter(h2,decimal) ". ";
+counter-increment : h2;
+}
+
+h2.nocount:before {
+content : "";
+counter-increment : none;
+}
+
+.section h2{
+padding-top: 200px;
+float:right;
+width: 75%;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: right;
+} 
+
+.section h3{
+float:right;
+width: 75%;
+}
+
+.rightA{
+float:right;
+width: 75%;
+}
+
+.leftB{
+float: left;
+width: 23%;
+text-align: right;
+}
+
+.headerBlue{
+background-color:#008080; 
+border-radius: 5px; 
+padding: 20px;
+width: 100%;
+font-weight: bold;
+float: centre;
+colour: white;
+}
+
+.footer{
+  position: relative; 
+  margin-top: 500px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+.
+</style>
+<div class="pageContentWrapper">
+
+<div id="understanding-and-measuring-uncertainty" class="section level1">
+<h1>Understanding and measuring uncertainty</h1>
+<p><br></p>
+<div class="rightA">
+<p>At this stage you should have considered where the uncertainties lie. You will now need to consider whether it is possible and appropriate to quantify this uncertainty. In a highly uncertain context, detailed assessment of data-driven uncertainty may not be worthwhile. This is an analytical judgement to be made in light of the full consideration of sources of uncertainty.</p>
+</div>
+<div class="rightA">
+<p>This section presents some approaches at a high level then in more detail for quantifying and measuring the uncertainty in your analysis.</p>
+</div>
+<p><img src="images/measure.png" width="100%" style="display: block; margin: auto;" /></p>
+<div style="clear: both;">
+
+</div>
+<div id="quantifying-uncertainty-in-inputs" class="section level2">
+<h2>Quantifying uncertainty in inputs</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br></p>
+<div class="rightA">
+<p>We have highlighted ways to think about the uncertainty coming from specific sources. We now bring this together into approaches that can be applied to understand the size and distribution of these uncertainties and how you might include this information in your analysis. In most cases, the approach to uncertainty quantification is limited by the data and time available to you, though you should also consider where the major sources of uncertainty are in your analysis and pay most attention to these.</p>
+</div>
+<div class="rightA">
+<p>In addition, the following approaches can be useful in understanding the size and distribution of the uncertainties in your analytical inputs.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+<div class="leftB">
+<p>Consider discrete and continuous distributions…</p>
+</div>
+<div class="rightA">
+<p>A probability distribution describes the probability of occurrences of different outcomes. Generally, there are two types of probability distribution; discrete distributions and continuous distributions.</p>
+</div>
+<div class="rightA">
+<p>Consider whether you have information about the underlying distribution of the parameter. Often data from other sources will be provided with confidence intervals (or standard errors, etc) that can be used to quantify uncertainty. Where such information is not provided, you may be able to approximate these with knowledge of the sample size and design.</p>
+</div>
+<div class="leftB">
+<p>data sources may include confidence intervals…</p>
+</div>
+<div class="rightA">
+<p>Distributions can also be created using what you know about error from previous models. Consider the performance of previous forecasts against outturn results. The distribution of previous errors can provide the uncertainty distribution for the current forecast. Additionally, you might be able to use one source to validate another or to help estimate the uncertainty in the original source.</p>
+</div>
+<div class="leftB">
+<p>or analysis of past model performance to create distributions…</p>
+</div>
+<div class="rightA">
+<p>If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, using the Delphi Method, a structured facilitation method, which relies on a panel of experts to build a combined judgement, for example, about a particular number. This method can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.</p>
+</div>
+<div class="leftB">
+<p>Without quantitative data, use expert judgement</p>
+</div>
+<div class="rightA">
+<p>A range is similar to a probability distribution, in that it considers the possible outcomes but does not consider the probability of each outcome occurring. If there are data or resource limitations a range can be a simple way to illustrate the uncertainty in a parameter.</p>
+</div>
+<div class="leftB">
+<p>Ranges can work in absence of distributions…</p>
+</div>
+<div class="rightA">
+<p>Historical data can be used to quantify a range. Consider how the parameter has changed over a suitable time period. The maximum and minimum values could provide a sensible range. When using historical data be aware that you will only be able to assess ‘business as usual’ uncertainty. If there are future shocks to the system this may fall outside your historic range.</p>
+</div>
+<div class="leftB">
+<p>Historical data can inform the range,</p>
+</div>
+<div class="rightA">
+<p>For parameters that have been the subject of academic studies a literature review can be used to create a range. Consider why different studies may result in different outcomes, and which studies are the most suitable for what you are trying to measure.</p>
+</div>
+<div class="leftB">
+<p>You can also use a literature review…</p>
+</div>
+<div class="rightA">
+<p>If no quantitative data is available, consider whether there are relevant policy/operational constraints that will limit your range. Judgement from experts can be also be used to create sensible ranges.</p>
+</div>
+<div class="leftB">
+<p>Expert steers can inform the range</p>
+</div>
+<div class="rightA">
+<p>In some situations, it is not possible to create a probability distribution or a range. In such cases, make a qualitative assessment of uncertainty. This is still useful to analysts and customers to consider the magnitude of uncertainty.</p>
+</div>
+<div class="rightA">
+<p>You can make qualitative assessments yourself, and by using expert judgement. A simple approach is to RAG rate the likelihood and impact of uncertainty in your parameters. This qualitative assessment should be considered when thinking about the analytical results. If data is categorised as highly uncertain and having a large impact on results, then final outputs will be subject to large uncertainty. Care in presentation is needed when using these more qualitative methods, however, as it’s potentially easier for decision makers to misunderstand the relevance of qualitative assessments of uncertainty for their decision compared to quantitative assessments. It is particularly important to explain the impact of uncertainty on the analytical result and the decision to be made when using these types of qualitative assessment.</p>
+</div>
+<div class="leftB">
+<p>RAG rate your parameters</p>
+</div>
+<div class="rightA">
+<p>A further option to support decision makes is to use break-even analysis. This is useful to understand at which point a saving becomes a cost or possibly at which point you would take a different decision.</p>
+</div>
+<div class="leftB">
+<p>Break-even analysis can help re-frame the question</p>
+</div>
+<div class="rightA">
+<p>Some decision makers will be used to seeing a range around a central estimate. Break-even analysis works backwards – if we were to break-even what would the input be? This could help bring the policy alive and help assumption owners to really consider how realistic the assumption is.</p>
+</div>
+<div class="rightA">
+<p>Break-even analysis helps people understand how much the input has to change before you reach a break-even point so they can consider the probability of this occurring.</p>
+</div>
+<p><img src="images/cablecar.png" width="100%" style="display: block; margin: auto;" /></p>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="common-techniques-for-assessing-uncertainty-in-analytical-outputs" class="section level2">
+<h2>Common techniques for assessing uncertainty in analytical outputs</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br></p>
+<div class="rightA">
+<p>Now that we have explored how to assess uncertainties in individual analytical inputs, we turn to commonly used techniques for analysing overall uncertainty in analytical outputs, moving from approaches to use when we have a good numerical understanding of input uncertainties, though to approaches which can be used when we know less about how input uncertainties are quantified.</p>
+</div>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<div id="monte-carlo-techniques" class="section level3">
+<h3>Monte Carlo Techniques</h3>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p>If all significant sources of uncertainty can be quantified, along with the correlations between them, then probabilistic methods can provide a picture of the range of possible outcomes and the likelihood of each.</p>
+<p><br><br></p>
+<b>Outline:</b> <br><br> The basic process for a Monte Carlo simulation is to:
+<ol>
+<li>
+Define a distribution for each input showing the uncertainty in each. These can be simple distributions based on estimation (e.g. uniform, triangular) or more complex distributions based on data (e.g. normal, beta).
+</li>
+<li>
+Define the correlations between these inputs
+</li>
+<li>
+Randomly generate a value from each input distribution (accounting for correlations)
+</li>
+<li>
+Calculate the outputs of the model deterministically
+</li>
+<li>
+Repeat steps 3) and 4) many (i.e. thousands of) times
+</li>
+<li>
+Analyse the distribution of the resulting outputs
+</li>
+</ol>
+<p><br><br> This should be repeated until the key outputs are stable and reproducible at the level of rounding that will be used when communicating the results</p>
+<p><br><br></p>
+<b>Advantages:</b> <br><br>
+<ul>
+<li>
+Produces a full probability profile of the range of possible outcomes and the likelihood of each – the gold standard in uncertainty analysis
+</li>
+<li>
+Enables analysis of complex interactions between uncertainties within a model
+</li>
+<li>
+Produces a visual representation of the range of possible outcomes, that may aid customer understanding
+</li>
+<li>
+Can be used to assess the impact of removing or reducing a source of uncertainty
+</li>
+</ul>
+<b>Disadvantages:</b> <br><br>
+<ul>
+<li>
+Highly dependent on the accuracy of the distributions used
+</li>
+<li>
+May require more resource than other techniques to build
+</li>
+<li>
+Correlations can be difficult to define mathematically, and can give misleading results if not properly accounted for
+</li>
+<li>
+Can be computationally expensive
+</li>
+<li>
+Outputs may not be reproducible if insufficient iterations are used (effectively introducing further uncertainty to the model)
+</li>
+</ul>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<b>Example:</b> <br><br>
+<ul>
+<li>
+Can help assess overall uncertainty when you have uncertainty around many aspects of your model
+</li>
+<li>
+Assess uncertainty around a fund forecast
+</li>
+<li>
+Estimate the uncertainty around assumptions used in policy costings
+</li>
+<li>
+An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided <a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/blob/master/Monte%20Carlo%20template/Monte%20Carlo%20Template.xlsm" style="color: DARKBLUE";> <b>here</b></a> </b>
+</li>
+</ul>
+<p><br><br></p>
+<p><img src="images/Monte_carlo.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="convolution" class="section level3">
+<h3>Convolution</h3>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p>If there are a small number of uncertainty sources, then it may be possible to combine them mathematically, which can be quicker than using probabilistic methods</p>
+<p><br><br></p>
+<b>Outline:</b> <br><br> In principle uncertainty distributions can be combined to give an exact distribution for the resulting overall uncertainty (known as convolution). <br><br> Consider rolling two dice - the value of each follows a discrete uniform distribution from 1 to 6. If we wanted to know the sum of the two dice, we can combine these uniform distributions to show that the resulting probability profile follows a triangular distribution from 2 to 12. <br><br> This avoids the randomness of probabilistic approaches. However this method tends to get very complicated once more than a few uncertainties are involved, and probabilistic methods may be easier.
+</div>
+<p><br><br></p>
+<div class = "halfBoxBlueLeft">
+<b>Advantages:</b> <br><br>
+<ul>
+<li>
+Deterministic, so outputs are reproducible and quick to generate
+</li>
+<li>
+Works with any input probability distributions (don’t need to assume normality)
+</li>
+</ul>
+<b>Disadvantages:</b> <br><br>
+<ul>
+<li>
+Can be difficult to do with more than 2 or 3 sources of uncertainty
+</li>
+<li>
+Generally only feasible if the distributions are combined using simple mathematical operations (addition, subtraction, multiplication)
+</li>
+<li>
+Assumes that each uncertainty is independent (or correlations must be accounted for)
+</li>
+</ul>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p><b>Example:</b> <br><br> Any situation where you’re combining two probability distributions using simple mathematical operations (addition, subtraction, multiplication)</p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="summing-uncorrelated-uncertainties-in-quadrature" class="section level3">
+<h3>Summing Uncorrelated Uncertainties in Quadrature</h3>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p>If multiple components need to be summed, and the uncertainty in each can be assumed to be normal and uncorrelated, then summing in quadrature is a useful shortcut for estimating the total uncertainty</p>
+<p><br><br></p>
+<p><b>Outline:</b> <br><br> If the model is simply summing a number of output components (e.g. a number of different funding forecasts), and the uncertainty is known in each, then the uncertainty in the sum of those values can be given by the square root of the sum of the individual uncertainties squared (assuming that all errors are independent and normally distributed).</p>
+<p><br><br></p>
+<b>Advantages:</b> <br><br>
+<ul>
+<li>
+Very simple to calculate
+</li>
+<li>
+Can include uncertainties from all sources
+</li>
+</ul>
+<b>Disadvantages:</b> <br><br>
+<ul>
+<li>
+Only applicable for models where uncertainties can simply be summed - more complex interactions will need to use other techniques
+</li>
+<li>
+Only valid if the individual uncertainty distributions are independent and normally distributed
+</li>
+</ul>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p><b>Example:</b> <br><br> Useful for financial forecasting, where individual budgets and their uncertainty has been assessed, and these must be summed to give the overall budget. In this situation assuming independence between budget over/underspends is often reasonable. <br><br> Also useful for quickly estimating the uncertainty when changing the timeframe of a forecast e.g. if you have a forecast by month (with quantified uncertainty), then this is quick way of estimating the uncertainty in the annual totals – assuming there is no correlation between the uncertainty from one month to the next.</p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="using-past-variance-to-estimate-future-uncertainty" class="section level3">
+<h3>Using Past Variance to Estimate Future Uncertainty</h3>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p>If a forecast has been produced repeatedly over many years, it may be possible to use the accuracy of all the previous forecasts to estimate the uncertainty in the new forecast</p>
+<p><br><br></p>
+<p><b>Outline:</b> <br><br> Start by looking at the variance of all of the previous forecasts after one time period, and create a distribution of these variances. This distribution can be used to estimate the uncertainty of the new forecast after one time period. <br><br> Repeat for the variance at each subsequent time period to produce e.g. a fan forecast (smoothing if needed).</p>
+<p><br><br></p>
+<b>Advantages:</b> <br><br>
+<ul>
+<li>
+Captures all sources of uncertainty
+</li>
+<li>
+Avoids the need to identify, quantify and combine individual sources of uncertainty
+</li>
+<li>
+Based on real-world performance, so avoids optimism/pessimism bias (the estimated uncertainty may be asymmetric as a result)
+</li>
+</ul>
+<b>Disadvantages:</b> <br><br>
+<ul>
+<li>
+Needs the system to be stable over time (i.e. there’s no reason to think that the system is more/less predictable than in past years).
+</li>
+<li>
+Needs the approach to forecasting to have been consistent over the years (i.e. there’s no reason to think that our forecasts will be more/less accurate than in previous years).
+</li>
+<li>
+The forecasts must have been produced for a sufficiently long time so that we have enough historical data on the variance to capture the full range of plausible variances
+</li>
+</ul>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p><b>Example:</b> <br><br> <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html#estimating_uncertainty_in_prison_population_projections" style="color: DARKBLUE";> <b>MoJ prison population forecasting</b></a></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="focussing-on-the-dominant-uncertainty" class="section level3">
+<h3>Focussing on the Dominant Uncertainty</h3>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p>If one source of uncertainty has a much greater impact than all the others, then the uncertainty due to this one factor might be a reasonable proxy for the overall uncertainty</p>
+<p><br><br></p>
+<p><b>Outline:</b> <br><br> Consider all the sources of uncertainty affecting the analysis and quantify the impact that each has on the overall uncertainty (even if this is approximate or subjective – see section on ‘Defining and Identifying Uncertainty’). If one source has substantially more impact that the others, then simply looking at the uncertainty in this one factor might be a pragmatic approximation for the overall uncertainty measure, ignoring other sources. <br><br> This is not a robust way of estimating overall uncertainty, as it ignores all but one source. It should only be used if previous techniques are inappropriate, and there is genuinely one source of uncertainty that has an impact that is an order of magnitude larger than the others. However, when time is tight this may be a pragmatic way of estimating uncertainty.</p>
+<p><br><br></p>
+<b>Advantages:</b> <br><br>
+<ul>
+<li>
+Relatively simple and quick
+</li>
+<li>
+No need to combine uncertainties
+</li>
+<li>
+Focusses attention on the key driver of uncertainty, avoiding unnecessary discussion of relatively minor elements
+</li>
+</ul>
+<b>Disadvantages:</b> <br><br>
+<ul>
+<li>
+Will always underestimate the overall uncertainty as most sources of uncertainty are excluded
+</li>
+<li>
+Can dramatically underestimate uncertainty if the source of uncertainty assumed to be dominant isn’t as dominant as believed
+</li>
+</ul>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p><b>Example:</b> <br><br> The Accuracy Tracking Tool <b>(link to DfE Accuracy tracking tool to come)</b> can be used to estimate the residual uncertainty once the dominant uncertainty has been modelled. This tool assesses the accuracy of different forecast elements and allows you to see the percentage which both the dominant and residual uncertainty contribute to the total error.</p>
+<p><br><br></p>
+<p><img src="images/Dominant.png" width="100%" style="display: block; margin: auto;" /></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="scenario-analysis" class="section level3">
+<h3>Scenario analysis</h3>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br></p>
+<p>If there are many sources of uncertainty with complex correlations between them and the likelihood of them occurring is unknown, then it may be more sensible to use a set of scenarios to illustrate the range of plausible outcomes.</p>
+<p><br><br></p>
+<b>Outline:</b>
+<ul>
+<li>
+Identify the individual sources of uncertainty, and the range of possible values for each.
+</li>
+<li>
+Create a set of coherent scenarios (jointly agreed with the decision maker), setting each source of uncertainty to a value that could realistically occur in parallel with the others (e.g. a crimewave is unlikely to occur if the economy is booming).
+</li>
+<li>
+Try to ensure that the chosen scenarios cover the full range of possible outcomes, from highly optimistic to highly pessimistic, with equal attention given to each to avoid bias in presenting the results.
+</li>
+<li>
+Then quantify the overall uncertainty in each scenario, combining uncertainties using other methods in this section (the benefit is that this combining can be done manually for a small number of specific cases, rather than having to formulate the combinations mathematically for all possible inputs).
+</li>
+</ul>
+<p><br><br></p>
+<b>Advantages:</b> <br><br>
+<ul>
+<li>
+Don’t need to mathematically define the correlations between sources of uncertainty.
+</li>
+<li>
+Gives ‘real-world’ explanations to the range of possible outcomes, which may increase buy-in from the customers.
+</li>
+<li>
+Can include low-probability, high-impact events (i.e. system shocks) without needing to define their probability.
+</li>
+</ul>
+<b>Disadvantages:</b> <br><br>
+<ul>
+<li>
+The choice of scenarios is subjective, and may not cover the full range of plausible outcomes.
+</li>
+<li>
+Risk of optimism/pessimism bias, with scenarios not evenly distributed around the most likely outcome.
+</li>
+<li>
+Provides no information about the likelihood of each scenario occurring
+</li>
+<li>
+Needs input from a range of knowledgeable people
+</li>
+</ul>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p><b>Example:</b> <br><br> Forecasting where a range of policy options are being considered, particularly where the likelihood of an event occurring is unknown, for example early analysis on Exiting the EU scenarios</p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="judgement" class="section level3">
+<h3>Judgement</h3>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p>If the previous methods are unfeasible then you could make a subjective estimate of the overall uncertainty using expert elicitation techniques.</p>
+<p><br><br></p>
+<p><b>Outline:</b> <br><br> If the previous methods are unfeasible, then adding a subjective estimate of the overall of uncertainty is an option. Where there is too little information or time to do a quantified analysis, it may be better to provide a judgement on the uncertainty than nothing at all. <br><br> Ideally this should be a group decision, using formal expert elicitation methods (e.g. Delphi) to avoid group-think and arrive at a consensus, agreement, or an average (depending on the technique used). If formal expert elicitation isn’t possible, then the judgement of an individual is better than nothing, though less rigorous. <br><br> However the uncertainty is estimated, make sure that it is clear that it is a subjective opinion rather than results of analysis to prevent it being misused.</p>
+<p><br><br></p>
+<b>Advantages:</b> <br><br>
+<ul>
+<li>
+May be able to be produced quickly, though can take time if using formal elicitation methods with large groups
+</li>
+<li>
+Requires little to no data
+</li>
+<li>
+Based on real-world performance, so avoids optimism/pessimism bias (the estimated uncertainty may be asymmetric as a result)
+</li>
+<li>
+Do not need to consider all sources of uncertainty individually
+</li>
+<li>
+Do not need to mathematically combine uncertainties
+</li>
+</ul>
+<b>Disadvantages:</b> <br><br>
+<ul>
+<li>
+Highly subjective
+</li>
+<li>
+Needs a group of knowledgeable experts, who can reasonably be expected to have a grasp of the range of possible outcomes
+</li>
+</ul>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p><b>Example:</b> <br><br> Providing context around a high priority figure that needs to be submitted quickly. <br><br> Analysis based on a data source of unknown reliability <br><br> Analysis where the expected range of results would lead to the same outcome</p>
+<p><br><br></p>
+<p><img src="images/Judgement.png" width="100%" style="display: block; margin: auto;" /></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+<div id="quality-assuring-uncertainty-analysis-and-accounting-for-wider-uncertainties" class="section level2">
+<h2>Quality assuring uncertainty analysis and accounting for wider uncertainties</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br></p>
+<div class="leftB">
+<p>It is best practice to test the outputs of the uncertainty analysis before using/presenting</p>
+</div>
+<div class="rightA">
+<p>After modelling uncertainty, you should always test the outputs of the analysis before sharing the results. This minimises the risk of errors in your analysis and helps you to understand the detailed outputs fully, including the level of the extreme or the most likely values.</p>
+</div>
+<div class="rightA">
+<p>Uncertainty analysis may produce ‘extreme outcomes’, so that implausible results or scenarios are given. These can be identified through having a sensible checklist of validation rules (e.g. no negative values allowed) and aided with visualisation and filtering. These implausible outcomes could indicate an issue with the setup conditions of your analysis.</p>
+</div>
+<div class="rightA">
+<p>Unusual results in uncertainty analysis may also indicate a weakness in how you have used your chosen technique. For example, if using the Monte Carlo technique, there may be unknown correlation which hasn’t been accounted for, or you might have used an inappropriate distribution for a parameter.</p>
+</div>
+<div class="leftB">
+<p>Unusual results may indicate a weakness in the use of the technique</p>
+</div>
+<div class="rightA">
+<p>One element you may not be able to test in your analysis is the effect of unknown system shocks, such as a recession. It is not always useful or practical to investigate and analyse these types of epistemic or ontological uncertainty, but they should be accounted for in presenting your analysis, for example by highlighting the risks associated with the analysis and the decision it will inform.</p>
+</div>
+<div class="leftB">
+<p>Accounting for uncertainties that analysis cannot capture</p>
+</div>
+<div class="footer">
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
