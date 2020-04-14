@@ -27,9 +27,9 @@ text-align: right;
 }
 
 .footer{
-  position: relative; 
-  margin-top: 450px; 
-  height = 100px; 
+  position: relative;
+  margin-top: 450px;
+  height = 100px;
   width: 100%;
   text-align: left
 }
@@ -112,7 +112,7 @@ This toolkit contains the following chapters:
 </div>
 
 <div class = "rightA">
-Before conducting any uncertainty analysis, it is important to check that you understand how the analysis will be used. What type of decision is being made? Are you informing a debate or a final decision? This will frame how you approach the analysis and how you communicate it to your customers. 
+Before conducting any uncertainty analysis, it is important to check that you understand how the analysis will be used. What type of decision is being made? Are you informing a debate or a final decision? This will frame how you approach the analysis and how you communicate it to your customers.
 </div>
 
 <div class = "leftB">
@@ -151,3 +151,87 @@ There is little point conducting any analysis if it has no impact, so this is pe
 <a href="index.html">Click here to return to home page</a>
 </div>
 
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+  /* This is the css styling of the PopUp this can be edited to change the appearance */
+#gdprPopup {
+    background-color: rgba(20,20,20,0.8);
+    min-height: 26px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+#gdprPopup a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closegdprPopup {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+#closegdprPopup:hover {
+    color: #FFF;
+}
+#gdprPopup a.gdprPopupOK {
+    background-color: #F1D600;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+#gdprPopup a.gdprPopupOK:hover {
+    background-color: #E0C91F;
+}
+/* End of css styling /*
+
+
+</style>
+</head>
+
+<body>
+<script>
+// This is the js function to animate the popup //
+// The value 2000 sets the length of time before it appears, this can be changed to any value (e.g 4 seconds = 4000) //
+// fadeIn and fadeOut are set to 200, this can be changed to change the transition period  //
+
+  $(document).ready(function(){
+      setTimeout(function () {
+          $("#gdprPopup").fadeIn(200);
+       }, 2000);
+      $("#closegdprPopup, .gdprPopupOK").click(function() {
+          $("#gdprPopup").fadeOut(200);
+      });
+  });
+</script>
+
+<div id="gdprPopup">
+<div id="closegdprPopup">x
+</div>
+  In the government we respect your concerns about privacy and value the relationship that we have with you.
+
+  We use technology on our website to collect information that helps us enhance the experience and tailor our products to our users.
+
+  Read the MORE INFORMATION page for further details of what is collected.
+<a href="#" target="_blank">More info</a>
+<a class="gdprPopupOK">That's Fine</a>
+</div>
+
+</body>
+</html>

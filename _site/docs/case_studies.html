@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>    7. Case studies</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Uncertainty Toolkit for Analysts in Government</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="introduction.html">1. Introduction</a>
+</li>
+<li>
+  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+</li>
+<li>
+  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+</li>
+<li>
+  <a href="chapter_3.html">4. Understanding and measuring uncertainty</a>
+</li>
+<li>
+  <a href="chapter_4.html">5. Presenting and communicating uncertainty</a>
+</li>
+<li>
+  <a href="Conclusion.html">6. Conclusion</a>
+</li>
+<li>
+  <a href="case_studies.html">7. Case studies</a>
+</li>
+<li>
+  <a href="further_reading.html">8. Further reading</a>
+</li>
+<li>
+  <a href="exec.html">9. Decision maker summary</a>
+</li>
+<li>
+  <a href="Download_pdf.html">Download pdf</a>
+</li>
+<li>
+  <a href="accessibility.html">Accessibility statement</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore"><br><br><br> 7. Case studies</h1>
+
+</div>
+
+
+<style type="text/css">
+
+#TOC {
+margin-top: 100px;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+background-color: DARKBLUE;
+} 
+
+.section h2{
+float:left;
+width: 75%;
+}
+
+.section h4{
+color:DARKBLUE;
+font-weight: bold;
+}
+
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: left;
+} 
+
+.leftA{
+float: left;
+width: 100%;
+font-weight: bold;
+}
+
+.leftB{
+float: left;
+width: 23%;
+}
+
+.leftC1{
+float: left;
+width: 100%;
+font-weight: bold;
+color: DarkBlue;
+}
+
+.leftC2{
+float: left;
+width: 100%;
+}
+
+.leftC3{
+float: left;
+width: 50%;
+}
+
+.leftC4{
+float: left;
+width: 65%;
+}
+
+.leftD1{
+float: left;
+width: 50%;
+font-weight: bold;
+color: DarkBlue;
+}
+
+.leftD2{
+float: left;
+width: 50%;
+}
+
+.rightA{
+float:right;
+width: 75%;
+}
+
+.rightB1{
+float: right;
+width: 50%;
+font-weight: bold;
+color: DarkBlue;
+}
+
+.rightB2{
+float: right;
+width: 50%;
+}
+
+
+.headerBlue{
+background-color:#008080; 
+border-radius: 5px; 
+padding: 20px;
+width: 100%;
+font-weight: bold;
+float: centre;
+colour: white;
+}
+
+.fullBoxBlue{
+background-color:#AFEEEE; 
+border-radius: 5px; 
+padding: 20px;
+width: 100%;
+}
+
+.halfBoxBlueLeft{
+background-color:#AFEEEE; 
+border-radius: 2px; 
+padding: 20px;
+width: 48%;
+float: left;
+}
+
+.halfBoxBlueRight{
+background-color:#AFEEEE; 
+border-radius: 2px; 
+padding: 20px;
+width: 48%;
+float: right;
+}
+
+.footer{
+  position: relative; 
+  margin-top: 100px; 
+  height = 100px; 
+  width: 100%;
+  text-align: left
+}
+
+.
+</style>
+<div id="estimating-the-impact-of-evidence-volumes-in-legal-aid-spend" class="section level2">
+<h2>Estimating the impact of evidence volumes in Legal Aid spend</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<div class="leftC1">
+<h4>
+The situation:
+</h4>
+</div>
+<p><br></p>
+<div class="leftC2">
+Prices in Crown Court Legal Aid work had been undergoing a sustained increase. Several drivers were identified that suggested that these increases would continue, such as:
+<ul>
+<li>
+Increased electronic evidence
+</li>
+<li>
+Media focus on collapse of trials due to lack of evidence
+</li>
+<li>
+New guidance on the disclosure of data
+</li>
+</ul>
+<p>However, there was no information to determine for how long these increases could continue. In addition, prices had risen particularly quickly in more recent months and may be an indication of an accelerating trend.</p>
+</div>
+<div class="leftD1">
+<h4>
+The analytical approach:
+</h4>
+</div>
+<div class="rightB1">
+<h4>
+Asking the right question:
+</h4>
+</div>
+<div class="leftD2">
+<p>The existing model takes predicted court activity and calculates expected bill volumes, which a price forecast is then applied to.</p>
+</div>
+<div class="rightB2">
+<ul>
+<li>
+What should the price forecast be set at for Crown Court Legal Aid?
+</li>
+<li>
+What is the risk of over or underspending against this forecast?
+</li>
+</ul>
+</div>
+<div class="leftC1">
+<h4>
+Defining and identifying uncertainty:
+</h4>
+</div>
+<div class="leftC2">
+<ul>
+<li>
+The timing and value of upcoming bills
+</li>
+<li>
+Potential changes in underlying cases mix
+</li>
+<li>
+Case volumes
+</li>
+</ul>
+</div>
+<div class="leftC1">
+<h4>
+Understanding and measuring uncertainty:
+</h4>
+</div>
+<div class="leftC2">
+<ul>
+<li>
+Uncertainty around case volumes was discounted (<b>Dominant Uncertainty</b>) as the impact was expected to be small.
+</li>
+<li>
+No information was available to determine the scale of future increases, so scenario analysis was used to assess the impact of certain assumptions.
+</li>
+<li>
+The impacts of 3 price scenarios, representing price increases continuing for 3, 6 or 12 months, were estimated.
+</li>
+<li>
+Two additional scenarios were considered:
+</li>
+<li>
+An increasing level of prices. Due to insufficient evidence to support it being considered for the main estimate, it was logged in the risk register to highlight the potential variance.
+</li>
+<li>
+Prices levelling out immediately in case the full impact had already fed through. Due to the volume and timing of identified drivers this was felt to be very unlikely, so including it could be misleading and contribute to an optimism bias to the decision making.
+</li>
+</ul>
+</div>
+<p><img src="images/legal_aid.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="leftC1">
+<p>Presenting and communicating uncertainty analysis</p>
+</div>
+<div class="leftC2">
+<ul>
+<li>
+Scenarios were presented taking the 3, 6 or 12 month assumptions for the central projection, with the higher and flat scenarios being logged in the risk register. The communication stressed that there was no information that would allow us to tell which scenario was more likely.
+</li>
+<li>
+Decision makers agreed that the range of scenarios considered reflected the range of reasonable outcomes.
+</li>
+<li>
+As no information was available on the which scenario was mostly likely, discussion focused on the risks that were associated with taking each scenario through for planning purposes, such as over or underspending against the overall budget.
+</li>
+<li>
+Scenario analysis was used to provide a range of values to illustrate the large amounts of uncertainty around the forecast without giving the impression that any particular outcome was more likely, allowing a decision to be made with the understanding of the risks involved.
+</li>
+</ul>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="estimating-uncertainty-in-prison-population-projections" class="section level2">
+<h2>Estimating uncertainty in prison population projections</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<div class="leftC1">
+<h4>
+The situation:
+</h4>
+</div>
+<p><br></p>
+<div class="leftC2">
+<p>Prison population projections are the end result of a number of criminal justice system interconnected models. The uncertainty around each of these models had not been estimated, but understanding the uncertainty of prison projections was essential for capacity planning.</p>
+</div>
+<div class="leftD1">
+<h4>
+The analytical approach:
+</h4>
+</div>
+<div class="rightB1">
+<h4>
+Asking the right question:
+</h4>
+</div>
+<div class="leftD2">
+<p>Court demand and sentencing and forecasts were used within a prison population microsimulation model, with policy forecasts overlaid.</p>
+</div>
+<div class="rightB2">
+<ul>
+<li>
+How confident are we that the prison population will not exceed a particular threshold?
+</li>
+<li>
+Was there sufficient resource to estimate uncertainty using a traditional bottom-up approach (i.e. combining the uncertainty from all constituent models)?
+</li>
+</ul>
+</div>
+<div class="leftC1">
+<h4>
+Defining and identifying uncertainty:
+</h4>
+</div>
+<div class="leftC2">
+<ul>
+<li>
+Court demand projections
+</li>
+<li>
+Sentencing assumptions (custody rate)
+</li>
+<li>
+Impact estimates of future policy changes
+</li>
+<li>
+Unknown impacts such as exogenous system shocks or policy changes not known at time of projection
+</li>
+<li>
+Estimation error (such as sampling bias) from simulation model
+</li>
+</ul>
+</div>
+<div class="leftC1">
+<h4>
+Understanding and measuring uncertainty:
+</h4>
+</div>
+<div class="leftC2">
+<ul>
+<li>
+A top-down approach was chosen as the resource requirement for a traditional bottom-up approach would have been prohibitive.
+</li>
+<li>
+The variance of all the previous forecast errors after 1 time period were fitted to a chosen probability distribution (in this case a normal distribution was chosen). This distribution was used to estimate the uncertainty of the new forecast after 1 time period.
+</li>
+<li>
+This process was repeated for the variance at each subsequent time period.
+</li>
+<li>
+The rate of change of variance was used to extrapolate the variance for periods where no forecast error existed.
+</li>
+</ul>
+</div>
+<p><img src="images/prisons.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="leftC1">
+<p>Presenting and communicating uncertainty analysis</p>
+</div>
+<div class="leftC2">
+<ul>
+<li>
+We presented our historical forecast errors, explaining their main drivers and how each contributes to our current uncertainty range. This helped our key customers to better understand the uncertainties inherent in the system we model, and therefore why we can’t produce more precise forecasts.
+</li>
+<li>
+The other aspect was helping customers think about how they should use the uncertainty estimates. For example: for the prison estate, assessing the likelihood of prison population reaching different levels together with an assessment of risk appetite and contingency measures we could use. This allowed for an evidence based approach for how much capacity we should plan for, not simply planning to the central estimate.
+</li>
+</ul>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="estimating-changes-to-staff-travel-times-following-an-office-relocation" class="section level2">
+<h2>Estimating changes to staff travel times following an office relocation</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<div class="leftC1">
+<h4>
+The situation:
+</h4>
+</div>
+<p><br></p>
+<div class="leftC2">
+<p>Alternative government office locations were being considered and their on staff travel times.</p>
+</div>
+<div class="leftD1">
+<h4>
+The analytical approach:
+</h4>
+</div>
+<div class="rightB1">
+<h4>
+Asking the right question:
+</h4>
+</div>
+<div class="leftD2">
+<p>Google maps API was used to estimate journey times from each home address to each potential location.</p>
+</div>
+<div class="rightB2">
+<ul>
+<li>
+90 minutes was considered to be a ‘reasonable’ travel time.
+</li>
+<li>
+The distribution of journey times was an output of interest, but the key focus was “What proportion of staff will have a journey time of over 90 minutes?”
+</li>
+</ul>
+</div>
+<div class="leftC1">
+<h4>
+Defining and identifying uncertainty:
+</h4>
+</div>
+<div class="leftC3">
+<b>Missing Data:</b>
+<ul>
+<li>
+Only first half of staff postcodes were available.
+</li>
+<li>
+Not known who could feasibly travel by car.
+</li>
+</ul>
+<b>Assumptions:</b>
+<ul>
+<li>
+Staff begin and end work at 9am and 5pm.
+</li>
+<li>
+Journey time assumes all transport is running to schedule.
+</li>
+<li>
+Assumptions for transfer times, walking speeds etc.
+</li>
+</ul>
+</div>
+<p><img src="images/Case_study_3.1.png" width="50%" style="display: block; margin: auto 0 auto auto;" /></p>
+<div class="leftC1">
+<h4>
+Understanding and measuring uncertainty:
+</h4>
+</div>
+<div class="leftC4">
+<ul>
+<li>
+Through sensitivity analysis on each parameter, the use of partial postcodes was found to be the most significant source of uncertainty and so <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#focussing_on_the_dominant_uncertainty" style="color: DARKBLUE";> <b>Dominant uncertainty</b></a> was chosen.
+</li>
+<li>
+A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques" style="color: DARKBLUE";> <b>Monte Carlo</b></a> approach would have been a more complete analysis but was not viable in the available time.
+</li>
+<li>
+A sample of postcode districts were reviewed to calculate: - The journey time from the centre of the postcode; - The shortest possible journey from within that postcode; - The longest possible journey from within that postcode.
+</li>
+<li>
+The differences in these times were analysed across the sample to form distributions.
+</li>
+<li>
+Producing an uncertainty estimate of 90% of journey times to be within ± 25 minutes of the calculated durations.
+</li>
+</ul>
+</div>
+<p><img src="images/Case_study_3.2.png" width="35%" style="display: block; margin: auto 0 auto auto;" /></p>
+<p><img src="images/Case_study_3.3.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="leftC1">
+<p>Presenting and communicating uncertainty analysis</p>
+</div>
+<div class="leftC2">
+<ul>
+<li>
+A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#cumulative_density_functions_(cdfs)" style="color: DARKBLUE";> <b>cumulative distribution</b></a> of journey times along with uncertainty bounds clearly presented how many journey times were estimated to be within the crucial threshold of 90 minutes.
+</li>
+<li>
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#error_bars" style="color: DARKBLUE";> <b>Bar graph ranges</b></a> were presented to the senior move managers, to show how journey times compared between location – the central estimate wasn’t plotted to avoid the reader putting too much significance on it.
+</li>
+<li>
+Prose sentences were used to clearly present the key results.
+</li>
+<li>
+Unquantified uncertainties were communicated e.g. the assumption of no delays.
+</li>
+<li>
+The communication of the uncertainty made clear the case for obtaining exact postcodes, allowing the analysis to be repeated with less postcode uncertainty.
+</li>
+</ul>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="predicting-staff-pay-costs" class="section level2">
+<h2>Predicting staff pay costs</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<div class="leftC1">
+<h4>
+The situation:
+</h4>
+</div>
+<p><br></p>
+<div class="leftC2">
+<p>Each department has to manage their pay costs to ensure they stay within their budget, making decisions to recruit (or not) in the face of uncertainty over staff turnover, pay rises, etc.</p>
+</div>
+<div class="leftD1">
+<h4>
+The analytical approach:
+</h4>
+</div>
+<div class="rightB1">
+<h4>
+Asking the right question:
+</h4>
+</div>
+<div class="leftD2">
+<p>Use a microsimulation to model staff members over time, with departures, promotions, and new recruits modelled stochastically.</p>
+</div>
+<div class="rightB2">
+<ul>
+<li>
+Initially ‘What will our pay costs be at the end of the year for a given recruit plan?’
+</li>
+<li>
+Redefined as ‘how likely is it that our costs will exceed our budget?’, allowing a risk-based approach to decision-making, and also allowing uncertainty in the budget to be incorporated.
+</li>
+</ul>
+</div>
+<div class="leftC1">
+<h4>
+Defining and identifying uncertainty:
+</h4>
+</div>
+<div class="leftC3">
+<b>Unknowns:</b>
+<ul>
+<li>
+The pay budget including additional sources of funding not known until the start of the year
+</li>
+</ul>
+<b>Assumptions:</b>
+<ul>
+<li>
+Number of staff who will join or leave the department in future months
+</li>
+<li>
+Variation in starting salaries, pension etc. for new staffs
+</li>
+<li>
+Variation in pay awards based on staff performance
+</li>
+</ul>
+</div>
+<p><img src="images/Case_study_4.1.png" width="50%" style="display: block; margin: auto 0 auto auto;" /></p>
+<div class="leftC1">
+<h4>
+Understanding and measuring uncertainty:
+</h4>
+</div>
+<div class="leftC2">
+<ul>
+<li>
+A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques" style="color: DARKBLUE";> <b>Monte Carlo</b></a> approach was used due to the large number of sources of uncertainty, its suitability in microsimulation, the (assumed) lack of correlation between sources, and availability of time. Given that the model was likely to be reused many times, it was worth investing the time to build a full probabilistic uncertainty assessment into the model.
+</li>
+<li>
+Most numerical assumptions in the model (including dates) can be entered as a distribution (exact, uniform, or triangular, along with some bespoke distributions for specific purposes).
+</li>
+<li>
+This resulted in a full probability distribution of the range of possible outcomes.
+</li>
+</ul>
+</div>
+<p><img src="images/Case_study_4.2.png" width="100%" style="display: block; margin: auto 0 auto auto;" /></p>
+<div class="leftC1">
+<p>Presenting and communicating uncertainty analysis</p>
+</div>
+<div class="leftC2">
+<ul>
+<li>
+All major uncertainties were quantified, and presented (with any unquantified sources noted elsewhere).
+</li>
+<li>
+The key output was simply the likelihood of remaining within budget, using positive and negative framing (e.g. “We have an 70% chance of staying within budget, and a 30% chance of exceeding our budget”)
+</li>
+<li>
+As the budget holder was an analyst, we chose to present the full <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#probability_density_functions_(pdfs)" style="color: DARKBLUE";> <b>probability density profile</b></a> to illustrate the range of possible over-/under-spends.
+</li>
+<li>
+Alongside, simple prose descriptions of the 90% prediction intervals to describe the likely range of the over-/under-spend
+</li>
+<li>
+A further graph was used to show how performance against budget was predicted to evolve over the year, using <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#multiple_line_charts" style="color: DARKBLUE";> <b>multiple line graphs</b></a> to show the 90% prediction intervals.
+</li>
+</ul>
+</div>
+<div style="clear: both;">
+
+</div>
+<div class="footer">
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
