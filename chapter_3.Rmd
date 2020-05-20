@@ -6,6 +6,8 @@ output:
     toc_float:
           collapsed: false
     toc_depth: 3
+    includes:
+       in_header: tracking.html
 ---
 
 

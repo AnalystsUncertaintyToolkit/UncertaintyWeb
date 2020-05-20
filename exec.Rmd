@@ -1,5 +1,9 @@
 ---
 title: <br><br><br> 9. Decision maker summary
+output:
+  html_document:
+    includes:
+       in_header: tracking.html
 ---
 
 <style type="text/css">
