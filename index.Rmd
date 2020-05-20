@@ -1,5 +1,9 @@
 ---
 title: <br><br><br> Uncertainty Toolkit for Analysts in Government
+output:
+  html_document:
+    includes:
+       in_header: tracking.html
 ---
 
 <style type="text/css">
