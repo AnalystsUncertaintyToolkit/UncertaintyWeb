@@ -114,7 +114,7 @@ We encounter uncertainty throughout the decision making process and in the analy
 <br>
 
 <div class = "rightA"> 
-Try to identify and record all the potential sources of uncertainty in your analysis at an early stage.  Early identification of uncertainty is important; if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis. See the <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html" style="color: DARKBLUE";> <b>presenting and communicating uncertainty</b></a> section for Tornado diagrams that are a useful way to communicate the size of uncertainty.
+Try to identify and record all the potential sources of uncertainty in your analysis at an early stage.  Early identification of uncertainty is important; if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis. See the <a href="chapter_4.html" style="color: DARKBLUE;"> <b>presenting and communicating uncertainty</b></a> section for Tornado diagrams that are a useful way to communicate the size of uncertainty.
 </div>
 
 
