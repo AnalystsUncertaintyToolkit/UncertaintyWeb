@@ -69,7 +69,7 @@ output:
 </div>
 
 <h3 id="how-we-tested-this-website">How we tested this website</h3>
-<p>This website (<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/, style="color: DARKBLUE;""><b>https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/</b></a>) was last tested in January 2020. The test was carried out by accessibility experts in the Ministry of Justice and changes were made by analysts in the Department for Education.</p>
+<p>This website was last tested in January 2020. The test was carried out by accessibility experts in the Ministry of Justice and changes were made by analysts in the Department for Education.</p>
 
 <h3 id="what-were-doing-to-improve-accessibility">What we're doing to improve accessibility</h3>
 <div class="call-to-action">
