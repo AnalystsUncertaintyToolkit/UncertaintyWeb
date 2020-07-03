@@ -116,7 +116,7 @@ Relying on best estimates may lead to the wrong decision being made
 </div>
 
 <div class = "rightA">
-This uncertainty can be critically important to any decisions based on the analysis, as ‘best estimates’ are generally not enough to make an informed decision. For example, Option A may appear better than Option B when looking at the most likely outcome of each, but if the uncertainty in A is greater than in B then it might carry an unacceptable chance of much worse outcomes.
+This uncertainty can be critically important to any decisions based on the analysis, as ‘best estimates’ are generally not enough to make an informed decision. For example, Option A may appear better than Option B when looking at the most likely outcome of each, but if the uncertainty in A is greater than in B then it might carry an unacceptable chance of much worse outcomes. To help consider the full range of outcomes, it may be useful to work with the analysts to ensure the uncertainty is framed in terms of the decision being made. For example, rather than looking at the central estimate, it may be more useful to consider a higher likelihood, such as the 90% confidence that the figure is within a certain range. Alternatively, to understand the probability of a policy being effective or not, considering the level of take up required for the policy to break even. This is particularly important when levels of uncertainty are very high and there may not be a single best estimate, and instead a decision must be made purely on the expected range.
 </div>
 
 <div class = "rightA">

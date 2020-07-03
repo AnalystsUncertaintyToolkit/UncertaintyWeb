@@ -142,12 +142,9 @@ This section sets out a range of techniques to help you understand and assess th
 <div style="clear: both;"></div>
 
 <div class = "rightA"> 
-Understanding the characteristics of different classifications of uncertainty can help you to identify sources of uncertainty in your own analysis.  Further, categorising the types of uncertainty provides a framework for the next steps of analysis.
+There are a number of ways to classify uncertainty. A common classification divides uncertainty into known knowns, known unknowns, and unknown unknowns, as we explain in Table 3.1. <a href="https://royalsocietypublishing.org/doi/pdf/10.1098/rsos.181870" style="color: DARKBLUE;"> <b>Other classifications</b></a> consider, for example, the range of things about the analysis which may be uncertain and whether uncertainty relates directly to these “objects” of uncertainty or to the quality of evidence behind them. We recommend following one of these frameworks when assessing the uncertainties that affect your analysis and the decisions it will inform.
 </div>
 
-<div class = "rightA"> 
-A common classification divides uncertainty into known knowns, known unknowns, and unknown unknowns.  We explain these in Table 3.1.
-</div>
 
 
 ```{r fig.align="center", echo=FALSE, out.width='100%', alt = ""}
