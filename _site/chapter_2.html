@@ -701,7 +701,7 @@ text-align: right;
 <p>Undertake appropriate AQA</p>
 </div>
 <div class="rightA">
-<p>An additional, but important source of analytical uncertainty is in the analysis itself. With verification and validation of models, good Analytical Quality Assurance (AQA) practices can help identify the restricted uses of analytical outputs and help minimise the possibility of errors. However, mistakes can still be made, so being clear with decision makers about the extent to which analysis has been quality assured can help them understand how far they may rely on analytical results in support of their decision making. Please see the AQuA book for more information.</p>
+<p>An additional, but important source of analytical uncertainty is in the analysis itself. With verification and validation of models, good Analytical Quality Assurance (AQA) practices can help identify the restricted uses of analytical outputs and help minimise the possibility of errors. However, mistakes can still be made, so being clear with decision makers about the extent to which analysis has been quality assured can help them understand how far they may rely on analytical results in support of their decision making. Please see the <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government" style="color: DARKBLUE;"> <b>AQuA book</b></a>, <a href="https://www.gov.uk/government/collections/aqua-book-resources" style="color: DARKBLUE;"> <b>AQuA Book resources</b></a> and <a href="https://www.gov.uk/government/collections/quality-assurance-tools-and-guidance-in-decc" style="color: DARKBLUE;"> <b>BEIS QA tools and guidance</b></a> for more information.</p>
 </div>
 <div style="clear: both;">
 
@@ -762,7 +762,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

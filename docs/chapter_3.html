@@ -559,7 +559,7 @@ colour: white;
 <p>or analysis of past model performance to create distributions…</p>
 </div>
 <div class="rightA">
-<p>If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, using the Delphi Method, a structured facilitation method, which relies on a panel of experts to build a combined judgement, for example, about a particular number. This method can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.</p>
+<p>If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, using the Delphi Method, a structured facilitation method, which relies on a panel of (ideally external) experts to build a combined judgement, for example, about a particular number. This method can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution. Consider tools to overcome biases, e.g. Brier score. These measure the mean squared difference between the predicted and actual outcomes. The lower the Brier score is for a set of predictions, the better the predictions are calibrated, which has been shown to improve judgement</p>
 </div>
 <div class="leftB">
 <p>Without quantitative data, use expert judgement</p>
@@ -858,6 +858,9 @@ Needs the system to be stable over time (i.e. there’s no reason to think that
 Needs the approach to forecasting to have been consistent over the years (i.e. there’s no reason to think that our forecasts will be more/less accurate than in previous years).
 </li>
 <li>
+Would not work for large and nfrequent events.
+</li>
+<li>
 The forecasts must have been produced for a sufficiently long time so that we have enough historical data on the variance to capture the full range of plausible variances
 </li>
 </ul>
@@ -1140,7 +1143,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

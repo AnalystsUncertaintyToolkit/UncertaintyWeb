@@ -171,7 +171,7 @@ or analysis of past model performance to create distributions...
 </div>
 
 <div class = "rightA">
-If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, using the Delphi Method, a structured facilitation method, which relies on a panel of experts to build a combined judgement, for example,  about a particular number. This method can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.
+If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, using the Delphi Method, a structured facilitation method, which relies on a panel of (ideally external) experts to build a combined judgement, for example,  about a particular number. This method can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution. Consider tools to overcome biases, e.g. Brier score. These measure the mean squared difference between the predicted and actual outcomes. The lower the Brier score is for a set of predictions, the better the predictions are calibrated, which has been shown to improve judgement
 </div>
 
 <div class = "leftB">
@@ -472,6 +472,7 @@ Repeat for the variance at each subsequent time period to produce e.g. a fan for
 <br><br>
 <ul><li>Needs the system to be stable over time (i.e. there’s no reason to think that the system is more/less predictable than in past years).</li>
 <li>Needs the approach to forecasting to have been consistent over the years (i.e. there’s no reason to think that our forecasts will be more/less accurate than in previous years).</li>
+<li>Would not work for large and nfrequent events.</li>
 <li>The forecasts must have been produced for a sufficiently long time so that we have enough historical data on the variance to capture the full range of plausible variances</li></ul>
 
 <br><br>
