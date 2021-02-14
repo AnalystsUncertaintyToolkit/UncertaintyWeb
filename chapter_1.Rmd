@@ -230,7 +230,7 @@ Discuss how the uncertainty will inform the decision-maker’s judgement
 Examples can be very helpful when discussing the analysis with the decision maker. An answer to the question of the net benefits of a policy may be &#163;3m, with uncertainty analysis giving a broad range of &#163;0.5-5.5m. You could discuss with the decision maker how they want to be able to frame the analysis, for example: <br> <i>"A range of &#163;0.5-5.5m";
 <br> "The estimated benefits are &#163;3m, with analysis showing a 90% likelihood that benefits will be between &#163;1-5m";
 <br> "Analysis shows that there is an 80% likelihood that the net benefits will be greater than &#163;2m";
-<br> "The policy needs to have X amount of takeup in order to break even"</i>
+<br> "The policy needs to have $x$ amount of takeup in order to break even"</i>
 </div>
 
 <div class = "rightA">

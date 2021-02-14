@@ -223,7 +223,7 @@ RAG rate your parameters
 </div>
 
 <div class = "rightA">
-A further option to support decision makes is to use break-even analysis. This is useful to understand at which point a saving becomes a cost or possibly at which point you would take a different decision.
+A further option to support decision makers is to use break-even analysis. This is useful to understand at which point a saving becomes a cost or possibly at which point you would take a different decision.
 </div>
 
 <div class = "leftB">

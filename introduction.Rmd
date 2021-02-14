@@ -120,7 +120,7 @@ Before conducting any uncertainty analysis, it is important to check that you un
 </div>
 
 <div class = "leftB">
-1. Jointly agreeing how uncertainty should be used
+2. Jointly agreeing how uncertainty should be used
 </div>
 
 <div class = "rightA">
@@ -128,7 +128,7 @@ Considering the whole system that influences your analysis helps identify all po
 </div>
 
 <div class = "leftB">
-2. Defining and identifying uncertainty
+3. Defining and identifying uncertainty
 </div>
 
 <div class = "rightA">
@@ -136,7 +136,7 @@ Before conducting uncertainty analysis, you should consider the range of possibl
 </div>
 
 <div class = "leftB">
-3. Understanding and measuring uncertainty
+4. Understanding and measuring uncertainty
 </div>
 
 <div class = "rightA">
@@ -144,7 +144,7 @@ There is little point conducting any analysis if it has no impact, so this is pe
 </div>
 
 <div class = "leftB">
-4. Presenting and communicating uncertainty
+5. Presenting and communicating uncertainty
 </div>
 
 <div class="footer">
