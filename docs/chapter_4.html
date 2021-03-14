@@ -11,8 +11,9 @@
 
 
 
-<title></title>
+<title>   </title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -34,6 +35,15 @@
 
   gtag('config', 'UA-167193673-1');
 </script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -79,6 +89,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -571,7 +582,7 @@ text-align: right;
 <p>Think about how caveats are presented. A long list is unhelpful, but two or three upfront that have the most impact on the results are likely to be more helpful and easily understood. Consider which caveats have the greater impact on the final decision that is being made. You should explain what the caveats mean for decision makers who want to use the analysis, rather than simply setting out what they are.</p>
 </div>
 <div class="leftB">
-<p>Front load the important caveats and explain why they matter.</p>
+<p>Front load the important caveats and explain why they matter</p>
 </div>
 <div style="clear: both;">
 
@@ -644,7 +655,7 @@ text-align: right;
 
 </div>
 <p><br></p>
-<div clas="leftB">
+<div class="leftB">
 <p>Identify who your audience is</p>
 </div>
 <div class="rightA">
@@ -884,7 +895,49 @@ An exception to this is where there is an established system that your audience 
 </div>
 <p><img src="images/box_plots.png" width="419" style="display: block; margin: auto;" /></p>
 <div class="rightA">
-<p><i>Example: <a href="https://www.gov.uk/government/publications/end-of-life-care-profiles-july-2018-data-update/statistical-commentary-end-of-life-care-profiles-july-2018-update" style="color: DARKBLUE;"> <b>Deaths in the usual place of residence, Public Health England</b></a> The graph depicts the percentage of individual that die in their usual place of residence. Box plots are used to show the variation between different Clinical Commissioning Groups, and district and local authorities. A labelled box plot is presented to explain what the ranges mean. </i></p>
+<p><i>Example: <a href="https://www.gov.uk/government/publications/end-of-life-care-profiles-july-2018-data-update/statistical-commentary-end-of-life-care-profiles-july-2018-update" style="color: DARKBLUE;"> <b>Deaths in the usual place of residence, Public Health England</b></a> The graph depicts the percentage of individuals that die in their usual place of residence. Box plots are used to show the variation between different Clinical Commissioning Groups, and district and local authorities. A labelled box plot is presented to explain what the ranges mean. </i></p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="violin-plots" class="section level2">
+<h2>Violin plots</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br></p>
+<div class="leftB">
+<p>Violin plots give a sense of a distribution’s shape by showing probability densities</p>
+</div>
+<div class="rightA">
+<p>Violin plots are similar to box plots except they also show the probability density of possible outcomes, where a greater width means higher probability. This reinforces awareness of an underlying distribution and gives an intuitive sense of the distribution’s shape, although it can be difficult to infer specific probability values.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+<div class="leftB">
+<p>Violin plots can help avoid bias</p>
+</div>
+<div class="rightA">
+<p>Violin plots can help to avoid bias which can occur when interpreting intervals (for example when the uncertainty region is ignored in favour of the central tendency) or when reading error bars (for example within-the-bar-bias, common in bar charts). Within-the-bar bias occurs when viewers report that values are more likely to lie within the bar of a bar chart despite error bars indicating they could equally lie outside.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+<div class="leftB">
+<p>Consider whether the audience will be familiar with this type of plot</p>
+</div>
+<div class="rightA">
+<p>The audience might find interpretation of violin plots hard if they are unfamiliar with them. Weigh up the value added from the additional detail on uncertainty against the increased potential for audience confusion and consider what additional commentary should go alongside the plot to aid interpretation.</p>
+</div>
+<p><img src="images/violin_plots.png" width="346" style="display: block; margin: auto;" /></p>
+<div class="rightA">
+<p><i>Example: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/917911/LE-UKSA_Commercial_Space_Surveillance_Tracking_FINAL_FOR_PUBLICATION.pdf" style="color: DARKBLUE;"> <b>Collision probabilities of non-constellation spacecraft and constellation satellites, London Economics analysis for the UK Space Agency (pdf)</b></a> The graph shows how the collision probability for a subset of 216 non-constellation spacecraft and over 16,000 constellation satellites changes across the years 2020, 2025, 2029 and 2036.</i></p>
 </div>
 <div style="clear: both;">
 
@@ -1019,7 +1072,7 @@ An exception to this is where there is an established system that your audience 
 </div>
 <p><img src="images/fan_chart.png" width="524" style="display: block; margin: auto;" /></p>
 <div class="rightA">
-<p><i>Example: <a href="https://www.bankofengland.co.uk/-/media/boe/files/inflation-report/2019/may/inflation-report-may-2019.pdf?la=en&hash=D4985F6D513BF04EB81A28C53F6DB0CFB8CC09FB" style="color: DARKBLUE;"> <b>CPI inflation projection, Bank of England (pdf)</b></a> The graph depicts probability of various outcomes for CPI inflation in the future. The fan charts are constructed so that outturns of inflation are also expected to lie within darkest central band and each pair of the lighter red areas on 30 occasions. In any particular quarter of the forecast period, inflation is therefore expected to lie somewhere within the fans on 90 out of 100 occasions. And on the remaining 10 out of 100 occasions inflation can fall anywhere outside the red area of the fan chart (grey area). </i></p>
+<p><i>Example: <a href="https://www.bankofengland.co.uk/-/media/boe/files/inflation-report/2019/may/inflation-report-may-2019.pdf?la=en&hash=D4985F6D513BF04EB81A28C53F6DB0CFB8CC09FB" style="color: DARKBLUE;"> <b>CPI inflation projection, Bank of England (pdf)</b></a> The graph depicts probability of various outcomes for CPI inflation in the future. The fan charts are constructed so that outturns of inflation are also expected to lie within the darkest central band and each pair of the lighter red areas on 30 occasions. In any particular quarter of the forecast period, inflation is therefore expected to lie somewhere within the fans on 90 out of 100 occasions. And on the remaining 10 out of 100 occasions inflation can fall anywhere outside the red area of the fan chart (grey area). </i></p>
 </div>
 <div style="clear: both;">
 
@@ -1039,7 +1092,7 @@ An exception to this is where there is an established system that your audience 
 <p>Multiple line charts can be clearer than a series of error bars</p>
 </div>
 <div class="rightA">
-<p>Multiple line charts with time series data to show a quantified range around a ‘most likely’ projection (essentially a series of error bars).</p>
+<p>Multiple line charts with time series data show a quantified range around a ‘most likely’ projection (essentially a series of error bars).</p>
 </div>
 <div style="clear: both;">
 
@@ -1132,7 +1185,7 @@ An exception to this is where there is an established system that your audience 
 <p>Graphics can grab attention and make messages more accessible</p>
 </div>
 <div class="rightA">
-<p>When done well they will grab the reader’s attention from become a very powerful way of communicating key messages. Designing a good infographic may be worthwhile if your audience is less confident with data and analysis.</p>
+<p>When done well they will grab the reader’s attention and become a very powerful way of communicating key messages. Designing a good infographic may be worthwhile if your audience is less confident with data and analysis.</p>
 </div>
 <div style="clear: both;">
 
@@ -1221,7 +1274,7 @@ An exception to this is where there is an established system that your audience 
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

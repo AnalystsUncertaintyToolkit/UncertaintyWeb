@@ -11,8 +11,9 @@
 
 
 
-<title></title>
+<title>   </title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -34,6 +35,15 @@
 
   gtag('config', 'UA-167193673-1');
 </script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -79,6 +89,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -609,25 +620,25 @@ text-align: right;
 <p>How well do the definitions and concepts in the data chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. For example, you might want to analyse London &amp; South East but only have data for the whole of the UK.</p>
 </div>
 <div class="leftB">
-<p>How your data source compares with your analysis objective:</p>
+<p>How your data source compares with your analysis objective</p>
 </div>
 <div class="rightA">
-<p>How rigorous was the data collection process? Was the data owner’s quality assurance sufficiently robust? For survey data, would respondents have fully understood the question intent? Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics. <br><br> When considering uncertainty in input data, you should think about whether the data being used was gathered for an alternative purpose and if it has been manipulated and how you can adjust or account for this. Accompanying data descriptions (or a quick exploration of the source data if these don’t exist) can be helpful in understanding data limitations of the data and whether any adjustments made could conflict with or bias your analysis. Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertaint.</p>
+<p>How rigorous was the data collection process? Was the data owner’s quality assurance sufficiently robust? For survey data, would respondents have fully understood the question intent? Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics. <br><br> When considering uncertainty in input data, you should think about whether the data being used was gathered for an alternative purpose and if it has been manipulated and how you can adjust or account for this. Accompanying data descriptions (or a quick exploration of the source data if these don’t exist) can be helpful in understanding data limitations of the data and whether any adjustments made could conflict with or bias your analysis.</p>
 </div>
 <div class="leftB">
-<p>Where the data come from and how they have been collected:</p>
+<p>Where the data come from and how they have been collected</p>
 </div>
 <div class="rightA">
 <p>More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile.</p>
 </div>
 <div class="leftB">
-<p>What period the data covers:</p>
+<p>What period the data covers</p>
 </div>
 <div class="rightA">
 <p>For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. For example, missing values may have been imputed, survey data may have been weighted to make survey results representative of a wider population, extreme values and outliers may have been removed, data sets may have been combined (possibly resulting in false positive or false negative matches), disclosure controls may have been applied (potentially biasing the data set). Consider how the retention or exclusion of an outlier will affect your results. Truncation or removal of outliers will typically introduce bias but this may be tolerated in exchange for reduced variance.</p>
 </div>
 <div class="leftB">
-<p>Whether your data has been subjected to any pre-processing:</p>
+<p>Whether your data has been subjected to any pre-processing</p>
 </div>
 <div class="rightA">
 <p>Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertainty. In the absence of direct measure of variance, be aware that small sample sizes will increase the margin of error in your results.</p>
@@ -723,7 +734,7 @@ text-align: right;
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

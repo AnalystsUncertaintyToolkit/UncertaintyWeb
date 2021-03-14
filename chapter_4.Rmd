@@ -183,7 +183,7 @@ Think about how caveats are presented. A long list is unhelpful, but two or thre
 </div>
 
 <div class = "leftB"> 
-Front load the important caveats and explain why they matter.
+Front load the important caveats and explain why they matter
 </div>
 
 <div style="clear: both;"></div>
@@ -260,7 +260,7 @@ This section considers a range of approaches based on your understanding of the 
 
 <br>
 
-<div clas = "leftB">
+<div class = "leftB">
 Identify who your audience is
 </div>
 
@@ -551,10 +551,62 @@ knitr::include_graphics("images/box_plots.png")
 ```
 
 <div class = "rightA">
-<i>Example: <a href="https://www.gov.uk/government/publications/end-of-life-care-profiles-july-2018-data-update/statistical-commentary-end-of-life-care-profiles-july-2018-update" style="color: DARKBLUE;"> <b>Deaths in the usual place of residence, Public Health England</b></a> The graph depicts the percentage of individual that die in their usual place of residence. Box plots are used to show the variation between different Clinical Commissioning Groups, and district and local authorities. A labelled box plot is presented to explain what the ranges mean. </i>
+<i>Example: <a href="https://www.gov.uk/government/publications/end-of-life-care-profiles-july-2018-data-update/statistical-commentary-end-of-life-care-profiles-july-2018-update" style="color: DARKBLUE;"> <b>Deaths in the usual place of residence, Public Health England</b></a> The graph depicts the percentage of individuals that die in their usual place of residence. Box plots are used to show the variation between different Clinical Commissioning Groups, and district and local authorities. A labelled box plot is presented to explain what the ranges mean. </i>
 </div>
 
 <div style="clear: both;"></div>
+
+
+## Violin plots
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
+<br>
+
+<div class = "leftB">
+Violin plots give a sense of a distribution's shape by showing probability densities
+</div>
+
+<div class = "rightA">
+Violin plots are similar to box plots except they also show the probability density of possible outcomes, where a greater width means higher probability. This reinforces awareness of an underlying distribution and gives an intuitive sense of the distribution's shape, although it can be difficult to infer specific probability values.
+</div>
+
+<div style="clear: both;"></div>
+
+<div class = "leftB">
+Violin plots can help avoid bias
+</div>
+
+<div class = "rightA">
+Violin plots can help to avoid bias which can occur when interpreting intervals (for example when the uncertainty region is ignored in favour of the central tendency) or when reading error bars (for example within-the-bar-bias, common in bar charts). Within-the-bar bias occurs when viewers report that values are more likely to lie within the bar of a bar chart despite error bars indicating they could equally lie outside.
+</div>
+
+<div style="clear: both;"></div>
+
+<div class = "leftB">
+Consider whether the audience will be familiar with this type of plot
+</div>
+
+<div class = "rightA">
+The audience might find interpretation of violin plots hard if they are unfamiliar with them. Weigh up the value added from the additional detail on uncertainty against the increased potential for audience confusion and consider what additional commentary should go alongside the plot to aid interpretation.
+</div>
+
+```{r fig.align="center", echo=FALSE, alt = ""}
+
+knitr::include_graphics("images/violin_plots.png")
+
+```
+
+<div class = "rightA">
+<i>Example: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/917911/LE-UKSA_Commercial_Space_Surveillance_Tracking_FINAL_FOR_PUBLICATION.pdf" style="color: DARKBLUE;"> <b>Collision probabilities of non-constellation spacecraft and constellation satellites, London Economics analysis for the UK Space Agency (pdf)</b></a> The graph shows how the collision probability for a subset of 216 non-constellation spacecraft and over 16,000 constellation satellites changes across the years 2020, 2025, 2029 and 2036.</i>
+</div>
+
+<div style="clear: both;"></div>
+
 
 ## Probability density functions (PDFs)
 
@@ -712,7 +764,7 @@ knitr::include_graphics("images/fan_chart.png")
 ```
 
 <div class = "rightA">
-<i>Example: <a href="https://www.bankofengland.co.uk/-/media/boe/files/inflation-report/2019/may/inflation-report-may-2019.pdf?la=en&hash=D4985F6D513BF04EB81A28C53F6DB0CFB8CC09FB" style="color: DARKBLUE;"> <b>CPI inflation projection, Bank of England (pdf)</b></a> The graph depicts probability of various outcomes for CPI inflation in the future. The fan charts are constructed so that outturns of inflation are also expected to lie within darkest central band and each pair of the lighter red areas on 30 occasions. In any particular quarter of the forecast period, inflation is therefore expected to lie somewhere within the fans on 90 out of 100 occasions. And on the remaining 10 out of 100 occasions inflation can fall anywhere outside the red area of the fan chart (grey area). </i>
+<i>Example: <a href="https://www.bankofengland.co.uk/-/media/boe/files/inflation-report/2019/may/inflation-report-may-2019.pdf?la=en&hash=D4985F6D513BF04EB81A28C53F6DB0CFB8CC09FB" style="color: DARKBLUE;"> <b>CPI inflation projection, Bank of England (pdf)</b></a> The graph depicts probability of various outcomes for CPI inflation in the future. The fan charts are constructed so that outturns of inflation are also expected to lie within the darkest central band and each pair of the lighter red areas on 30 occasions. In any particular quarter of the forecast period, inflation is therefore expected to lie somewhere within the fans on 90 out of 100 occasions. And on the remaining 10 out of 100 occasions inflation can fall anywhere outside the red area of the fan chart (grey area). </i>
 </div>
 
 <div style="clear: both;"></div>
@@ -732,7 +784,7 @@ Multiple line charts can be clearer than a series of error bars
 </div>
 
 <div class = "rightA">
-Multiple line charts with time series data to show a quantified range around a ‘most likely’ projection (essentially a series of error bars).
+Multiple line charts with time series data show a quantified range around a ‘most likely’ projection (essentially a series of error bars).
 </div>
 
 <div style="clear: both;"></div>
@@ -842,7 +894,7 @@ Graphics can grab attention and make messages more accessible
 </div>
 
 <div class = "rightA">
-When done well they will grab the reader’s attention from become a very powerful way of communicating key messages. Designing a good infographic may be worthwhile if your audience is less confident with data and analysis.
+When done well they will grab the reader’s attention and become a very powerful way of communicating key messages. Designing a good infographic may be worthwhile if your audience is less confident with data and analysis.
 </div>
 
 <div style="clear: both;"></div>

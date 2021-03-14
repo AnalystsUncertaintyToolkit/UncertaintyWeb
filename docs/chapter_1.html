@@ -11,8 +11,9 @@
 
 
 
-<title></title>
+<title>   </title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -34,6 +35,15 @@
 
   gtag('config', 'UA-167193673-1');
 </script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -79,6 +89,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -600,7 +611,7 @@ text-align: right;
 <p>Discuss how the uncertainty will inform the decision-maker’s judgement</p>
 </div>
 <div class="rightA">
-<p>Examples can be very helpful when discussing the analysis with the decision maker. An answer to the question of the net benefits of a policy may be £3m, with uncertainty analysis giving a broad range of £0.5-5.5m. You could discuss with the decision maker how they want to be able to frame the analysis, for example: <br> <i>“A range of £0.5-5.5m”; <br> “The estimated benefits are £3m, with analysis showing a 90% likelihood that benefits will be between £1-5m”; <br> “Analysis shows that there is an 80% likelihood that the net benefits will be greater than £2m”; <br> “The policy needs to have X amount of takeup in order to break even”</i></p>
+<p>Examples can be very helpful when discussing the analysis with the decision maker. An answer to the question of the net benefits of a policy may be £3m, with uncertainty analysis giving a broad range of £0.5-5.5m. You could discuss with the decision maker how they want to be able to frame the analysis, for example: <br> <i>“A range of £0.5-5.5m”; <br> “The estimated benefits are £3m, with analysis showing a 90% likelihood that benefits will be between £1-5m”; <br> “Analysis shows that there is an 80% likelihood that the net benefits will be greater than £2m”; <br> “The policy needs to have <span class="math inline">\(x\)</span> amount of takeup in order to break even”</i></p>
 </div>
 <div class="rightA">
 <p>Operational decision makers may not want to see a range of results, but instead want to plan to a certain level of confidence, such as 65% or 95% rather than 50%. For example, when planning the number of schools, prison places or GPs we’ll need over the next 5 years, it may be more appropriate to plan to a higher level of confidence than 50%.</p>
@@ -625,7 +636,7 @@ text-align: right;
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

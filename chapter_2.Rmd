@@ -189,17 +189,17 @@ How well do the definitions and concepts in the data chosen fit with what you ar
 </div>
 
 <div class = "leftB">
-How your data source compares with your analysis objective:
+How your data source compares with your analysis objective
 </div>
 
 <div class = "rightA">
 How rigorous was the data collection process? Was the data owner’s quality assurance sufficiently robust? For survey data, would respondents have fully understood the question intent? Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics. 
 <br><br>
-When considering uncertainty in input data, you should think about whether the data being used was gathered for an alternative purpose and if it has been manipulated and how you can adjust or account for this. Accompanying data descriptions (or a quick exploration of the source data if these don’t exist) can be helpful in understanding data limitations of the data and whether any adjustments made could conflict with or bias your analysis. Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertaint.
+When considering uncertainty in input data, you should think about whether the data being used was gathered for an alternative purpose and if it has been manipulated and how you can adjust or account for this. Accompanying data descriptions (or a quick exploration of the source data if these don’t exist) can be helpful in understanding data limitations of the data and whether any adjustments made could conflict with or bias your analysis.
 </div>
 
 <div class = "leftB">
-Where the data come from and how they have been collected:
+Where the data come from and how they have been collected
 </div>
 
 <div class = "rightA">
@@ -207,7 +207,7 @@ More uncertainty will occur if either the data don’t match the time period of 
 </div>
 
 <div class = "leftB">
-What period the data covers:
+What period the data covers
 </div>
 
 <div class = "rightA">
@@ -215,7 +215,7 @@ For data obtained in a processed state from others you may need to explore what 
 </div>
 
 <div class = "leftB">
-Whether your data has been subjected to any pre-processing: 
+Whether your data has been subjected to any pre-processing 
 </div>
 
 <div class = "rightA">
