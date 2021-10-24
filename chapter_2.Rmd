@@ -305,6 +305,20 @@ Undertake appropriate AQA
 
 <div class= "rightA">
 An additional, but important source of analytical uncertainty is in the analysis itself. With verification and validation of models, good Analytical Quality Assurance (AQA) practices can help identify the restricted uses of analytical outputs and help minimise the possibility of errors. However, mistakes can still be made, so being clear with decision makers about the extent to which analysis has been quality assured can help them understand how far they may rely on analytical results in support of their decision making. Please see the <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government" style="color: DARKBLUE;"> <b>AQuA Book</b></a>, <a href="https://www.gov.uk/government/collections/aqua-book-resources" style="color: DARKBLUE;"> <b>AQuA Book resources</b></a> and <a href="https://www.gov.uk/government/collections/quality-assurance-tools-and-guidance-in-decc" style="color: DARKBLUE;"> <b>BEIS QA tools and guidance</b></a> for more information.
+
+Carrying out adequate quality assurance is an important way to ensure sources of uncertainty have been sufficiently mitigated. Ideally, the AQA should be carried out throughout the project - before, during and after the analysis to inform at all stages. The AQA process should involve checking the analyst has done the following, for example:
+<br>
+
+<ul>
+<li>Considered why the methodology is appropriate to solve the analytical problem or answer the research question</li>
+<li>Considered why the analysis is appropriate for the type of data collected</li>
+<li>Understood the data that will be used in the analysis, including main sources of potential error and limitations of the data/analysis</li>
+<li>Analysed and interpreted the data in a consistent way</li>
+<li>Made it clear how analytical constructs e.g. categories, classifications, typologies etc. have been developed.</li>
+<li>Ensured all interpretations are well supported by the data, accurately reflecting the meanings assigned by the participants</li>
+</ul>
+
+Note that these steps should also be applied for quality assurance of both quantitative and qualitative research. More information on AQA of qualitative research is included in Chapter 4.
 </div>
 
 <div style="clear: both;"></div>
@@ -405,8 +419,10 @@ Uncertainty is increased when the chosen control group is not comparable to the 
 </div>
 
 <div class = "rightA">
-Comparisons from one period to another (such as comparing this week or month to the same period last year) are common. However, they present data out of the context of the underlying trend or do not account for the effect of seasonality. For example, drawing comparisons in outcomes between January 2020 and January 2021 would be misleading as external factors, such as the COVID-19 pandemic, would have had significantly impacted trends. Alternatives to before-after comparisons are discussed in chapter 4, [Mitigating Uncertainty](#somewhere).
+Comparisons from one period to another (such as comparing this week or month to the same period last year) are common. However, they present data out of the context of the underlying trend or do not account for the effect of seasonality. For example, drawing comparisons in outcomes between January 2020 and January 2021 would be misleading as external factors, such as the COVID-19 pandemic, would have had significantly impacted trends. Alternatives to before-after comparisons are discussed in chapter 4, Mitigating Uncertainty.
 </div>
+
+<!-- need reference for mitigating uncertainty chapter*-->
 
 <div class = "leftB">
 Binary before-after comparisons can be misleading if they are presented without contextual information
@@ -485,7 +501,7 @@ The sources of uncertainty in survey research can be broadly categorised into th
 </div>
 
 <div class = "rightA">
-Good questionnaire design is vital to ensuring the validity and reliability of survey responses. A valid questionnaire is one that measures what it intends to measure. That is, the objectives of the questionnaire and the items within it are clearly understood by the respondent and elicit the information required by the researcher. Reliability refers to the consistency of a survey measurement and the extent to which the measurement is able to elicit the same information from the same person each time it’s administered, assuming all else remains unchanged. There are a number of tests and methods for ensuring questionnaire validity and reliability (see section 4 on Mitigating uncertainty in survey research for more information).
+Good questionnaire design is vital to ensuring the validity and reliability of survey responses. A valid questionnaire is one that measures what it intends to measure. That is, the objectives of the questionnaire and the items within it are clearly understood by the respondent and elicit the information required by the researcher. Reliability refers to the consistency of a survey measurement and the extent to which the measurement is able to elicit the same information from the same person each time it’s administered, assuming all else remains unchanged. There are a number of tests and methods for ensuring questionnaire validity and reliability (see section 4 on mitigating uncertainty in survey research for more information).
 </div>
 
 <div class = "leftB">
@@ -628,7 +644,7 @@ These include:
 <li>Businesses or individuals refusing to respond</li>
 <li>Respondents giving inaccurate answers</li>
 <li>Processing or analysis errors</li>
-<ul>
+</ul>
 
 For example, inaccurate answers to a question about money spent on fuel would lead to a difference between the estimate and the population value even if the entire population were surveyed. These errors are usually very difficult to quantify and to do so would require additional and specific research.
 </div>
