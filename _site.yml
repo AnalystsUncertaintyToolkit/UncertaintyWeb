@@ -11,7 +11,7 @@ navbar:
     - text: "3. Defining and identifying uncertainty"
       href: chapter_2.html
     - text: "4. Mitigating uncertainty"
-      href: chapter_x.html
+      href: chapter_5.html
     - text: "5. Understanding and measuring uncertainty"
       href: chapter_3.html
     - text: "6. Presenting and communicating uncertainty"

@@ -196,7 +196,7 @@ Where it is not possible to run an experimental study to measure impact, you sho
 Developing a comprehensive theory of change to explain how inputs of the intervention lead to outputs, outcomes and impact and testing it against existing evidence will help identify what data is needed for an impact evaluation. Having a robust, high quality theory of change will also ensure that you do not miss any key indicators and alert you to any potential unintended consequences that may need to be measured.
 <br>
 
-There is a useful logic models guide on gov.uk. This goes through the process of creating a logic model and provides examples and templates. There is also some good guidance on developing and using logic models from the <a href="https://www.nuffieldtrust.org.uk/files/2019-02/stephanie-kumpunen-and-muna-sheikh.pdf" style="color: DARKBLUE;"><b>Nuffield Trust</b></a> and a step by step guide from the US CDC.
+There is a useful <a href="https://www.gov.uk/guidance/evaluation-in-health-and-wellbeing-creating-a-logic-model" style="color: DARKBLUE;"><b>logic models guide on gov.uk</b></a>. This goes through the process of creating a logic model and provides examples and templates. There is also some good guidance on developing and using logic models from the <a href="https://www.nuffieldtrust.org.uk/files/2019-02/stephanie-kumpunen-and-muna-sheikh.pdf" style="color: DARKBLUE;"><b>Nuffield Trust</b></a> and a <a href="https://www.cdc.gov/eval/steps/step2/index.htm" style="color: DARKBLUE;"><b>step by step guide from the US CDC</b></a>.
 </div>
 
 <div class = "leftB">
@@ -391,7 +391,7 @@ However, it is worth being mindful that one of the key purposes and strengths of
 
 <b> Analytical quality assurance </b>
 
-As outlined in section 4 on Mitigating uncertainty in analysis of quantitative data, steps applied to quality assuring quantitative data are also relevant to quality assuring qualitative research. 
+As outlined in <a href = "chapter_5.html#Mitigating_uncertainty_in_quantitative_data_analysis" style ="color: DARKBLUE;"> <b>mitigating uncertainty in quantitative data analysis</b></a>, steps applied to quality assuring quantitative data are also relevant to quality assuring qualitative research. 
 
 Although the AQUA book does not specifically outline suggestions for AQA of qualitative research, it should be subject to the same attention to best practice and quality assurance in its design and analysis as model building and quantitative analysis. Check whether your department has created its own guidance for conducting qualitative AQA (for example, this exists in the Home Office). 
 
@@ -405,7 +405,7 @@ Being transparent about how the research and analysis was conducted builds confi
 </div>
 
 <div class = "rightA">
-As noted above, maintaining a clear audit trail can help to mitigate uncertainty by facilitating peer review and scrutiny of the research process and its findings. When reporting findings from qualitative research it is important to be transparent about both the limitations and bias in the research design and the implications for how they should be interpreted and used. See section… ‘Communicating uncertainty in qualitative research’ for further details. When doing so it is important to reiterate the role and purpose of qualitative research and that findings are not intended to be representative of or generalisable to the wider population.
+As noted above, maintaining a clear audit trail can help to mitigate uncertainty by facilitating peer review and scrutiny of the research process and its findings. When reporting findings from qualitative research it is important to be transparent about both the limitations and bias in the research design and the implications for how they should be interpreted and used. See <a href = "chapter_4.html#Communicating_uncertainty_in_qualitative_research" style ="color: DARKBLUE;"> <b>communicating uncertainty in qualitative research</b></a> for further details. When doing so it is important to reiterate the role and purpose of qualitative research and that findings are not intended to be representative of or generalisable to the wider population.
 </div>
 
 <div style="clear: both;"></div>

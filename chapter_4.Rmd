@@ -105,6 +105,18 @@ We now consider how to choose <i>what</i> messages about uncertainty we should c
 </div>
 
 <div style="clear: both;"></div>
+
+<div class = "leftB">
+When reporting findings from any research and analysis, it is important to be transparent about the strengths, limitations and any bias in the research process as well as the findings
+</div>
+
+<div class = "rightA">
+Research or analytical reports should include sufficient and appropriate information about the research process, any sources of uncertainty and the steps that have or could be taken to mitigate this. Where possible it is also good practice to make other materials and outputs from the research available either through publication or upon request to enable others to better understand the context and process by which the research was conducted.
+
+The implications of sources of uncertainty on how results should be interpreted and used in decision-making and policy development should also be communicated. 
+</div>
+
+<div style="clear: both;"></div>
  
 ## Deciding what to communicate
 
@@ -188,7 +200,7 @@ Front load the important caveats and explain why they matter
 </div>
 
 <div class = "rightA">
-It is not possible to eliminate uncertainty around the causal effects in evaluation. However, study design can be used to minimise the level of uncertainty (see Mitigating uncertainty in experimental and quasi-experimental evaluation methods). The level of uncertainty depends on components such as uncertainty in data used to assess outcomes, the control group and participant identification strategy. For more details on sources of uncertainty in evaluation design, see section on Sources of uncertainty in experimental and quasi-experimental evaluation designs.
+It is not possible to eliminate uncertainty around the causal effects in evaluation. However, study design can be used to minimise the level of uncertainty (see <a href = "chapter_5.html#Mitigating_uncertainty_in_experimental_and_quasi-experimental_evaluation_methods" style ="color: DARKBLUE;"> <b>mitigating uncertainty in experimental and quasi-experimental evaluation methods</b></a>). The level of uncertainty depends on components such as uncertainty in data used to assess outcomes, the control group and participant identification strategy. For more details on sources of uncertainty in evaluation design, see <a href = "chapter_2.html#Sources_of_uncertainty_in_experimental_and_quasi-experimental_evaluation_methods" style ="color: DARKBLUE;"> <b>Sources of uncertainty in experimental and quasi-experimental evaluation methods</b></a>).
 </div>
 
 <div class = "leftB"> 
@@ -204,11 +216,11 @@ Analysts must clearly communicate the extent to which findings can and cannot be
 </div>
 
 <div class = "rightA">
-Sampling error survey data is typically estimated and reported using the [standard error](https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/uncertaintyandhowwemeasureit#standard-error), [coefficient of variation](https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/uncertaintyandhowwemeasureit#coefficient-of-variation) and [confidence interval](https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/uncertaintyandhowwemeasureit#confidence-interval).
+Sampling error survey data is typically estimated and reported using the <a href = "https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/uncertaintyandhowwemeasureit#standard-error" style ="color: DARKBLUE;"> <b>standard error</b></a>, <a href = "https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/uncertaintyandhowwemeasureit#coefficient-of-variation" style ="color: DARKBLUE;"> <b>coefficient of variation</b></a>, and <a href = "https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/uncertaintyandhowwemeasureit#confidence-interval" style ="color: DARKBLUE;"> <b>confidence interval</b></a>.
 
 A confidence interval is a statistical estimate used to communicate the uncertainty around a parameter estimate. A confidence interval is the range of values that is likely to include an unknown parameter, such as the population mean, and the interval has an associated confidence level that gives the probability with which an estimated interval will contain the true value of the parameter. For example, if 80% of survey respondents give a certain response, a 95% confidence interval of [75, 85] indicates that the proportion of the population that would give that response would be between 75% and 85%. The confidence interval becomes smaller as the sample size increases. Effect sizes should be reported with confidence intervals, and what level of uncertainty that represents should be explained in accessible terms. 
 
-The ONS’s page on [Uncertainty and how we measure it for our surveys](https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/uncertaintyandhowwemeasureit) provides more detail on these concepts.
+The ONS’s page on <a href = "https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/uncertaintyandhowwemeasureit" style ="color: DARKBLUE;"> <b>"Uncertainty and how we measure it for our surveys"</b></a> provides more detail on these concepts.
  
 </div>
 
@@ -258,6 +270,18 @@ Be conscious of how your analysis may be used in future communication
 
 <div class = "rightA">
 A good relationship with colleagues will minimise this risk. Work collaboratively to ensure that colleagues understand why central numbers could be misleading and in which situations it would be inappropriate for them to be communicated on their own.   Always ensure that wherever possible you have sight of further communication before it is sent.
+
+In evaluations, analysts have a responsibility to take all reasonable steps to ensure that findings from quantitative analysis are used appropriately and not misconstrued and must be clear about the level of confidence in findings, taking account of the level of uncertainty and generalisability. For some methodologies it is particularly important to ensure that audiences understand limitations and the implications for use in policymaking; for example, where analysis relies solely on limited datasets or where there is ecological fallacy (discussed in <a href = "chapter_2.html" style ="color: DARKBLUE;"> <b>Defining and identifying uncertainty</b></a>). 
+</div>
+
+<div style="clear: both;"></div>
+
+<div class= "leftB">
+Consider how to present measures of uncertainty to a non-analytical audience
+</div>
+
+<div class = "rightA">
+If presenting results to a non-analytical audience, bear in mind that they may find statistical measures of uncertainty difficult to interpret. Consider other visual methods such as a BRAG (blue/black, red, amber, green) rating scale that communicates your confidence in the results.
 </div>
 
 <div style="clear: both;"></div>
@@ -1030,7 +1054,7 @@ knitr::include_graphics("images/interactive.png")
 <div class = "rightA">
 The key principles of presenting and communicating uncertainty outlined in this section of the toolkit are also applicable when working with outputs from qualitative research. The only exception to this is the use of numeric data when presenting qualitative research findings. This is generally not considered good practice due to the small sample sizes and diverse make-up of the population.
 
-<u> Recap of key principles </u>
+<b> Recap of key principles </b>
 
 <ul>
 <li>Be transparent about the strengths, limitations and bias in the research process and their implications for the findings.</li>
@@ -1046,7 +1070,7 @@ The remainder of this subsection includes guidance on how to communicate uncerta
 
 
 <div class = "rightA">
-Section 3 of the toolkit details the main sources of uncertainty for qualitative research. These include: a lack of representativeness of the population and sub-groups within it, potential biases due to researchers’ subjective judgements in the process of recruitment and analysis, and differences in how research participants engage with the research process. 
+<a href = "chapter_2.html" style = "color: DARKBLUE;"> <b>Section 3</b></a> of the toolkit details the main sources of uncertainty for qualitative research. These include: a lack of representativeness of the population and sub-groups within it, potential biases due to researchers’ subjective judgements in the process of recruitment and analysis, and differences in how research participants engage with the research process. 
 
 When reporting findings from qualitative research it is important to be transparent about the limitations, bias and uncertainty in the research design and the implications for how findings should be interpreted and used in decision-making. 
 
@@ -1119,7 +1143,7 @@ A key challenge that you will face when trying to communicate uncertainty messag
 <ul>
 <li> Immediate Client - Any individual/group that receives information directly from you whether this is verbally or from reading your publication. This group will receive your uncertainty message in its purest form. </li>
 <li> Secondary Client - Any individual/group that receives your uncertainty message through an immediate client and not verbally from you or from reading your publication. This group is not guaranteed to receive your uncertainty message in its purest form and instead may receive a distorted version depending how effectively it is communicated to them by your immediate client. </li>
-<li> Message distortion - A situation where a secondary client receives an incorrect version of your uncertainty message from an immediate client. Note that this framework largely deals with cases of misinformation only in which the sharing of inaccurate information is inadvertent. Detailed guidance on disinformation, the deliberate creation/sharing of false information, can be found in the <a href="https://gcs.civilservice.gov.uk/publications/resist-counter-disinformation-toolkit/" style="color: DARKBLUE;"> RESIST</a> toolkit</li>
+<li> Message distortion - A situation where a secondary client receives an incorrect version of your uncertainty message from an immediate client. Note that this framework largely deals with cases of misinformation only in which the sharing of inaccurate information is inadvertent. Detailed guidance on disinformation, the deliberate creation/sharing of false information, can be found in the <a href="https://gcs.civilservice.gov.uk/publications/resist-counter-disinformation-toolkit/" style="color: DARKBLUE;"><b>RESIST</b></a> toolkit</li>
 </ul>
 The challenge is to limit the extent of message distortion in the information exchange between your immediate and secondary clients.
 </div>
@@ -1131,7 +1155,7 @@ Understanding your immediate clients
 </div>
 
 <div class = "rightA">
-When passing uncertainty messages to be communicated onwards, it is important that you consider who your immediate clients 			are, how they are likely to convey your message and whether you are likely to communicate with them again. We can condense the 			attributes of your immediate client as falling into two core characteristics:
+When passing uncertainty messages to be communicated onwards, it is important that you consider who your immediate clients are, how they are likely to convey your message and whether you are likely to communicate with them again. We can condense the attributes of your immediate client as falling into two core characteristics:
 
 <ul>
 <li> Ambiguity – This is the extent to which you are unsure that your analytical message will be passed on accurately to secondary clients.</li>
@@ -1242,7 +1266,7 @@ The set of possible responses when communicating uncertainty in analytical messa
 <ul>
 <li>Due to a low level of ambiguity, content is likely to be communicated onwards accurately as long as it is initially interpreted correctly i.e., the risk of disinformation is low.</li>
 <li>Therefore, while more focus should be placed on effective communication, the complexity of any uncertainty messages should be made appropriate to the level of expertise of your immediate client in order to ensure they are interpreted in the desired manner.</li>
-<li>There is evidence ([Ribeiro et al. 2019, pdf](https://arxiv.org/pdf/1902.09197.pdf)) to suggest that summarising key information is an extractive way (by sub selecting key phrases), as opposed to abstractive summarisation (using paraphrasing), is a more effective way of preventing distortion when information is cascaded.</li>  
+<li>There is evidence (<a href = "https://arxiv.org/pdf/1902.09197.pdf" style = "Color: DARKBLUE;"><b>Ribeiro et al. 2019, pdf</b></a>) to suggest that summarising key information is an extractive way (by sub selecting key phrases), as opposed to abstractive summarisation (using paraphrasing), is a more effective way of preventing distortion when information is cascaded.</li>  
 </ul>
 </td>
 <td>
@@ -1269,7 +1293,7 @@ The set of possible responses when communicating uncertainty in analytical messa
 </td>
 <td>
 <ul>
-<li>Importance of communicating uncertainty can be stressed by pointing colleagues towards relevant materials, such as the GSS guidance on [Communicating Quality, Uncertainty and Change](https://gss.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/)</li>
+<li>Importance of communicating uncertainty can be stressed by pointing colleagues towards relevant materials, such as the GSS guidance on <a href = "https://gss.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change" style = "Color: DARKBLUE;"><b>Communicating Quality, Uncertainty and Change</b></a></li>
 <li>Take opportunities to ensure that your message is communicated appropriately at critical moments e.g. Some departments have run trials in which analysts sit with Press Officers on the day of a publication release to help field any questions.</li> 
 </ul>
 </td>
@@ -1287,9 +1311,9 @@ The set of possible responses when communicating uncertainty in analytical messa
 <td>
 <ul>
 <li>“Tightness” of message is crucial in this scenario. Clear and unambiguous messaging leaves as little room for distortion as possible.</li>
-<li>There is evidence from the field of health that exaggeration in news is strongly correlated with exaggeration in press releases ([Sumner et al. 2014, pdf](https://www.bmj.com/content/bmj/349/bmj.g7015.full.pdf)). Therefore, maintaining accuracy in any form of press release is important.</li>
+<li>There is evidence from the field of health that exaggeration in news is strongly correlated with exaggeration in press releases (<a href = "https://www.bmj.com/content/bmj/349/bmj.g7015.full.pdf" style = "Color: DARKBLUE;"><b>Sumner et al. 2014, pdf</b></a>). Therefore, maintaining accuracy in any form of press release is important.</li>
 <li>Accompanying releases on these platforms with links to “explainers” written in plain-English will mitigate misinformation spread to some extent.</li>
-<li>The GSS [Communicating Quality, Uncertainty and Change](https://gss.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change/) guidance offers advice on how to successfully communicate information to users when under character limits imposed by platforms such as Twitter.</li>
+<li>The GSS <a href = "https://gss.civilservice.gov.uk/policy-store/communicating-quality-uncertainty-and-change" style = "Color: DARKBLUE;"><b>Communicating Quality, Uncertainty and Change</b></a> guidance offers advice on how to successfully communicate information to users when under character limits imposed by platforms such as Twitter.</li>
 </ul>
 </td>
 <td>
@@ -1307,8 +1331,8 @@ The set of possible responses when communicating uncertainty in analytical messa
 A number of themes sit behind the set of actions outlined in the Action Matrix. These are additional factors that apply to all of the 			scenarios outlined by the Ambiguity/Accessibility Matrix:
 
 <ul>
-<li><b>Understanding who your clients are and how they use your analysis</b> – In all contexts, it is important to try to understand how your client plans to use this analytical information and what their motivations are. Studies show that people selectively seek out information that is consistent with their prior beliefs and sometimes process this more fluently than information that is inconsistent with their prior beliefs. The client’s pre-existing beliefs or attitudes towards you, the topic or object of uncertainty might influence the effects of any uncertainty communication and, in turn, how the client passes this information onward ([van der Ples et al. 2019](https://royalsocietypublishing.org/doi/full/10.1098/rsos.181870#d3e2087)). Therefore, in order for uncertainty to be communicated effectively, messages should be tailored to clients depending on knowledge of these factors. </li>
-<li><b>Guiding your clients on how to use your analysis</b> – An inquiry into the [governance of statistics (pdf)](https://publications.parliament.uk/pa/cm201719/cmselect/cmpubadm/1820/1820.pdf), published in July 2019, by the Public Administration and Constitutional Affairs Committee (PACAC) produced a recommendation that government statisticians ‘should do more to guide users how to use their statistics, explain how they are typically used, outlining their strengths and weaknesses, providing commentary and advice’ (point 46). Applying this to all analysis, even when information is passed onward from the most accessible and least ambiguous client, the onus is on you to ensure clarity of message, something which is greatly aided by this type of communication. </li>
+<li><b>Understanding who your clients are and how they use your analysis</b> – In all contexts, it is important to try to understand how your client plans to use this analytical information and what their motivations are. Studies show that people selectively seek out information that is consistent with their prior beliefs and sometimes process this more fluently than information that is inconsistent with their prior beliefs. The client’s pre-existing beliefs or attitudes towards you, the topic or object of uncertainty might influence the effects of any uncertainty communication and, in turn, how the client passes this information onward (<a href = "https://royalsocietypublishing.org/doi/full/10.1098/rsos.181870#d3e2087" style = "Color: DARKBLUE;"><b>van der Ples et al. 2019</b></a>). Therefore, in order for uncertainty to be communicated effectively, messages should be tailored to clients depending on knowledge of these factors. </li>
+<li><b>Guiding your clients on how to use your analysis</b> – An inquiry into the <a href = "https://publications.parliament.uk/pa/cm201719/cmselect/cmpubadm/1820/1820.pdf" style = "Color: DARKBLUE;"><b>governance of statistics (pdf)</b></a>, published in July 2019, by the Public Administration and Constitutional Affairs Committee (PACAC) produced a recommendation that government statisticians ‘should do more to guide users how to use their statistics, explain how they are typically used, outlining their strengths and weaknesses, providing commentary and advice’ (point 46). Applying this to all analysis, even when information is passed onward from the most accessible and least ambiguous client, the onus is on you to ensure clarity of message, something which is greatly aided by this type of communication. </li>
 <li><b>Client Expertise/Knowledge</b> – The complexity of uncertainty messaging in all contexts needs to be tailored towards the level of expertise of your client i.e., their ability to correctly understand and use the information. Providing messages to a low-expertise client that are too complex carries the risk of them accidentally distorting the information due to a lack of knowledge, irrespective of ambiguity/accessibility levels. Conversely, delivering an overly simplified message to a high-expertise client represents a missed opportunity to communicate more nuanced uncertainty messages. </li>
 <li><b>Communicating uncertainty within the presentation of analysis</b> – Uncertainty caveats can be embedded directly into analysis in a variety of ways, for example, by presenting figures with confidence intervals. It then requires a deliberate action from the immediate client to remove this information, whereas it would be much easier to deliberately or accidentally drop footnotes or other contextual information that is not embedded into the analysis. </li>
 </ul>
