@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> Introduction
+title: <br><br> Introduction
 output:
   html_document:
     includes:
