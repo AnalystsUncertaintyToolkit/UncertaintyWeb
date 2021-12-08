@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> Accessibility statement
+title: <br><br> Accessibility statement
 output:
   html_document:
     toc: true

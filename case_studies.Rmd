@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> 8. Case studies
+title: <br><br> 8. Case studies
 output:
   html_document:
     toc: true
