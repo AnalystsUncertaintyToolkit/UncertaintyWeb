@@ -14,7 +14,7 @@ output:
 <style type="text/css">
 
 #TOC {
-margin-top: 50px;
+margin-top: 150px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -26,7 +26,7 @@ counter-reset : h1;
 }
 
 .title{
-padding-top: 50px;
+padding-top: 150px;
 }
 
 h1 {
