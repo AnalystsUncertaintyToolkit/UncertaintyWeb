@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> 8. Case studies
+title: <br><br> 8. Case studies
 output:
   html_document:
     toc: true
@@ -14,6 +14,10 @@ output:
 
 #TOC {
 margin-top: 150px;
+}
+
+.title{
+padding-top: 50px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {

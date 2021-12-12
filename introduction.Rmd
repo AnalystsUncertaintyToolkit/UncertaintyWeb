@@ -13,6 +13,10 @@ output:
 margin-top: 100px;
 }
 
+.title{
+padding-top: 100px;
+}
+
 .leftA{
 float: left;
 width: 100%;

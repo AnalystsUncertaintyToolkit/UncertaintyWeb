@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> # Defining and Identifying Uncertainty
+title: Defining and Identifying Uncertainty
 output:
   html_document:
     toc: true
@@ -22,6 +22,10 @@ background-color: DARKBLUE;
 
 body {
 counter-reset : h1;
+}
+
+.title{
+padding-top: 150px;
 }
 
 h1 {
@@ -101,7 +105,7 @@ text-align: right;
 
 <div class="pageContentWrapper">
 
-# Defining and identifying uncertainty
+<!--# Defining and identifying uncertainty-->
 
 <br>
 

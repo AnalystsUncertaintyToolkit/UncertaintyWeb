@@ -1,5 +1,5 @@
 ---
-title: <br><br><br>
+title: Presenting and communicating uncertainty
 output:
   html_document:
     toc: yes
@@ -22,6 +22,10 @@ background-color: DARKBLUE;
 
 body {
 counter-reset : h1;
+}
+
+.title{
+padding-top: 150px;
 }
 
 h1 {
@@ -96,7 +100,7 @@ text-align: right;
 
 <div class="pageContentWrapper">
 
-# Presenting and communicating uncertainty
+<!--# Presenting and communicating uncertainty-->
 
 <br><br>
 

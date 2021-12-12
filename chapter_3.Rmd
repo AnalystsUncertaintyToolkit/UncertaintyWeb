@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> # Understanding and Measuring Uncertainty
+title: Understanding and Measuring Uncertainty
 output:
   html_document:
     toc: true
@@ -23,6 +23,10 @@ background-color: DARKBLUE;
 
 body {
 counter-reset : h1;
+}
+
+.title{
+padding-top: 150px;
 }
 
 h1 {
@@ -105,7 +109,7 @@ colour: white;
 
 <div class="pageContentWrapper">
 
-# Understanding and measuring uncertainty
+<!--# Understanding and measuring uncertainty-->
 
 <br>
 
