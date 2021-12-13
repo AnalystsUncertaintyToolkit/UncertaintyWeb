@@ -136,7 +136,7 @@ Considering the whole system that influences your analysis helps identify all po
 </div>
 
 <div class = "rightA">
-Where possible uncertainty should be reduced. We explain how to mitigate uncertainty in quantitative data analysis through to qualitative survey research.
+Once uncertainty has been identified it should be reduced where possible. We explain how to mitigate uncertainty in quantitative data analysis through to qualitative survey research.
 </div>
 
 <div class = "leftB">
