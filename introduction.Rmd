@@ -136,11 +136,19 @@ Considering the whole system that influences your analysis helps identify all po
 </div>
 
 <div class = "rightA">
+Where possible uncertainty should be reduced. We explain how to mitigate uncertainty in quantitative data analysis through to qualitative survey research.
+</div>
+
+<div class = "leftB">
+4. Mitigating uncertainty
+</div>
+
+<div class = "rightA">
 Before conducting uncertainty analysis, you should consider the range of possible techniques. We provide a list of the most common techniques with some examples for reference.
 </div>
 
 <div class = "leftB">
-4. Understanding and measuring uncertainty
+5. Understanding and measuring uncertainty
 </div>
 
 <div class = "rightA">
@@ -148,7 +156,7 @@ There is little point conducting any analysis if it has no impact, so this is pe
 </div>
 
 <div class = "leftB">
-5. Presenting and communicating uncertainty
+6. Presenting and communicating uncertainty
 </div>
 
 <div class="footer">
