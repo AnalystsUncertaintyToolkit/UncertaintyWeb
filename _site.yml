@@ -10,17 +10,19 @@ navbar:
       href: chapter_1.html
     - text: "3. Defining and identifying uncertainty"
       href: chapter_2.html
-    - text: "4. Understanding and measuring uncertainty"
+    - text: "4. Mitigating uncertainty"
+      href: chapter_5.html
+    - text: "5. Understanding and measuring uncertainty"
       href: chapter_3.html
-    - text: "5. Presenting and communicating uncertainty"
+    - text: "6. Presenting and communicating uncertainty"
       href: chapter_4.html
-    - text: "6. Conclusion"
+    - text: "7. Conclusion"
       href: Conclusion.html
-    - text: "7. Case studies"
+    - text: "8. Case studies"
       href: case_studies.html
-    - text: "8. Further reading"
+    - text: "9. Further reading"
       href: further_reading.html
-    - text: "9. Decision maker summary"
+    - text: "10. Decision maker summary"
       href: exec.html
     - text: "Download pdf"
       href: Download_pdf.html

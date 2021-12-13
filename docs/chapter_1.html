@@ -11,9 +11,8 @@
 
 
 
-<title>   </title>
+<title>Jointly agreeing how uncertainty should be used</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -35,15 +34,6 @@
 
   gtag('config', 'UA-167193673-1');
 </script>
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -89,7 +79,6 @@ h6 {
   text-align: left;
 }
 </style>
-
 
 
 
@@ -386,22 +375,25 @@ div.tocify {
   <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">4. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">5. Presenting and communicating uncertainty</a>
+  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="Conclusion.html">6. Conclusion</a>
+  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
-  <a href="case_studies.html">7. Case studies</a>
+  <a href="Conclusion.html">7. Conclusion</a>
 </li>
 <li>
-  <a href="further_reading.html">8. Further reading</a>
+  <a href="case_studies.html">8. Case studies</a>
 </li>
 <li>
-  <a href="exec.html">9. Decision maker summary</a>
+  <a href="further_reading.html">9. Further reading</a>
+</li>
+<li>
+  <a href="exec.html">10. Decision maker summary</a>
 </li>
 <li>
   <a href="Download_pdf.html">Download pdf</a>
@@ -421,7 +413,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore"><br><br><br></h1>
+<h1 class="title toc-ignore">Jointly agreeing how uncertainty should be used</h1>
 
 </div>
 
@@ -433,7 +425,7 @@ div.tocify {
 
 
 #TOC{
-margin-top: 100px;
+margin-top: 150px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -444,6 +436,10 @@ body {
 counter-reset : h1;
 }
 
+.title{
+padding-top: 150px;
+}
+
 h1 {
   counter-reset:h2;
 }
@@ -452,10 +448,10 @@ h2 {
 counter-reset : h3;
 }
 
-h1:before{
+<!--h1:before{
   content : "2" ". ";
   counter-increment: h1;
-}
+}-->
 
 h2:before {
 content : "2" "." counter(h2,decimal) ". ";
@@ -511,8 +507,7 @@ text-align: right;
 
 .
 </style>
-<div id="jointly-agreeing-how-uncertainty-should-be-used" class="section level1">
-<h1>Jointly agreeing how uncertainty should be used</h1>
+<!--# Jointly agreeing how uncertainty should be used-->
 <p><br></p>
 <div class="rightA">
 <p>Decision-makers need information about uncertainty in the impacts of their decisions. This section looks at the steps to ensure that analysts and decision-makers agree on the question being asked, how analytical outputs will be used in the decision-making process, and how to appropriately incorporate uncertainty into the analysis.</p>
@@ -623,7 +618,6 @@ text-align: right;
 <p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
 </div>
 </div>
-</div>
 
 
 
@@ -636,7 +630,7 @@ text-align: right;
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -675,7 +669,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

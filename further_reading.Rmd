@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> 8. Further reading
+title: <br><br> 9. Further reading
 output:
   html_document:
     toc: true
@@ -17,6 +17,10 @@ output:
   height = 100px; 
   width: 100%;
   text-align: left
+}
+
+.title{
+padding-top: 50px;
 }
 
 .

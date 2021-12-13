@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> Introduction
+title: <br><br> Introduction
 output:
   html_document:
     includes:
@@ -11,6 +11,10 @@ output:
 
 #TOC {
 margin-top: 100px;
+}
+
+.title{
+padding-top: 100px;
 }
 
 .leftA{

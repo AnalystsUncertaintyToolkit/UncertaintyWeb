@@ -11,9 +11,8 @@
 
 
 
-<title>    9. Decision maker summary</title>
+<title>   10. Decision maker summary</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -32,15 +31,6 @@
 
   gtag('config', 'UA-167193673-1');
 </script>
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -86,7 +76,6 @@ h6 {
   text-align: left;
 }
 </style>
-
 
 
 
@@ -304,22 +293,25 @@ $(document).ready(function () {
   <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">4. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">5. Presenting and communicating uncertainty</a>
+  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="Conclusion.html">6. Conclusion</a>
+  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
-  <a href="case_studies.html">7. Case studies</a>
+  <a href="Conclusion.html">7. Conclusion</a>
 </li>
 <li>
-  <a href="further_reading.html">8. Further reading</a>
+  <a href="case_studies.html">8. Case studies</a>
 </li>
 <li>
-  <a href="exec.html">9. Decision maker summary</a>
+  <a href="further_reading.html">9. Further reading</a>
+</li>
+<li>
+  <a href="exec.html">10. Decision maker summary</a>
 </li>
 <li>
   <a href="Download_pdf.html">Download pdf</a>
@@ -339,7 +331,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><br><br><br> 9. Decision maker summary</h1>
+<h1 class="title toc-ignore"><br><br> 10. Decision maker summary</h1>
 
 </div>
 
@@ -347,7 +339,11 @@ $(document).ready(function () {
 <style type="text/css">
 
 #TOC {
-margin-top: 100px;
+margin-top: 150px;
+}
+
+.title{
+padding-top: 50px;
 }
 
 .leftA{
@@ -473,7 +469,7 @@ Provide feedback to analysts on the usefulness and effectiveness of how they com
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

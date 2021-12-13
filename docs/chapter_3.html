@@ -11,9 +11,8 @@
 
 
 
-<title>   </title>
+<title>Understanding and Measuring Uncertainty</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -35,15 +34,6 @@
 
   gtag('config', 'UA-167193673-1');
 </script>
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -89,7 +79,6 @@ h6 {
   text-align: left;
 }
 </style>
-
 
 
 
@@ -386,22 +375,25 @@ div.tocify {
   <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">4. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">5. Presenting and communicating uncertainty</a>
+  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="Conclusion.html">6. Conclusion</a>
+  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
-  <a href="case_studies.html">7. Case studies</a>
+  <a href="Conclusion.html">7. Conclusion</a>
 </li>
 <li>
-  <a href="further_reading.html">8. Further reading</a>
+  <a href="case_studies.html">8. Case studies</a>
 </li>
 <li>
-  <a href="exec.html">9. Decision maker summary</a>
+  <a href="further_reading.html">9. Further reading</a>
+</li>
+<li>
+  <a href="exec.html">10. Decision maker summary</a>
 </li>
 <li>
   <a href="Download_pdf.html">Download pdf</a>
@@ -421,7 +413,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore"><br><br><br></h1>
+<h1 class="title toc-ignore">Understanding and Measuring Uncertainty</h1>
 
 </div>
 
@@ -429,7 +421,7 @@ div.tocify {
 <style type="text/css">
 
 #TOC {
-margin-top: 100px;
+margin-top: 150px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -438,6 +430,10 @@ background-color: DARKBLUE;
 
 body {
 counter-reset : h1;
+}
+
+.title{
+padding-top: 150px;
 }
 
 h1 {
@@ -449,12 +445,12 @@ counter-reset : h3;
 }
 
 h1:before{
-  content : "4" ". ";
+  content : "5" ". ";
   counter-increment: h1;
 }
 
 h2:before {
-content : "4" "." counter(h2,decimal) ". ";
+content : "5" "." counter(h2,decimal) ". ";
 counter-increment : h2;
 }
 
@@ -519,8 +515,7 @@ colour: white;
 </style>
 <div class="pageContentWrapper">
 
-<div id="understanding-and-measuring-uncertainty" class="section level1">
-<h1>Understanding and measuring uncertainty</h1>
+<!--# Understanding and measuring uncertainty-->
 <p><br></p>
 <div class="rightA">
 <p>At this stage you should have considered where the uncertainties lie. You will now need to consider whether it is possible and appropriate to quantify this uncertainty. In a highly uncertain context, detailed assessment of data-driven uncertainty may not be worthwhile. This is an analytical judgement to be made in light of the full consideration of sources of uncertainty.</p>
@@ -1102,7 +1097,6 @@ Needs a group of knowledgeable experts, who can reasonably be expected to have a
 <p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
 </div>
 </div>
-</div>
 
 
 
@@ -1115,7 +1109,7 @@ Needs a group of knowledgeable experts, who can reasonably be expected to have a
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -1154,7 +1148,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
