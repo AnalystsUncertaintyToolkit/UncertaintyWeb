@@ -1,5 +1,5 @@
 ---
-title: Understanding and Measuring Uncertainty
+title: <br><br><br> #Understanding and Measuring Uncertainty
 output:
   html_document:
     toc: true
@@ -14,7 +14,7 @@ output:
 <style type="text/css">
 
 #TOC {
-margin-top: 150px;
+margin-top: 50px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -22,11 +22,12 @@ background-color: DARKBLUE;
 } 
 
 body {
+margin-top : 150px;
 counter-reset : h1;
 }
 
 .title{
-padding-top: 150px;
+display: none;
 }
 
 h1 {
@@ -109,7 +110,7 @@ colour: white;
 
 <div class="pageContentWrapper">
 
-<!--# Understanding and measuring uncertainty-->
+# Understanding and measuring uncertainty
 
 <br>
 

@@ -1,5 +1,5 @@
 ---
-title: Jointly agreeing how uncertainty should be used
+title: <br><br><br> #Jointly agreeing how uncertainty should be used
 output:
   html_document:
     toc: yes
@@ -18,7 +18,7 @@ output:
 
 
 #TOC{
-margin-top: 150px;
+margin-top: 50px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -26,11 +26,12 @@ background-color: DARKBLUE;
 }  
 
 body {
+margin-top : 150px;
 counter-reset : h1;
 }
 
 .title{
-padding-top: 150px;
+display: none;
 }
 
 h1 {
@@ -41,10 +42,10 @@ h2 {
 counter-reset : h3;
 }
 
-<!--h1:before{
+h1:before{
   content : "2" ". ";
   counter-increment: h1;
-}-->
+}
 
 h2:before {
 content : "2" "." counter(h2,decimal) ". ";
@@ -101,7 +102,7 @@ text-align: right;
 .
 </style>
 
-<!--# Jointly agreeing how uncertainty should be used-->
+# Jointly agreeing how uncertainty should be used
 
 <br>
 

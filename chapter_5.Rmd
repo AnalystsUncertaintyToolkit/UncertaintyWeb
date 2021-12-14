@@ -1,5 +1,5 @@
 ---
-title: Mitigating uncertainty
+title: <br><br><br> # Mitigating uncertainty
 output:
   html_document:
     toc: true
@@ -13,7 +13,7 @@ output:
 <style type="text/css">
 
 #TOC {
-margin-top: 150px;
+margin-top: 50px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -21,11 +21,12 @@ background-color: DARKBLUE;
 } 
 
 body {
+margin-top: 150px;
 counter-reset : h1;
 }
 
 .title{
-padding-top: 150px;
+display : none;
 }
 
 h1 {
@@ -105,11 +106,17 @@ text-align: right;
 
 <div class="pageContentWrapper">
 
-<!--# Mitigating uncertainty -->
+# Mitigating uncertainty 
 
 <!-- introduction here?*-->
 
 ## Mitigating uncertainty in quantitative data analysis
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <div class = "rightA">
 If the data is missing across all observations, for example due to test design, failure in the observations or failure in recording observations, the data can be classified as missing completely at random (MCAR). This is because the reasons for its absence are external and not related to the value of the observation. It is typically safe to remove MCAR data because the results will be unbiased. The statistical test(s) you are performing may not be as powerful, but the results will be reliable.
@@ -395,7 +402,7 @@ However, it is worth being mindful that one of the key purposes and strengths of
 
 <b> Analytical quality assurance </b>
 
-As outlined in <a href = "chapter_5.html#mitigating_uncertainty_in_quantitative_data_analysis" style ="color: DARKBLUE;"> <b>mitigating uncertainty in quantitative data analysis</b></a>, steps applied to quality assuring quantitative data are also relevant to quality assuring qualitative research. 
+As outlined in <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_5.html#Mitigating_uncertainty_in_quantitative_data_analysis" style ="color: DARKBLUE;"> <b>mitigating uncertainty in quantitative data analysis</b></a>, steps applied to quality assuring quantitative data are also relevant to quality assuring qualitative research. 
 
 Although the AQUA book does not specifically outline suggestions for AQA of qualitative research, it should be subject to the same attention to best practice and quality assurance in its design and analysis as model building and quantitative analysis. Check whether your department has created its own guidance for conducting qualitative AQA (for example, this exists in the Home Office). 
 
@@ -409,7 +416,7 @@ Being transparent about how the research and analysis was conducted builds confi
 </div>
 
 <div class = "rightA">
-As noted above, maintaining a clear audit trail can help to mitigate uncertainty by facilitating peer review and scrutiny of the research process and its findings. When reporting findings from qualitative research it is important to be transparent about both the limitations and bias in the research design and the implications for how they should be interpreted and used. See <a href = "chapter_4.html#communicating_uncertainty_in_qualitative_research" style ="color: DARKBLUE;"> <b>communicating uncertainty in qualitative research</b></a> for further details. When doing so it is important to reiterate the role and purpose of qualitative research and that findings are not intended to be representative of or generalisable to the wider population.
+As noted above, maintaining a clear audit trail can help to mitigate uncertainty by facilitating peer review and scrutiny of the research process and its findings. When reporting findings from qualitative research it is important to be transparent about both the limitations and bias in the research design and the implications for how they should be interpreted and used. See <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#Communicating_uncertainty_in_qualitative_research" style ="color: DARKBLUE;"> <b>communicating uncertainty in qualitative research</b></a> for further details. When doing so it is important to reiterate the role and purpose of qualitative research and that findings are not intended to be representative of or generalisable to the wider population.
 </div>
 
 <div style="clear: both;"></div>

@@ -1,5 +1,5 @@
 ---
-title: Presenting and communicating uncertainty
+title: <br><br><br> # Presenting and communicating uncertainty
 output:
   html_document:
     toc: yes
@@ -13,7 +13,7 @@ output:
 <style type="text/css">
 
 #TOC {
-margin-top: 150px;
+margin-top: 50px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -21,11 +21,12 @@ background-color: DARKBLUE;
 } 
 
 body {
+margin-top : 150px;
 counter-reset : h1;
 }
 
 .title{
-padding-top: 150px;
+display : none;
 }
 
 h1 {
@@ -100,7 +101,7 @@ text-align: right;
 
 <div class="pageContentWrapper">
 
-<!--# Presenting and communicating uncertainty-->
+# Presenting and communicating uncertainty
 
 <br><br>
 
@@ -204,7 +205,7 @@ Front load the important caveats and explain why they matter
 </div>
 
 <div class = "rightA">
-It is not possible to eliminate uncertainty around the causal effects in evaluation. However, study design can be used to minimise the level of uncertainty (see <a href = "chapter_5.html#mitigating_uncertainty_in_experimental_and_quasi-experimental_evaluation_methods" style ="color: DARKBLUE;"> <b>mitigating uncertainty in experimental and quasi-experimental evaluation methods</b></a>). The level of uncertainty depends on components such as uncertainty in data used to assess outcomes, the control group and participant identification strategy. For more details on sources of uncertainty in evaluation design, see <a href = "chapter_2.html#sources_of_uncertainty_in_experimental_and_quasi-experimental_evaluation_methods" style ="color: DARKBLUE;"> <b>Sources of uncertainty in experimental and quasi-experimental evaluation methods</b></a>).
+It is not possible to eliminate uncertainty around the causal effects in evaluation. However, study design can be used to minimise the level of uncertainty (see <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_5.html#Mitigating_uncertainty_in_experimental_and_quasi-experimental_evaluation_methods" style ="color: DARKBLUE;"> <b>mitigating uncertainty in experimental and quasi-experimental evaluation methods</b></a>). The level of uncertainty depends on components such as uncertainty in data used to assess outcomes, the control group and participant identification strategy. For more details on the sources of uncertainty in evaluation designs, see <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_2.html#Sources_of_uncertainty_in_experimental_and_quasi-experimental_evaluation_designs" style ="color: DARKBLUE;"> <b>Sources of uncertainty in experimental and quasi-experimental evaluation designs</b></a>).
 </div>
 
 <div class = "leftB"> 
@@ -1174,7 +1175,7 @@ When passing uncertainty messages to be communicated onwards, it is important th
 <div style="clear: both;"></div>
 
 <div align = "center">
-<table style ="width:100%;border-collapse: separate;border-spacing: 15px;background-color: azure;">
+<table style ="width:100%;border-collapse: separate;border-spacing: 15px;">
 <tr>
 <th style= "text-align: left;">Ambiguity/Accessibility</th>
 <th style= "text-align: left;">High Accessibility</th>
@@ -1229,7 +1230,7 @@ The set of possible responses when communicating uncertainty in analytical messa
 
 <div align = "center">
 <br>
-<table style ="width:100%;border-collapse: separate;border-spacing: 15px;background-color: azure;">
+<table style ="width:100%;border-collapse: separate;border-spacing: 15px;">
 <tr>
 <th style= "text-align: left;">Ambiguity/Accessibility</th>
 <th style= "text-align: left;">Communication</th>

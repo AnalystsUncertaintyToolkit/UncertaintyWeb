@@ -11,24 +11,14 @@
 
 
 
-<title>Mitigating uncertainty</title>
+<title></title>
 
-<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -45,16 +35,12 @@
   gtag('config', 'UA-167193673-1');
 </script>
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
 <style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -67,7 +53,32 @@ if (window.hljs) {
 
 
 
-
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
 
 
 
@@ -77,6 +88,10 @@ if (window.hljs) {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -93,13 +108,40 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
-pre code {
-  padding: 0;
-}
 </style>
 
 
 <style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
 .dropdown-submenu {
   position: relative;
 }
@@ -127,7 +169,7 @@ pre code {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
+  border-left-color: #ffffff;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -139,7 +181,7 @@ pre code {
 }
 </style>
 
-<script type="text/javascript">
+<script>
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -150,23 +192,10 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.tab('show');
+  menuAnchor.parent().addClass('active');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
 });
 </script>
 
@@ -178,6 +207,7 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
+  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -309,7 +339,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
+<div class="row-fluid">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -379,11 +409,11 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div id="header">
+<div class="fluid-row" id="header">
 
 
 
-<h1 class="title toc-ignore">Mitigating uncertainty</h1>
+<h1 class="title toc-ignore"><br><br><br></h1>
 
 </div>
 
@@ -391,7 +421,7 @@ div.tocify {
 <style type="text/css">
 
 #TOC {
-margin-top: 150px;
+margin-top: 50px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -399,11 +429,12 @@ background-color: DARKBLUE;
 } 
 
 body {
+margin-top: 150px;
 counter-reset : h1;
 }
 
 .title{
-padding-top: 150px;
+display : none;
 }
 
 h1 {
@@ -482,10 +513,18 @@ text-align: right;
 </style>
 <div class="pageContentWrapper">
 
-<!--# Mitigating uncertainty -->
+<div id="mitigating-uncertainty" class="section level1">
+<h1>Mitigating uncertainty</h1>
 <!-- introduction here?*-->
 <div id="mitigating-uncertainty-in-quantitative-data-analysis" class="section level2">
 <h2>Mitigating uncertainty in quantitative data analysis</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <div class="rightA">
 <p>If the data is missing across all observations, for example due to test design, failure in the observations or failure in recording observations, the data can be classified as missing completely at random (MCAR). This is because the reasons for its absence are external and not related to the value of the observation. It is typically safe to remove MCAR data because the results will be unbiased. The statistical test(s) you are performing may not be as powerful, but the results will be reliable. <br></p>
 <p>Listwise deletion involves deleting all data for an observation that has one or more missing values. The analysis is run only on observations that have a complete set of data. If the number of observations with missing data is small, it may be the most efficient method to handle missing data. However, if listwise deletion would result in throwing away a lot of your data, pairwise deletion may be more appropriate. Here, cases with missing data are used when analysing variables where they don’t have missing values. For example, if you are missing data on a participant’s gender then this participant would be excluded from any analysis using the gender variable but would be included in any analyses for which the participant has complete data. However, the resulting statistics may vary because they are based on different data sets. <br></p>
@@ -662,7 +701,7 @@ text-align: right;
 <p>One way to minimise the risk that the researcher has misunderstood or misrepresented the research participant’s perspective is respondent validation. This is particularly useful when undertaking ethnographic research or generating case studies. The researcher will seek confirmation that their findings and perceptions match with the views of those who participated in the research by sharing their work with them and inviting feedback. This technique is particularly important in instances where research participants will be identifiable in the findings (e.g. where respondents have agreed to be used in a case study or organisations have agreed to be named in a report) to ensure they are content with how they are being represented.</p>
 <p>However, it is worth being mindful that one of the key purposes and strengths of the research process is to observe social phenomena - to look upon it from an external perspective. The researcher or research team plays a key role in this. By asking respondents to check and correct the researcher’s interpretation of the social world, it privileges the respondent’s view of their actions which does not necessarily increase the validity of findings. There are, of course, times where research is designed to be respondent-led - whereby the respondent acts as the researcher and may even interview and observe their peers as well as provide insight into their own lives. Where this is not the case, the decision to seek respondent validation of research findings should be considered carefully and alongside the role of the researcher in the research process.</p>
 <p><b> Analytical quality assurance </b></p>
-<p>As outlined in <a href = "chapter_5.html#mitigating_uncertainty_in_quantitative_data_analysis" style ="color: DARKBLUE;"> <b>mitigating uncertainty in quantitative data analysis</b></a>, steps applied to quality assuring quantitative data are also relevant to quality assuring qualitative research.</p>
+<p>As outlined in <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_5.html#Mitigating_uncertainty_in_quantitative_data_analysis" style ="color: DARKBLUE;"> <b>mitigating uncertainty in quantitative data analysis</b></a>, steps applied to quality assuring quantitative data are also relevant to quality assuring qualitative research.</p>
 <p>Although the AQUA book does not specifically outline suggestions for AQA of qualitative research, it should be subject to the same attention to best practice and quality assurance in its design and analysis as model building and quantitative analysis. Check whether your department has created its own guidance for conducting qualitative AQA (for example, this exists in the Home Office).</p>
 <p>To facilitate rigorous AQA, a complete audit trail should be kept recording decision points made and outputs produced at all key stages in the research process. This includes details about how the research problem or questions were defined at the outset; the approach to sampling and recruitment selection; research tools; copies of any notes, transcripts, audio-visual materials or other materials generated through the research (e.g. respondent diaries, journals or scrapbooks); and decisions regarding data analysis (e.g. theoretical approach, coding framework). AQA can take place during the research process as well as its conclusion. AQA reviewers act like auditors, checking that appropriate procedures have been followed and considering the extent to which theoretical inferences are credible and defensible. Consequently, AQA of qualitative research can be quite a demanding and resource intensive exercise. Whilst it can help to reduce uncertainty, analysts should keep proportionality in mind when deciding how and when it can best support the research process.</p>
 </div>
@@ -673,13 +712,14 @@ text-align: right;
 <p>Being transparent about how the research and analysis was conducted builds confidence in the findings</p>
 </div>
 <div class="rightA">
-<p>As noted above, maintaining a clear audit trail can help to mitigate uncertainty by facilitating peer review and scrutiny of the research process and its findings. When reporting findings from qualitative research it is important to be transparent about both the limitations and bias in the research design and the implications for how they should be interpreted and used. See <a href = "chapter_4.html#communicating_uncertainty_in_qualitative_research" style ="color: DARKBLUE;"> <b>communicating uncertainty in qualitative research</b></a> for further details. When doing so it is important to reiterate the role and purpose of qualitative research and that findings are not intended to be representative of or generalisable to the wider population.</p>
+<p>As noted above, maintaining a clear audit trail can help to mitigate uncertainty by facilitating peer review and scrutiny of the research process and its findings. When reporting findings from qualitative research it is important to be transparent about both the limitations and bias in the research design and the implications for how they should be interpreted and used. See <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#Communicating_uncertainty_in_qualitative_research" style ="color: DARKBLUE;"> <b>communicating uncertainty in qualitative research</b></a> for further details. When doing so it is important to reiterate the role and purpose of qualitative research and that findings are not intended to be representative of or generalisable to the wider population.</p>
 </div>
 <div style="clear: both;">
 
 </div>
 <div class="footer">
 <p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+</div>
 </div>
 </div>
 
@@ -694,7 +734,7 @@ text-align: right;
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -712,7 +752,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
+    $(this).parent().toggleClass('nav-tabs-open')
   });
 });
 </script>
@@ -721,9 +761,6 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -736,7 +773,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

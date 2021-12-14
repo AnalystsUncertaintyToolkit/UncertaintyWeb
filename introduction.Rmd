@@ -14,7 +14,7 @@ margin-top: 100px;
 }
 
 .title{
-padding-top: 100px;
+padding-top: 75px;
 }
 
 .leftA{
@@ -136,7 +136,7 @@ Considering the whole system that influences your analysis helps identify all po
 </div>
 
 <div class = "rightA">
-Once uncertainty has been identified it should be reduced where possible. We explain how to mitigate uncertainty in quantitative data analysis through to qualitative survey research.
+Once uncertainty has been identified it should be reduced where possible. We outline techniques for mitigating uncertainty in a variety of analytical contexts
 </div>
 
 <div class = "leftB">
