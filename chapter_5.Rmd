@@ -402,7 +402,7 @@ However, it is worth being mindful that one of the key purposes and strengths of
 
 <b> Analytical quality assurance </b>
 
-As outlined in <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_5.html#Mitigating_uncertainty_in_quantitative_data_analysis" style ="color: DARKBLUE;"> <b>mitigating uncertainty in quantitative data analysis</b></a>, steps applied to quality assuring quantitative data are also relevant to quality assuring qualitative research. 
+As outlined in <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_5.html#mitigating_uncertainty_in_quantitative_data_analysis" style ="color: DARKBLUE;"> <b>mitigating uncertainty in quantitative data analysis</b></a>, steps applied to quality assuring quantitative data are also relevant to quality assuring qualitative research. 
 
 Although the AQUA book does not specifically outline suggestions for AQA of qualitative research, it should be subject to the same attention to best practice and quality assurance in its design and analysis as model building and quantitative analysis. Check whether your department has created its own guidance for conducting qualitative AQA (for example, this exists in the Home Office). 
 
@@ -416,7 +416,7 @@ Being transparent about how the research and analysis was conducted builds confi
 </div>
 
 <div class = "rightA">
-As noted above, maintaining a clear audit trail can help to mitigate uncertainty by facilitating peer review and scrutiny of the research process and its findings. When reporting findings from qualitative research it is important to be transparent about both the limitations and bias in the research design and the implications for how they should be interpreted and used. See <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#Communicating_uncertainty_in_qualitative_research" style ="color: DARKBLUE;"> <b>communicating uncertainty in qualitative research</b></a> for further details. When doing so it is important to reiterate the role and purpose of qualitative research and that findings are not intended to be representative of or generalisable to the wider population.
+As noted above, maintaining a clear audit trail can help to mitigate uncertainty by facilitating peer review and scrutiny of the research process and its findings. When reporting findings from qualitative research it is important to be transparent about both the limitations and bias in the research design and the implications for how they should be interpreted and used. See <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#communicating_uncertainty_in_qualitative_research" style ="color: DARKBLUE;"> <b>communicating uncertainty in qualitative research</b></a> for further details. When doing so it is important to reiterate the role and purpose of qualitative research and that findings are not intended to be representative of or generalisable to the wider population.
 </div>
 
 <div style="clear: both;"></div>
