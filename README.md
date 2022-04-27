@@ -5,14 +5,15 @@ The Toolkit forms part of the Aqua Book resources and is updated with the
 latest evidence and advice from government experts, the academic community 
 and other external bodies.  
 
-The Toolkit is hosted on github here https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/index.html and is built in R Markdown.
-The lastest version of the code is contained in this repo.
+The Toolkit is built using R Markdown and hosted on GitHub. [You can view it here](https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/index.html).
+The lastest version of the code is contained in this repository.
 
 ## How to update the website
+
+You will need a GitHub account and access to RStudio.
+
 **First time only**
-- If you haven’t already, install git and RStudio.  
-- Open up the GitHub page 
-- Clone the repo to a local folder on your computer
+- Clone this repository to a local folder on your computer
 
 **Before making changes** 
 - Open the folder location of the cloned files in your local repo 
