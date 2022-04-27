@@ -11,14 +11,24 @@
 
 
 
-<title></title>
+<title>   </title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -35,12 +45,16 @@
   gtag('config', 'UA-167193673-1');
 </script>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -53,32 +67,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -88,10 +78,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -108,40 +94,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 45px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h2 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h3 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h4 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h5 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h6 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -169,7 +131,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -181,7 +143,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -192,10 +154,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -207,7 +182,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -339,7 +313,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -353,7 +327,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -409,7 +383,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -564,7 +538,7 @@ text-align: right;
 <th>Classification</th>
 <th>Aleatory uncertainty</th>
 <th>Known unknowns - Epistemic uncertainty</th>
-<th>Unknown unknowns - Ontological uncertainty</th>
+<th>Unknown unknowns - Ontological, Structural and Deep uncertainty*</th>
 </tr>
 </thead>
 <tbody>
@@ -572,28 +546,57 @@ text-align: right;
 <td><b>Definition</b></td>
 <td>Sometimes referred to as “known knowns”, aleatory uncertainty is the <b>things we know that we know</b>. This refers to the inherent uncertainty that is always present due to underlying probabilistic variability.</td>
 <td>Known unknowns are <b>things that we know we don’t know</b>. This type of uncertainty comes from a lack of knowledge about the (complex) system we are trying to model. Assumptions are used to plug these gaps in the absence of information.</td>
-<td>Unknown unknowns are <b>things that we don’t know we don’t know </b>. It usually comes from factors or situations that we have not previously experienced and therefore cannot consider because we simply don’t know where to look in the first instance.</td>
+<td>Unknown unknowns are <b>things that we don’t know we don’t know </b>. It usually comes from factors or situations that we have not previously experienced and therefore, while we can still think about it, we cannot consider it to the same level of detail as other forms of uncertainty.</td>
 </tr>
 <tr class="even">
 <td><b>Can it be quantified? </b></td>
 <td><b>Yes</b> it can be quantified. We usually characterise it using a probability distribution function (PDF). A PDF gives all the possible values that a variable can have and assigns a probability of occurrence to each. As analysts, the challenge for us is to derive the PDF. If you find that you can’t then you may instead have a known unknown.</td>
 <td><b>Yes</b> it can be quantified (but isn’t always) – e.g. through sensitivity analysis. These techniques try to quantify the uncertainty by altering assumptions and observing the impact on modelling outputs. They will work if the range of assumptions tested covers the range of unknown variables.</td>
-<td><b>No</b> it cannot be quantified. We cannot identify unknowable unknowns, so there are no actions we can take to quantify them. What we can do is be clear about the sources of uncertainty we have included, so that any others subsequently identified would likely add to that uncertainty.</td>
+<td><b>No</b>, although it’s likely effect upon our analysis can be qualitatively assessed (see the Evidence Framework Approach outlined in <a href="https://doi.org/10.1080/17477778.2020.1757389" style="color: DARKBLUE;"><b>Glover and Pearce (2020)</b></a>) through reference to similar things that we do know more about. What we must do is be clear about the sources of uncertainty we have recognised, enabling other sources subsequently identified to likely add to that uncertainty.</td>
 </tr>
 <tr class="odd">
 <td><b> Can it be reduced? </b></td>
 <td>This type of uncertainty cannot be completely removed. We can sometimes reduce it through data smoothing or increasing the size of a sample, but there will always be some random variability.</td>
 <td>Known unknowns are reducible by gathering information to lessen the gaps in our knowledge. Using new data sources, expanding our data collection or conducting research can remove the need for assumptions or refine their ranges.</td>
-<td>This type of uncertainty is not reducible. However, this type of uncertainty can usually be separated into “unknowable unknowns” and “knowable unknowns”. Horizon scanning can help identify knowable unknowns. Once they are identified they become known unknowns.</td>
+<td>This type of uncertainty can usually be reduced through further work, although this may take some time. It can also usefully be separated into “unknowable unknowns” and “knowable unknowns”. Once they are identified they become known unknowns.</td>
 </tr>
 <tr class="even">
 <td><b> Example </b></td>
 <td>Tossing a coin is an example of aleatory uncertainty. We can observe the possible outcomes (heads or tails) and the probability of each occurring (50:50), therefore create the PDF. However, prior to the coin being tossed we cannot reduce the uncertainty in outcome.</td>
 <td>Taking our coin toss example, we don’t know whether the coin is fair in the first instance. We may assume the coin is fair and will give a 50% probability of each outcome. Once we start to toss the coin, we start to gather information on its fairness. The longer we toss the coin the better our information gets and the greater the reduction in the known unknown.</td>
-<td>Unknown unknowns are often future events or circumstances that we cannot predict, for example, somebody swaps the coin to a weighted one without our knowing, or steals the coin altogether! Previous analysis is no longer reliable as it didn’t account for this change.</td>
+<td>Unknown unknowns are often future events or circumstances that we cannot predict, for example, somebody swaps the coin to a weighted one without our knowing, or steals the coin altogether! Previous analysis is no longer reliable if it didn’t account for this change.</td>
 </tr>
 </tbody>
 </table>
+<div class="rightA">
+<p>*The following definitions can be used to distinguish between these forms of uncertainty:</p>
+<b>Ontological Uncertainty</b> concerns the degree of conceptual understanding that we have of ‘the world’. Following <a href="https://link.springer.com/article/10.1007/s00191-004-0227-7" style="color: DARKBLUE;"><b>Lane (2005)</b></a>, this leads us to:
+<ul>
+<li>
+‘Grapple’ with the nature of the things we seek to analyse
+</li>
+<li>
+The most appropriate form of their characterisation for a stated purpose
+</li>
+<li>
+The appropriate interpretation of analysis relating to these things
+</li>
+</ul>
+<p>See also, <a href="https://doi.org/10.1558/jcr.v10i3.303" style = "color: DARKBLUE;"><b> Mingers (2011)</b></a></p>
+<p>While naively, ontological uncertainty can be said to be unknowable, we can turn this difficulty on its head trough engaging with the ongoing challenge to understand the nature of the world around us. A way of achieving this is described in <a href="https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science" style = "color: DARKBLUE;"><b> National Academies of Sciences, Engineering and Medicine (2019, particularly pp 27-54)</b></a></p>
+<b> Structural Uncertainty </b> relates to the simplifications we make to derive a ‘concrete’ representation of ‘the world’, from our conceptual understanding, for the purposes of our analysis. Following <a href="https://doi.org/10.1111/j.1524-4733.2008.00502.x" style = "color: DARKBLUE;"><b> Bojke et. al.(2009)</b></a>, the focus of structural uncertainty is therefore upon:
+<ul>
+<li>
+Relevant models for understanding systemic responses and interactions (which can include internalised mind models and underpinning beliefs, qualitative models and quantitative models)
+</li>
+<li>
+Relevant scenarios, since these represent the factors that shape the response space of a system and either bring or fail to bring key sub-systems into operation.
+</li>
+</ul>
+<p>Thus, while Ontological uncertainty focuses on our conceptual characterisation of ‘the world’, structural uncertainty relates to the relevance of our ‘concrete’ or internalised models and scenarios for our analysis.</p>
+<p><b> Deep Uncertainty </b> derives from the extent to which we can anticipate the nature of the problem space we will in future need to understand in order to conduct meaningful analysis. Where we cannot anticipate these future circumstances then a judgement is required on when a decision must be made by, with analysis conducted on the best available information to support necessary decision-making. See <a href="https://link.springer.com/book/10.1007/978-3-030-05252-2" style = "color: DARKBLUE;"><b> Bloemen et. al.(2019)</b></a> for analytical approaches.</p>
+<p><br></p>
+</div>
 <div style="clear: both;">
 
 </div>
@@ -1106,7 +1109,7 @@ Processing or analysis errors
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -1124,7 +1127,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -1133,6 +1136,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -1145,7 +1151,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
