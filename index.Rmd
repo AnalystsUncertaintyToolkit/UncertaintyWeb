@@ -82,20 +82,20 @@ This document sits alongside the Aqua Book guidance on quality analysis. The Aqu
 </div>
 
 <div class = "rightA">
-We have also provided a <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/exec.html" style="color: DARKBLUE;"><b>one-page summary</b></a>.
+We have also provided a <a href = "exec.html" style="color: DARKBLUE;"><b>one-page summary</b></a>.
 </div>
 
 <div class = "rightA">
-1. <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/introduction.html" style="color: DARKBLUE;"> <b>Introduction</b></a>
-2. <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_1.html" style="color: DARKBLUE;"> <b>Jointly agreeing how uncertainty should be used</b></a>
-3. <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_2.html" style="color: DARKBLUE;"> <b>Defining and identifying uncertainty</b></a>
-4. <a href = "chapter_5.html" style="color: DARKBLUE;"> <b>Mitigating uncertainty</b></a>
-5. <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html" style="color: DARKBLUE;"> <b>Understanding and measuring uncertainty</b></a>
-6. <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html" style="color: DARKBLUE;"> <b>Presenting and communicating uncertainty</b></a>
-7. <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/Conclusion.html" style="color: DARKBLUE;"> <b>Conclusion</b></a>
-8. <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html" style="color: DARKBLUE;"> <b>Case studies</b></a>
-9. <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/further_reading.html" style="color: DARKBLUE;"> <b>Further reading</b></a>
-10. <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/exec.html" style="color: DARKBLUE;"> <b>Decision-maker summary on analytical uncertainty</b></a>
+1. <a href = "introduction.html" style="color: DARKBLUE;"> <b>Introduction</b></a>
+2. <a href = "chapter_2.html" style="color: DARKBLUE;"> <b>Jointly agreeing how uncertainty should be used</b></a>
+3. <a href = "chapter_3.html" style="color: DARKBLUE;"> <b>Defining and identifying uncertainty</b></a>
+4. <a href = "chapter_4.html" style="color: DARKBLUE;"> <b>Mitigating uncertainty</b></a>
+5. <a href = "chapter_5.html" style="color: DARKBLUE;"> <b>Understanding and measuring uncertainty</b></a>
+6. <a href = "chapter_6.html" style="color: DARKBLUE;"> <b>Presenting and communicating uncertainty</b></a>
+7. <a href = "Conclusion.html" style="color: DARKBLUE;"> <b>Conclusion</b></a>
+8. <a href = "case_studies.html" style="color: DARKBLUE;"> <b>Case studies</b></a>
+9. <a href = "further_reading.html" style="color: DARKBLUE;"> <b>Further reading</b></a>
+10. <a href = "exec.html" style="color: DARKBLUE;"> <b>Decision-maker summary on analytical uncertainty</b></a>
 </div>
 
 <div class="footer">
