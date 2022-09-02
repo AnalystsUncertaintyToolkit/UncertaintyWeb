@@ -205,7 +205,7 @@ Front load the important caveats and explain why they matter
 </div>
 
 <div class = "rightA">
-It is not possible to eliminate uncertainty around the causal effects in evaluation. However, study design can be used to minimise the level of uncertainty (see <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_5.html#mitigating_uncertainty_in_experimental_and_quasi-experimental_evaluation_methods" style ="color: DARKBLUE;"> <b>mitigating uncertainty in experimental and quasi-experimental evaluation methods</b></a>). The level of uncertainty depends on components such as uncertainty in data used to assess outcomes, the control group and participant identification strategy. For more details on the sources of uncertainty in evaluation designs, see <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_2.html#sources_of_uncertainty_in_experimental_and_quasi-experimental_evaluation_designs" style ="color: DARKBLUE;"> <b>Sources of uncertainty in experimental and quasi-experimental evaluation designs</b></a>).
+It is not possible to eliminate uncertainty around the causal effects in evaluation. However, study design can be used to minimise the level of uncertainty (see <a href = "chapter_4.html#Mitigating_uncertainty_in_experimental_and_quasi-experimental_evaluation_methods" style ="color: DARKBLUE;"> <b>mitigating uncertainty in experimental and quasi-experimental evaluation methods</b></a>). The level of uncertainty depends on components such as uncertainty in data used to assess outcomes, the control group and participant identification strategy. For more details on the sources of uncertainty in evaluation designs, see <a href = "chapter_3.html#Sources_of_uncertainty_in_experimental_and_quasi-experimental_evaluation_designs" style ="color: DARKBLUE;"> <b>sources of uncertainty in experimental and quasi-experimental evaluation designs</b></a>).
 </div>
 
 <div class = "leftB"> 
@@ -276,7 +276,7 @@ Be conscious of how your analysis may be used in future communication
 <div class = "rightA">
 A good relationship with colleagues will minimise this risk. Work collaboratively to ensure that colleagues understand why central numbers could be misleading and in which situations it would be inappropriate for them to be communicated on their own.   Always ensure that wherever possible you have sight of further communication before it is sent.
 
-In evaluations, analysts have a responsibility to take all reasonable steps to ensure that findings from quantitative analysis are used appropriately and not misconstrued and must be clear about the level of confidence in findings, taking account of the level of uncertainty and generalisability. For some methodologies it is particularly important to ensure that audiences understand limitations and the implications for use in policymaking; for example, where analysis relies solely on limited datasets or where there is ecological fallacy (discussed in <a href = "chapter_2.html" style ="color: DARKBLUE;"> <b>Defining and identifying uncertainty</b></a>). 
+In evaluations, analysts have a responsibility to take all reasonable steps to ensure that findings from quantitative analysis are used appropriately and not misconstrued and must be clear about the level of confidence in findings, taking account of the level of uncertainty and generalisability. For some methodologies it is particularly important to ensure that audiences understand limitations and the implications for use in policymaking; for example, where analysis relies solely on limited datasets or where there is ecological fallacy (discussed in <a href = "chapter_3.html" style ="color: DARKBLUE;"> <b>Defining and identifying uncertainty</b></a>). 
 </div>
 
 <div style="clear: both;"></div>
@@ -357,7 +357,7 @@ An exception to this is where there is an established system that your audience 
 Nevertheless, these scales can be useful provided the scale being used is well-understood by the intended audience. Setting out scales used alongside analytical presentations is strongly recommended to avoid confusion .
 
 <div class = "rightA">
-Presenting the likelihood of success <a href="https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf" style="color: DARKBLUE;"> <b>may be perceived differently (pdf)</b></a> to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this. See <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#infographics" style="color: DARKBLUE;"> <b>infographics section</b></a> for more details.
+Presenting the likelihood of success <a href="https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf" style="color: DARKBLUE;"> <b>may be perceived differently (pdf)</b></a> to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this. See <a href="chapter_6.html#Infographics" style="color: DARKBLUE;"> <b>infographics section</b></a> for more details.
 </div>
 
 <div class = "leftB">
@@ -417,7 +417,7 @@ Stating a range may be perceived as a uniform distribution across the range. Con
 </div>
 
 <div class = "rightA">
-Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_1.html" style="color: DARKBLUE;"> <b>Agreeing how uncertainty should be used to help answer the question</b></a> section), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.
+Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see <a href="chapter_2.html" style="color: DARKBLUE;"> <b>Jointly agreeing how uncertainty should be used</b></a>), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.
 </div>
 
 <div class = "leftB">
@@ -1075,7 +1075,7 @@ The remainder of this subsection includes guidance on how to communicate uncerta
 
 
 <div class = "rightA">
-<a href = "chapter_2.html" style = "color: DARKBLUE;"> <b>Section 3</b></a> of the toolkit details the main sources of uncertainty for qualitative research. These include: a lack of representativeness of the population and sub-groups within it, potential biases due to researchers’ subjective judgements in the process of recruitment and analysis, and differences in how research participants engage with the research process. 
+<a href = "chapter_3.html" style = "color: DARKBLUE;"> <b>Section 3</b></a> of the toolkit details the main sources of uncertainty for qualitative research. These include: a lack of representativeness of the population and sub-groups within it, potential biases due to researchers’ subjective judgements in the process of recruitment and analysis, and differences in how research participants engage with the research process. 
 
 When reporting findings from qualitative research it is important to be transparent about the limitations, bias and uncertainty in the research design and the implications for how findings should be interpreted and used in decision-making. 
 
