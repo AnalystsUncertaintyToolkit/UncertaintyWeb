@@ -13,7 +13,7 @@
 
 <title>   7. Conclusion</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -153,11 +153,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -337,19 +341,19 @@ div.tocify {
   <a href="introduction.html">1. Introduction</a>
 </li>
 <li>
-  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+  <a href="chapter_2.html">2. Jointly agreeing how uncertainty should be used</a>
 </li>
 <li>
-  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+  <a href="chapter_3.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_5.html">4. Mitigating uncertainty</a>
+  <a href="chapter_4.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
+  <a href="chapter_6.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
   <a href="Conclusion.html">7. Conclusion</a>
@@ -402,13 +406,34 @@ padding-top: 50px;
 
 
 </style>
-<p>This toolkit is designed to provide guidance to analysts on how to incorporate uncertainty analysis into their work, as well as setting out some high level advice to decision makers, so they know what to expect when commissioning analysis and interpreting analytical results. <br></p>
-<p>See the Case Studies for examples of applying and communicating some of the techniques listed <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html" style="color: DARKBLUE;"> <b>here</b></a>. <br></p>
-<p>Additional papers that may be of interest are presented in the <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/further_reading.html" style="color: DARKBLUE;"> <b>Further Reading</b></a> tab. Your department may also have an uncertainty group who can advise on specific techniques and their implementation. <br></p>
-<p>This toolkit has set out good, not best, practice, as analysis and communication must always be tailored to the audience and decision being made. <br></p>
-<p>Please get in touch if you have any comments by emailing: <a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color:DARKBLUE;"> <b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a> <br>We also welcome your feedback via our <a href="https://www.smartsurvey.co.uk/s/P0DS1/" style="color: DARKBLUE;"> <b>short feedback survey</b></a></p>
+<p>This toolkit is designed to provide guidance to analysts on how to
+incorporate uncertainty analysis into their work, as well as setting out
+some high level advice to decision makers, so they know what to expect
+when commissioning analysis and interpreting analytical results.
+<br></p>
+<p>See the Case Studies for examples of applying and communicating some
+of the techniques listed
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html" style="color: DARKBLUE;">
+<b>here</b></a>. <br></p>
+<p>Additional papers that may be of interest are presented in the
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/further_reading.html" style="color: DARKBLUE;">
+<b>Further Reading</b></a> tab. Your department may also have an
+uncertainty group who can advise on specific techniques and their
+implementation. <br></p>
+<p>This toolkit has set out good, not best, practice, as analysis and
+communication must always be tailored to the audience and decision being
+made. <br></p>
+<p>Please get in touch if you have any comments by emailing:
+<a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color:DARKBLUE;">
+<b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk"
+class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>
+<br>We also welcome your feedback via our
+<a href="https://www.smartsurvey.co.uk/s/P0DS1/" style="color: DARKBLUE;">
+<b>short feedback survey</b></a></p>
 <div class="footer">
-<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here
+to see the accessibility statement</a> <br><br>
+<a href="index.html">Click here to return to home page</a></p>
 </div>
 
 

@@ -13,7 +13,7 @@
 
 <title>   Accessibility statement</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -153,11 +153,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -337,19 +341,19 @@ div.tocify {
   <a href="introduction.html">1. Introduction</a>
 </li>
 <li>
-  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+  <a href="chapter_2.html">2. Jointly agreeing how uncertainty should be used</a>
 </li>
 <li>
-  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+  <a href="chapter_3.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_5.html">4. Mitigating uncertainty</a>
+  <a href="chapter_4.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
+  <a href="chapter_6.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
   <a href="Conclusion.html">7. Conclusion</a>
@@ -403,7 +407,9 @@ padding-top: 50px;
 .
 </style>
 <div class="call-to-action">
-This website is run by the DfE, MoJ and Home Office. We want as many people as possible to be able to use this website. For example, that means you should be able to:
+This website is run by the DfE, MoJ and Home Office. We want as many
+people as possible to be able to use this website. For example, that
+means you should be able to:
 <ul>
 <li>
 change colours, contrast levels and fonts
@@ -418,14 +424,16 @@ navigate most of the website using just a keyboard
 navigate most of the website using speech recognition software
 </li>
 <li>
-listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
+listen to most of the website using a screen reader (including the most
+recent versions of JAWS, NVDA and VoiceOver)
 </li>
 </ul>
 <p>
 We’ve also made the website text as simple as possible to understand.
 </p>
 <p>
-<a href="https://mcmw.abilitynet.org.uk/" style="color: DARKBLUE;"><b>AbilityNet</b></a> has advice on making your device easier to use if you have a disability.
+<a href="https://mcmw.abilitynet.org.uk/" style="color: DARKBLUE;"><b>AbilityNet</b></a>
+has advice on making your device easier to use if you have a disability.
 </p>
 </div>
 <h3 id="how-accessible-this-website-is">
@@ -440,28 +448,34 @@ We know some parts of this website are not fully accessible:
 the tab names in the browser needs informative title tags
 </li>
 <li>
-a focus state is required to increase the constrast when using the tab key
+a focus state is required to increase the constrast when using the tab
+key
 </li>
 <li>
-the website needs a “skip content” tab so that the tab doesn’t scroll through everything at the top before going further down the page
+the website needs a “skip content” tab so that the tab doesn’t scroll
+through everything at the top before going further down the page
 </li>
 <li>
-the floating menu on the left hand side in sections 2-5 needs to be keyboard accessible
+the floating menu on the left hand side in sections 2-5 needs to be
+keyboard accessible
 </li>
 <li>
 the menu bar we requires a visually hidden text that says “menu”
 </li>
 <li>
-we need to define language (= English) for each HTML page for the benefit of a screen reader
+we need to define language (= English) for each HTML page for the
+benefit of a screen reader
 </li>
 <li>
-all images need amending so that the screen reader doesn’t read out the file name
+all images need amending so that the screen reader doesn’t read out the
+file name
 </li>
 <li>
 the content isn’t as usable when you enlarge the text
 </li>
 <div class="call-to-action">
-We were advised by accessibility colleagues that a sitemap was not required in this instance.
+We were advised by accessibility colleagues that a sitemap was not
+required in this instance.
 </div>
 </ul>
 </div>
@@ -469,52 +483,79 @@ We were advised by accessibility colleagues that a sitemap was not required in t
 What to do if you cannot access parts of this website
 </h3>
 <p>
-If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille:
+If you need information on this website in a different format like
+accessible PDF, large print, easy read, audio recording or braille:
 </p>
 <ul>
 <li>
-email: <a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE;"><b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>
+email:
+<a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE;"><b><a
+href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk"
+class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>
 </li>
 </ul>
 <p>
-We’ll consider your request and get back to you as soon as is practicably possible.
+We’ll consider your request and get back to you as soon as is
+practicably possible.
 </p>
 <h3 id="reporting-accessibility-problems-with-this-website">
 Reporting accessibility problems with this website
 </h3>
 <p>
-We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, contact us by email on: <a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE;"><b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>
+We’re always looking to improve the accessibility of this website. If
+you find any problems not listed on this page or think we’re not meeting
+accessibility requirements, contact us by email on:
+<a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE;"><b><a
+href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk"
+class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>
 </p>
 <h3 id="enforcement-procedure">
 Enforcement procedure
 </h3>
 <p>
-The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint, <a href="https://www.equalityadvisoryservice.com/" style="color: DARKBLUE;"><b>contact the Equality Advisory and Support Service (EASS)</b></a>.
+The Equality and Human Rights Commission (EHRC) is responsible for
+enforcing the Public Sector Bodies (Websites and Mobile Applications)
+(No. 2) Accessibility Regulations 2018 (the ‘accessibility
+regulations’). If you’re not happy with how we respond to your
+complaint,
+<a href="https://www.equalityadvisoryservice.com/" style="color: DARKBLUE;"><b>contact
+the Equality Advisory and Support Service (EASS)</b></a>.
 </p>
 <h3 id="technical-information-about-this-websites-accessibility">
 Technical information about this website’s accessibility
 </h3>
 <div class="call-to-action">
 <p>
-This website is partially compliant with the <a href="https://www.w3.org/TR/WCAG21/" style="color: DARKBLUE;"><b>Web Content Accessibility Guidelines version 2.1 </b></a>AA standard, due to the non-compliances listed below.
+This website is partially compliant with the
+<a href="https://www.w3.org/TR/WCAG21/" style="color: DARKBLUE;"><b>Web
+Content Accessibility Guidelines version 2.1 </b></a>AA standard, due to
+the non-compliances listed below.
 </p>
 </div>
 <h3 id="how-we-tested-this-website">
 How we tested this website
 </h3>
 <p>
-This website was last tested in January 2020. The test was carried out by accessibility experts in the Ministry of Justice and changes were made by analysts in the Department for Education.
+This website was last tested in January 2020. The test was carried out
+by accessibility experts in the Ministry of Justice and changes were
+made by analysts in the Department for Education.
 </p>
 <h3 id="what-were-doing-to-improve-accessibility">
 What we’re doing to improve accessibility
 </h3>
 <div class="call-to-action">
 <p>
-We are actively trying to get resource for a CSS/html expert to overcome the issues listed in the “How accessible this website is” paragraph above. This will help to ensure that this site is fully accessible. We will continue to monitor the accessibility of this website on an on-going basis and we plan to fix any accessibility issues reported to us.
+We are actively trying to get resource for a CSS/html expert to overcome
+the issues listed in the “How accessible this website is” paragraph
+above. This will help to ensure that this site is fully accessible. We
+will continue to monitor the accessibility of this website on an
+on-going basis and we plan to fix any accessibility issues reported to
+us.
 </p>
 </div>
 <div class="footer">
-<p><b>Useful links:</b> <br><br> <a href="index.html">Click here to return to home page</a></p>
+<p><b>Useful links:</b> <br><br> <a href="index.html">Click here to
+return to home page</a></p>
 </div>
 
 
