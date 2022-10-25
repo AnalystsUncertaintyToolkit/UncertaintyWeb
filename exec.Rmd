@@ -102,7 +102,7 @@ comb2pngs <- function(imgs, bottom_text = NULL){
                             interpolate = FALSE)
   img2 <-  grid::rasterGrob(as.raster(png::readPNG(imgs[2])),
                             interpolate = FALSE)
-  pdp::grid.arrange(img1, img2, ncol = 2, bottom = bottom_text)
+  gridExtra::grid.arrange(img1, img2, ncol = 2, bottom = bottom_text)
 }
 
 png1_dest <- "images/Flood_uncertainty.png"

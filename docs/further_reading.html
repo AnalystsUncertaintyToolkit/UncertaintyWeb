@@ -13,7 +13,7 @@
 
 <title>   9. Further reading</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -153,11 +153,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -337,19 +341,19 @@ div.tocify {
   <a href="introduction.html">1. Introduction</a>
 </li>
 <li>
-  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+  <a href="chapter_2.html">2. Jointly agreeing how uncertainty should be used</a>
 </li>
 <li>
-  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+  <a href="chapter_3.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_5.html">4. Mitigating uncertainty</a>
+  <a href="chapter_4.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
+  <a href="chapter_6.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
   <a href="Conclusion.html">7. Conclusion</a>
@@ -405,12 +409,24 @@ padding-top: 50px;
 .
 </style>
 <div class="pageContentWrapper">
-<p><a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government" style="color: DARKBLUE;"> <b>The Aqua Book: guidance on producing quality analysis for government</b></a>, <i> HM Treasury, 2015 </i></p>
-<p><a href="https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/Communicating_Quality_Uncertainty_and_Change_for_publication.pdf" style="color: DARKBLUE;"> <b>Communicating quality, uncertainty and change Guidance for producers of official statistics (pdf)</b></a>, <i>Government Statistical Service, 2018</i></p>
-<p><a href="http://researchbriefings.files.parliament.uk/documents/POST-PN-0564/POST-PN-0564.pdf" style="color: DARKBLUE;"> <b>Communicating Risk (pdf)</b></a>, <i>Parliamentary Office for Science and Technology, 2017</i></p>
-<p><a href="https://ec.europa.eu/eurostat/cros/powerfromstatistics/OR/PfS-OutlookReport-Cairo.pdf" style="color: DARKBLUE;"> <b>Uncertainty and graphicacy; How statisticians, journalists, and designers reveal uncertainty in graphics for public consumption (pdf)</b></a>, <i>Alberto Cairo, 2017</i></p>
+<p><a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government" style="color: DARKBLUE;">
+<b>The Aqua Book: guidance on producing quality analysis for
+government</b></a>, <i> HM Treasury, 2015 </i></p>
+<p><a href="https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/Communicating_Quality_Uncertainty_and_Change_for_publication.pdf" style="color: DARKBLUE;">
+<b>Communicating quality, uncertainty and change Guidance for producers
+of official statistics (pdf)</b></a>, <i>Government Statistical Service,
+2018</i></p>
+<p><a href="http://researchbriefings.files.parliament.uk/documents/POST-PN-0564/POST-PN-0564.pdf" style="color: DARKBLUE;">
+<b>Communicating Risk (pdf)</b></a>, <i>Parliamentary Office for Science
+and Technology, 2017</i></p>
+<p><a href="https://ec.europa.eu/eurostat/cros/powerfromstatistics/OR/PfS-OutlookReport-Cairo.pdf" style="color: DARKBLUE;">
+<b>Uncertainty and graphicacy; How statisticians, journalists, and
+designers reveal uncertainty in graphics for public consumption
+(pdf)</b></a>, <i>Alberto Cairo, 2017</i></p>
 <div class="footer">
-<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here
+to see the accessibility statement</a> <br><br>
+<a href="index.html">Click here to return to home page</a></p>
 </div>
 
 

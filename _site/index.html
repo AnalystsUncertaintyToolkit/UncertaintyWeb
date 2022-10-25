@@ -13,7 +13,7 @@
 
 <title>      Uncertainty Toolkit for Analysts in Government</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -150,11 +150,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -261,19 +265,19 @@ $(document).ready(function () {
   <a href="introduction.html">1. Introduction</a>
 </li>
 <li>
-  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+  <a href="chapter_2.html">2. Jointly agreeing how uncertainty should be used</a>
 </li>
 <li>
-  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+  <a href="chapter_3.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_5.html">4. Mitigating uncertainty</a>
+  <a href="chapter_4.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
+  <a href="chapter_6.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
   <a href="Conclusion.html">7. Conclusion</a>
@@ -305,7 +309,8 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><br><br><br><br><br> Uncertainty Toolkit for Analysts in Government</h1>
+<h1 class="title toc-ignore"><br><br><br><br><br> Uncertainty Toolkit
+for Analysts in Government</h1>
 
 </div>
 
@@ -344,17 +349,28 @@ width: 23%;
 .
 </style>
 <div class="rightA">
-<p>A cross government group has worked together to create an assessing and communicating uncertainty toolkit.</p>
+<p>A cross government group has worked together to create an assessing
+and communicating uncertainty toolkit.</p>
 </div>
 <div class="rightA">
-<p>This toolkit sets out good, not best, practice, as analysis and communication must always be tailored to the audience and decision being made.</p>
+<p>This toolkit sets out good, not best, practice, as analysis and
+communication must always be tailored to the audience and decision being
+made.</p>
 </div>
 <div class="rightA">
-<p><b>The toolkit is presented in the first instance as a suggested set of guidelines and we will be consulting with experts from Government, the academic community and other external bodies to develop thinking in line with the latest evidence on communicating uncertainty.</b></p>
+<p><b>The toolkit is presented in the first instance as a suggested set
+of guidelines and we will be consulting with experts from Government,
+the academic community and other external bodies to develop thinking in
+line with the latest evidence on communicating uncertainty.</b></p>
 </div>
 <p><br></p>
 <div class="rightA">
-<p><br> We welcome feedback on the content You can get in touch by emailing: <br><a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE;"> <b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a> <br></p>
+<p><br> We welcome feedback on the content You can get in touch by
+emailing:
+<br><a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE;">
+<b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk"
+class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>
+<br></p>
 </div>
 <div class="leftB">
 <p><br> Feedback <br></p>
@@ -366,30 +382,50 @@ width: 23%;
 <p><br> Is this toolkit for you?</p>
 </div>
 <div class="rightA">
-<p><br> This toolkit is aimed at all analysts, whether you are new to the Government or an experienced analyst looking to develop the way you communicate uncertainty to stakeholders.</p>
+<p><br> This toolkit is aimed at all analysts, whether you are new to
+the Government or an experienced analyst looking to develop the way you
+communicate uncertainty to stakeholders.</p>
 </div>
 <div class="rightA">
-<p>This document sits alongside the Aqua Book guidance on quality analysis. The Aqua Book should be read first as it describes the principles of uncertainty analysis and the processes that should be used in considering it. This is a supplementary document providing additional information for identifying, estimating and communicating uncertainty in analysis to support decisions and decision-makers.</p>
+<p>This document sits alongside the Aqua Book guidance on quality
+analysis. The Aqua Book should be read first as it describes the
+principles of uncertainty analysis and the processes that should be used
+in considering it. This is a supplementary document providing additional
+information for identifying, estimating and communicating uncertainty in
+analysis to support decisions and decision-makers.</p>
 </div>
 <div class="rightA">
-<p>We have also provided a <a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/exec.html" style="color: DARKBLUE;"><b>one-page summary</b></a>.</p>
+<p>We have also provided a
+<a href = "exec.html" style="color: DARKBLUE;"><b>one-page
+summary</b></a>.</p>
 </div>
 <div class="rightA">
 <ol style="list-style-type: decimal">
-<li><a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/introduction.html" style="color: DARKBLUE;"> <b>Introduction</b></a></li>
-<li><a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_1.html" style="color: DARKBLUE;"> <b>Jointly agreeing how uncertainty should be used</b></a></li>
-<li><a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_2.html" style="color: DARKBLUE;"> <b>Defining and identifying uncertainty</b></a></li>
-<li><a href = "chapter_5.html" style="color: DARKBLUE;"> <b>Mitigating uncertainty</b></a></li>
-<li><a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html" style="color: DARKBLUE;"> <b>Understanding and measuring uncertainty</b></a></li>
-<li><a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html" style="color: DARKBLUE;"> <b>Presenting and communicating uncertainty</b></a></li>
-<li><a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/Conclusion.html" style="color: DARKBLUE;"> <b>Conclusion</b></a></li>
-<li><a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/case_studies.html" style="color: DARKBLUE;"> <b>Case studies</b></a></li>
-<li><a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/further_reading.html" style="color: DARKBLUE;"> <b>Further reading</b></a></li>
-<li><a href = "https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/exec.html" style="color: DARKBLUE;"> <b>Decision-maker summary on analytical uncertainty</b></a></li>
+<li><a href = "introduction.html" style="color: DARKBLUE;">
+<b>Introduction</b></a></li>
+<li><a href = "chapter_2.html" style="color: DARKBLUE;"> <b>Jointly
+agreeing how uncertainty should be used</b></a></li>
+<li><a href = "chapter_3.html" style="color: DARKBLUE;"> <b>Defining and
+identifying uncertainty</b></a></li>
+<li><a href = "chapter_4.html" style="color: DARKBLUE;"> <b>Mitigating
+uncertainty</b></a></li>
+<li><a href = "chapter_5.html" style="color: DARKBLUE;">
+<b>Understanding and measuring uncertainty</b></a></li>
+<li><a href = "chapter_6.html" style="color: DARKBLUE;"> <b>Presenting
+and communicating uncertainty</b></a></li>
+<li><a href = "Conclusion.html" style="color: DARKBLUE;">
+<b>Conclusion</b></a></li>
+<li><a href = "case_studies.html" style="color: DARKBLUE;"> <b>Case
+studies</b></a></li>
+<li><a href = "further_reading.html" style="color: DARKBLUE;">
+<b>Further reading</b></a></li>
+<li><a href = "exec.html" style="color: DARKBLUE;"> <b>Decision-maker
+summary on analytical uncertainty</b></a></li>
 </ol>
 </div>
 <div class="footer">
-<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a></p>
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here
+to see the accessibility statement</a></p>
 </div>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -463,8 +499,13 @@ width: 23%;
 <div id="closegdprPopup">
 <p>x</p>
 </div>
-<p>In the government we respect your concerns about privacy and value the relationship that we have with you.</p>
-<p>We use technology on our website to collect information that helps us enhance the experience and tailor our products to our users. Read the MORE INFORMATION page for further details of what is collected. <a href="#" target="_blank">More info</a> <a class="gdprPopupOK">That’s Fine</a></p>
+<p>In the government we respect your concerns about privacy and value
+the relationship that we have with you.</p>
+<p>We use technology on our website to collect information that helps us
+enhance the experience and tailor our products to our users. Read the
+MORE INFORMATION page for further details of what is collected.
+<a href="#" target="_blank">More info</a> <a class="gdprPopupOK">That’s
+Fine</a></p>
 </div>
 </body>
 

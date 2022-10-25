@@ -13,7 +13,7 @@
 
 <title>   Introduction</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -150,11 +150,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -261,19 +265,19 @@ $(document).ready(function () {
   <a href="introduction.html">1. Introduction</a>
 </li>
 <li>
-  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+  <a href="chapter_2.html">2. Jointly agreeing how uncertainty should be used</a>
 </li>
 <li>
-  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+  <a href="chapter_3.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_5.html">4. Mitigating uncertainty</a>
+  <a href="chapter_4.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
+  <a href="chapter_6.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
   <a href="Conclusion.html">7. Conclusion</a>
@@ -355,13 +359,31 @@ text-align: right;
 <p>Uncertainty analysis: understanding what you don’t know</p>
 </div>
 <div class="rightA">
-<p>Uncertainty is unavoidable when making predictions about future events or impacts of decisions. Our knowledge of the present is typically incomplete; and we can’t be sure what will happen in the future. We can reduce uncertainty due to lack of knowledge by obtaining more information, or asking experts for advice. However, we can’t eliminate uncertainty entirely, so we must find ways to describe and communicate it.</p>
+<p>Uncertainty is unavoidable when making predictions about future
+events or impacts of decisions. Our knowledge of the present is
+typically incomplete; and we can’t be sure what will happen in the
+future. We can reduce uncertainty due to lack of knowledge by obtaining
+more information, or asking experts for advice. However, we can’t
+eliminate uncertainty entirely, so we must find ways to describe and
+communicate it.</p>
 </div>
 <div class="rightA">
-<p>There is a difference between uncertainty and risk; risk typically refers to the likelihood of a future unplanned event or unintended consequence that can be assigned a numeric probability. Forecasts of risk, like other forecasts, are themselves subject to uncertainty. For example, UK Met Office predictions of the risk of rain are uncertain as to whether it will rain at all, as well as uncertainty about how much it will rain. This uncertainty is described using a range from running several forecasts from equally likely initial conditions.</p>
+<p>There is a difference between uncertainty and risk; risk typically
+refers to the likelihood of a future unplanned event or unintended
+consequence that can be assigned a numeric probability. Forecasts of
+risk, like other forecasts, are themselves subject to uncertainty. For
+example, UK Met Office predictions of the risk of rain are uncertain as
+to whether it will rain at all, as well as uncertainty about how much it
+will rain. This uncertainty is described using a range from running
+several forecasts from equally likely initial conditions.</p>
 </div>
 <div class="rightA">
-<p>Taking account of uncertainty – and being seen to do so – is important for public trust. We must not pretend that the consequences of a policy or decision are certain: they are always uncertain to some degree. For each option, a range of outcomes are possible. Implying certainty about one particular outcome can damage public trust when things turn out differently.</p>
+<p>Taking account of uncertainty – and being seen to do so – is
+important for public trust. We must not pretend that the consequences of
+a policy or decision are certain: they are always uncertain to some
+degree. For each option, a range of outcomes are possible. Implying
+certainty about one particular outcome can damage public trust when
+things turn out differently.</p>
 </div>
 <div class="leftB">
 <p>Why does it matter?</p>
@@ -373,7 +395,8 @@ text-align: right;
 <p><b>Example</b></p>
 </div>
 <div class="rightA">
-<p>The National Weather Service (NWS) predicted, 2 months in advance, the Red River to crest 49 feet.</p>
+<p>The National Weather Service (NWS) predicted, 2 months in advance,
+the Red River to crest 49 feet.</p>
 </div>
 <div class="rightA">
 <p>In response, the levees were built to handle a flood of 51 feet</p>
@@ -382,7 +405,9 @@ text-align: right;
 <p>The actual flood level was 54 feet.</p>
 </div>
 <div class="rightA">
-<p>Had the NWS communicated their uncertainty (+/- 9 feet) the several $billion damages as well as the huge personal impact could have been avoided.</p>
+<p>Had the NWS communicated their uncertainty (+/- 9 feet) the several
+$billion damages as well as the huge personal impact could have been
+avoided.</p>
 </div>
 <div style="clear: both;">
 
@@ -392,7 +417,11 @@ text-align: right;
 <p>This toolkit contains the following chapters:</p>
 </div>
 <div class="rightA">
-<p>Before conducting any uncertainty analysis, it is important to check that you understand how the analysis will be used. What type of decision is being made? Are you informing a debate or a final decision? This will frame how you approach the analysis and how you communicate it to your customers.</p>
+<p>Before conducting any uncertainty analysis, it is important to check
+that you understand how the analysis will be used. What type of decision
+is being made? Are you informing a debate or a final decision? This will
+frame how you approach the analysis and how you communicate it to your
+customers.</p>
 </div>
 <div class="leftB">
 <ol start="2" style="list-style-type: decimal">
@@ -400,7 +429,10 @@ text-align: right;
 </ol>
 </div>
 <div class="rightA">
-<p>Considering the whole system that influences your analysis helps identify all possible areas where uncertainty can arise. Ensure you understand what is causing the uncertainty in your inputs and outputs, and whether this can be quantified.</p>
+<p>Considering the whole system that influences your analysis helps
+identify all possible areas where uncertainty can arise. Ensure you
+understand what is causing the uncertainty in your inputs and outputs,
+and whether this can be quantified.</p>
 </div>
 <div class="leftB">
 <ol start="3" style="list-style-type: decimal">
@@ -408,7 +440,9 @@ text-align: right;
 </ol>
 </div>
 <div class="rightA">
-<p>Once uncertainty has been identified it should be reduced where possible. We outline techniques for mitigating uncertainty in a variety of analytical contexts.</p>
+<p>Once uncertainty has been identified it should be reduced where
+possible. We outline techniques for mitigating uncertainty in a variety
+of analytical contexts.</p>
 </div>
 <div class="leftB">
 <ol start="4" style="list-style-type: decimal">
@@ -416,7 +450,9 @@ text-align: right;
 </ol>
 </div>
 <div class="rightA">
-<p>Before conducting uncertainty analysis, you should consider the range of possible techniques. We provide a list of the most common techniques with some examples for reference.</p>
+<p>Before conducting uncertainty analysis, you should consider the range
+of possible techniques. We provide a list of the most common techniques
+with some examples for reference.</p>
 </div>
 <div class="leftB">
 <ol start="5" style="list-style-type: decimal">
@@ -424,7 +460,13 @@ text-align: right;
 </ol>
 </div>
 <div class="rightA">
-<p>There is little point conducting any analysis if it has no impact, so this is perhaps the most important section. It is important to engage with your decision makers so they take account of uncertainty in any decisions they make. You should think about how you interact with the audience, tailoring your communication to different groups. This will help them to understand the consequences of uncertainty and why they should be interested in it.</p>
+<p>There is little point conducting any analysis if it has no impact, so
+this is perhaps the most important section. It is important to engage
+with your decision makers so they take account of uncertainty in any
+decisions they make. You should think about how you interact with the
+audience, tailoring your communication to different groups. This will
+help them to understand the consequences of uncertainty and why they
+should be interested in it.</p>
 </div>
 <div class="leftB">
 <ol start="6" style="list-style-type: decimal">
@@ -432,7 +474,9 @@ text-align: right;
 </ol>
 </div>
 <div class="footer">
-<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here
+to see the accessibility statement</a> <br><br>
+<a href="index.html">Click here to return to home page</a></p>
 </div>
 
 

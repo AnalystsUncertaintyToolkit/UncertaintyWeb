@@ -13,7 +13,7 @@
 
 <title>   Download website as pdf</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -153,11 +153,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -337,19 +341,19 @@ div.tocify {
   <a href="introduction.html">1. Introduction</a>
 </li>
 <li>
-  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+  <a href="chapter_2.html">2. Jointly agreeing how uncertainty should be used</a>
 </li>
 <li>
-  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+  <a href="chapter_3.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_5.html">4. Mitigating uncertainty</a>
+  <a href="chapter_4.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
+  <a href="chapter_6.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
   <a href="Conclusion.html">7. Conclusion</a>
@@ -401,11 +405,21 @@ padding-top: 50px;
 }
 .
 </style>
-<p>You can download the whole website as a pdf by going to this <a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/raw/master/PDF_chapters/Uncertainty_Toolkit_for_Analysts_in_Government_-_full_content.pdf" style="color: DARKBLUE;"> <b>link</b></a>.</p>
-<p>Alternatively, you can download pdf versions of each chapter by going to this <a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/tree/master/PDF_chapters" style="color: DARKBLUE;"> <b>link</b></a>, clicking on the chapter you wish to download and then clicking the download button.</p>
+<p>You can download the whole website as a pdf by going to this
+<a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/tree/main/PDF_chapters" style="color: DARKBLUE;">
+<b>link</b></a>, selecting the file entitled
+“Uncertainty_Toolkit_for_Analysts_in_Government_-_full_content.pdf”, and
+clicking on the download button.</p>
+<p>Alternatively, you can download pdf versions of each chapter by going
+to this
+<a href="https://github.com/AnalystsUncertaintyToolkit/UncertaintyWeb/tree/main/PDF_chapters" style="color: DARKBLUE;">
+<b>link</b></a>, clicking on the chapter you wish to download and then
+clicking the download button.</p>
 <p><img src="images/Download_demo.png" width="100%" style="display: block; margin: auto;" /></p>
 <div class="footer">
-<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here
+to see the accessibility statement</a> <br><br>
+<a href="index.html">Click here to return to home page</a></p>
 </div>
 
 

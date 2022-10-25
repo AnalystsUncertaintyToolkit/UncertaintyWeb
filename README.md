@@ -12,15 +12,6 @@ The lastest version of the code is contained in this repository.
 
 You will need a GitHub account and access to RStudio.
 
-**First time only**
-- Clone this repository to a local folder on your computer
-
-**Before making changes** 
-- Open the folder location of the cloned files in your local repo 
-- Open git bash, then do a “git fetch” to update your local repo to make sure it matches the latest master version 
-- Check “git status” – you may then be instructed to do “git pull” in order to fast forward your way through the latest commits.  
-- Open up the UncertaintyWeb.Rproj RProject file from this folder location. This will open up RStudio where you can make changes directly in relevant RMarkdown files. 
-
 **After making changes, before you “build” the output**
 - Delete the folder called “_site” and the folder called “docs” from your local repo (this is to prevent you from ending with folders within folders as RStudio can be a bit weird sometimes) 
 - Click ‘build’ tab in the environment pane and click on “Build website” (NB it can take a few minutes for it to be done as there’s a lot of stuff for it to do. Be patient. Once it’s done, your output will pop up in a new window.) 

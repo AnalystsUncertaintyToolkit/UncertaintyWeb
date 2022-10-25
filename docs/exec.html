@@ -13,7 +13,7 @@
 
 <title>   10. Decision maker summary</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -150,11 +150,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -261,19 +265,19 @@ $(document).ready(function () {
   <a href="introduction.html">1. Introduction</a>
 </li>
 <li>
-  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+  <a href="chapter_2.html">2. Jointly agreeing how uncertainty should be used</a>
 </li>
 <li>
-  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+  <a href="chapter_3.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_5.html">4. Mitigating uncertainty</a>
+  <a href="chapter_4.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
+  <a href="chapter_6.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
   <a href="Conclusion.html">7. Conclusion</a>
@@ -354,13 +358,25 @@ text-align: right;
 <p>All analysis is uncertain</p>
 </div>
 <div class="rightA">
-<p>Analysis is based on a model of the real word. Whether we are looking at statistics about the past, measurements of the present, or forecasts of the future, there will always be a degree of uncertainty in the outputs.</p>
+<p>Analysis is based on a model of the real word. Whether we are looking
+at statistics about the past, measurements of the present, or forecasts
+of the future, there will always be a degree of uncertainty in the
+outputs.</p>
 </div>
 <div class="rightA">
-<p>Making decisions using uncertain information can be uncomfortable – decisions would be far easier if we knew for sure what the consequences of each choice would be – but this is an unavoidable position, so analysts aspire to provide honest and practical advice on uncertainty.</p>
+<p>Making decisions using uncertain information can be uncomfortable –
+decisions would be far easier if we knew for sure what the consequences
+of each choice would be – but this is an unavoidable position, so
+analysts aspire to provide honest and practical advice on
+uncertainty.</p>
 </div>
 <div class="rightA">
-<p>Taking account of uncertainty – and being seen to do so – is important for public trust. We must not pretend that the consequences of a policy or decision are certain: they are always uncertain to some degree. For each option, a range of outcomes are possible. Implying certainty about one particular outcome can damage public trust when things turn out differently.</p>
+<p>Taking account of uncertainty – and being seen to do so – is
+important for public trust. We must not pretend that the consequences of
+a policy or decision are certain: they are always uncertain to some
+degree. For each option, a range of outcomes are possible. Implying
+certainty about one particular outcome can damage public trust when
+things turn out differently.</p>
 </div>
 <div class="leftB">
 <p>Why does it matter?</p>
@@ -372,7 +388,8 @@ text-align: right;
 <p><b>Example</b></p>
 </div>
 <div class="rightA">
-<p>The National Weather Service (NWS) predicted, 2 months in advance, the Red River to crest 49 feet.</p>
+<p>The National Weather Service (NWS) predicted, 2 months in advance,
+the Red River to crest 49 feet.</p>
 </div>
 <div class="rightA">
 <p>In response, the levees were built to handle a flood of 51 feet</p>
@@ -381,7 +398,8 @@ text-align: right;
 <p>The actual flood level was 54 feet</p>
 </div>
 <div class="rightA">
-<p>Had the NWS communicated their uncertainty (+/- 9 feet) the several $billion damages could have been avoided</p>
+<p>Had the NWS communicated their uncertainty (+/- 9 feet) the several
+$billion damages could have been avoided</p>
 </div>
 <div style="clear: both;">
 
@@ -391,16 +409,45 @@ text-align: right;
 
 </div>
 <div class="leftB">
-<p>Relying on best estimates may lead to the wrong decision being made</p>
+<p>Relying on best estimates may lead to the wrong decision being
+made</p>
 </div>
 <div class="rightA">
-<p>This uncertainty can be critically important to any decisions based on the analysis, as ‘best estimates’ are generally not enough to make an informed decision. For example, Option A may appear better than Option B when looking at the most likely outcome of each, but if the uncertainty in A is greater than in B then it might carry an unacceptable chance of much worse outcomes. To help consider the full range of outcomes, it may be useful to work with the analysts to ensure the uncertainty is framed in terms of the decision being made. For example, rather than looking at the central estimate, it may be more useful to consider a higher likelihood, such as the 90% confidence that the figure is within a certain range. Alternatively, to understand the probability of a policy being effective or not, considering the level of take up required for the policy to break even. This is particularly important when levels of uncertainty are very high and there may not be a single best estimate, and instead a decision must be made purely on the expected range.</p>
+<p>This uncertainty can be critically important to any decisions based
+on the analysis, as ‘best estimates’ are generally not enough to make an
+informed decision. For example, Option A may appear better than Option B
+when looking at the most likely outcome of each, but if the uncertainty
+in A is greater than in B then it might carry an unacceptable chance of
+much worse outcomes. To help consider the full range of outcomes, it may
+be useful to work with the analysts to ensure the uncertainty is framed
+in terms of the decision being made. For example, rather than looking at
+the central estimate, it may be more useful to consider a higher
+likelihood, such as the 90% confidence that the figure is within a
+certain range. Alternatively, to understand the probability of a policy
+being effective or not, considering the level of take up required for
+the policy to break even. This is particularly important when levels of
+uncertainty are very high and there may not be a single best estimate,
+and instead a decision must be made purely on the expected range.</p>
 </div>
 <div class="rightA">
-<p>The presence of uncertainty in analysis may not always inspire confidence, but the absence of uncertainty is even worse. Since uncertainty is ever-present, omitting it from analysis leaves it unacknowledged and unassessed. It could be of any size, leaving the true range of possible outcomes entirely unknown. A proper assessment of analytical uncertainty should reassure you that the analysts have considered the limitations in their data and methodology, as well as the inherent randomness in the world, in order to provide an honest assessment of the range of possible outcomes – rather than presenting misplaced confidence in an impossibly accurate estimate.</p>
+<p>The presence of uncertainty in analysis may not always inspire
+confidence, but the absence of uncertainty is even worse. Since
+uncertainty is ever-present, omitting it from analysis leaves it
+unacknowledged and unassessed. It could be of any size, leaving the true
+range of possible outcomes entirely unknown. A proper assessment of
+analytical uncertainty should reassure you that the analysts have
+considered the limitations in their data and methodology, as well as the
+inherent randomness in the world, in order to provide an honest
+assessment of the range of possible outcomes – rather than presenting
+misplaced confidence in an impossibly accurate estimate.</p>
 </div>
 <div class="rightA">
-<p>Decision makers have a critical role working with analysts to agree what the analysis should focus on in relation to the decision being made (for example, a range around an estimate may be less useful than understanding what the percentage take up should be a policy for the policy to be a benefit), helping to identify sources of uncertainty, discussing how the results inform the decision being made.</p>
+<p>Decision makers have a critical role working with analysts to agree
+what the analysis should focus on in relation to the decision being made
+(for example, a range around an estimate may be less useful than
+understanding what the percentage take up should be a policy for the
+policy to be a benefit), helping to identify sources of uncertainty,
+discussing how the results inform the decision being made.</p>
 </div>
 <div class="leftB">
 <p>Decision makers have a critical role</p>
@@ -408,16 +455,20 @@ text-align: right;
 <div class="rightA">
 <ul>
 <li>
-Consider the full range of possible outcomes when using analysis to inform decisions, not just the ‘best estimate’.
+Consider the full range of possible outcomes when using analysis to
+inform decisions, not just the ‘best estimate’.
 </li>
 <li>
-Challenge analysts where information on uncertainty is absent or inadequate.
+Challenge analysts where information on uncertainty is absent or
+inadequate.
 </li>
 <li>
-Ask questions about how to interpret the uncertainty and its implications.
+Ask questions about how to interpret the uncertainty and its
+implications.
 </li>
 <li>
-Provide feedback to analysts on the usefulness and effectiveness of how they communicate uncertainty.
+Provide feedback to analysts on the usefulness and effectiveness of how
+they communicate uncertainty.
 </li>
 </ul>
 </div>
@@ -425,13 +476,23 @@ Provide feedback to analysts on the usefulness and effectiveness of how they com
 <p>Key points to remember</p>
 </div>
 <div class="rightA">
-<p>This toolkit has been written for analysts to help them understand and assess the uncertainty in their work, and then to communicate that to the users of their analysis in an effective and helpful way. Feedback from those users – those who commission the work and make decisions informed by it – is crucial to helping refine and improve this guidance. We welcome any comments by emailing: <a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color:DARKBLUE;"> <b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>.</p>
+<p>This toolkit has been written for analysts to help them understand
+and assess the uncertainty in their work, and then to communicate that
+to the users of their analysis in an effective and helpful way. Feedback
+from those users – those who commission the work and make decisions
+informed by it – is crucial to helping refine and improve this guidance.
+We welcome any comments by emailing:
+<a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color:DARKBLUE;">
+<b><a href="mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk"
+class="email">AnalystsUncertaintyToolkit@homeoffice.gov.uk</a></b></a>.</p>
 </div>
 <div class="leftB">
 <p>We welcome your feedback</p>
 </div>
 <div class="footer">
-<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here
+to see the accessibility statement</a> <br><br>
+<a href="index.html">Click here to return to home page</a></p>
 </div>
 
 

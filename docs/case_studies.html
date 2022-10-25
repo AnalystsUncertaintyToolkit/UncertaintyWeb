@@ -13,7 +13,7 @@
 
 <title>   8. Case studies</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -153,11 +153,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -337,19 +341,19 @@ div.tocify {
   <a href="introduction.html">1. Introduction</a>
 </li>
 <li>
-  <a href="chapter_1.html">2. Jointly agreeing how uncertainty should be used</a>
+  <a href="chapter_2.html">2. Jointly agreeing how uncertainty should be used</a>
 </li>
 <li>
-  <a href="chapter_2.html">3. Defining and identifying uncertainty</a>
+  <a href="chapter_3.html">3. Defining and identifying uncertainty</a>
 </li>
 <li>
-  <a href="chapter_5.html">4. Mitigating uncertainty</a>
+  <a href="chapter_4.html">4. Mitigating uncertainty</a>
 </li>
 <li>
-  <a href="chapter_3.html">5. Understanding and measuring uncertainty</a>
+  <a href="chapter_5.html">5. Understanding and measuring uncertainty</a>
 </li>
 <li>
-  <a href="chapter_4.html">6. Presenting and communicating uncertainty</a>
+  <a href="chapter_6.html">6. Presenting and communicating uncertainty</a>
 </li>
 <li>
   <a href="Conclusion.html">7. Conclusion</a>
@@ -529,7 +533,8 @@ float: right;
 
 .
 </style>
-<div id="estimating-the-impact-of-evidence-volumes-in-legal-aid-spend" class="section level2">
+<div id="estimating-the-impact-of-evidence-volumes-in-legal-aid-spend"
+class="section level2">
 <h2>Estimating the impact of evidence volumes in Legal Aid spend</h2>
 <div style="clear: both;">
 
@@ -545,7 +550,9 @@ The situation:
 </div>
 <p><br></p>
 <div class="leftC2">
-Prices in Crown Court Legal Aid work had been undergoing a sustained increase. Several drivers were identified that suggested that these increases would continue, such as:
+Prices in Crown Court Legal Aid work had been undergoing a sustained
+increase. Several drivers were identified that suggested that these
+increases would continue, such as:
 <ul>
 <li>
 Increased electronic evidence
@@ -557,7 +564,10 @@ Media focus on collapse of trials due to lack of evidence
 New guidance on the disclosure of data
 </li>
 </ul>
-<p>However, there was no information to determine for how long these increases could continue. In addition, prices had risen particularly quickly in more recent months and may be an indication of an accelerating trend.</p>
+<p>However, there was no information to determine for how long these
+increases could continue. In addition, prices had risen particularly
+quickly in more recent months and may be an indication of an
+accelerating trend.</p>
 </div>
 <div class="leftD1">
 <h4>
@@ -570,7 +580,8 @@ Asking the right question:
 </h4>
 </div>
 <div class="leftD2">
-<p>The existing model takes predicted court activity and calculates expected bill volumes, which a price forecast is then applied to.</p>
+<p>The existing model takes predicted court activity and calculates
+expected bill volumes, which a price forecast is then applied to.</p>
 </div>
 <div class="rightB2">
 <ul>
@@ -608,22 +619,31 @@ Understanding and measuring uncertainty:
 <div class="leftC2">
 <ul>
 <li>
-Uncertainty around case volumes was discounted (<b>Dominant Uncertainty</b>) as the impact was expected to be small.
+Uncertainty around case volumes was discounted (<b>Dominant
+Uncertainty</b>) as the impact was expected to be small.
 </li>
 <li>
-No information was available to determine the scale of future increases, so scenario analysis was used to assess the impact of certain assumptions.
+No information was available to determine the scale of future increases,
+so scenario analysis was used to assess the impact of certain
+assumptions.
 </li>
 <li>
-The impacts of 3 price scenarios, representing price increases continuing for 3, 6 or 12 months, were estimated.
+The impacts of 3 price scenarios, representing price increases
+continuing for 3, 6 or 12 months, were estimated.
 </li>
 <li>
 Two additional scenarios were considered:
 </li>
 <li>
-An increasing level of prices. Due to insufficient evidence to support it being considered for the main estimate, it was logged in the risk register to highlight the potential variance.
+An increasing level of prices. Due to insufficient evidence to support
+it being considered for the main estimate, it was logged in the risk
+register to highlight the potential variance.
 </li>
 <li>
-Prices levelling out immediately in case the full impact had already fed through. Due to the volume and timing of identified drivers this was felt to be very unlikely, so including it could be misleading and contribute to an optimism bias to the decision making.
+Prices levelling out immediately in case the full impact had already fed
+through. Due to the volume and timing of identified drivers this was
+felt to be very unlikely, so including it could be misleading and
+contribute to an optimism bias to the decision making.
 </li>
 </ul>
 </div>
@@ -634,16 +654,26 @@ Prices levelling out immediately in case the full impact had already fed through
 <div class="leftC2">
 <ul>
 <li>
-Scenarios were presented taking the 3, 6 or 12 month assumptions for the central projection, with the higher and flat scenarios being logged in the risk register. The communication stressed that there was no information that would allow us to tell which scenario was more likely.
+Scenarios were presented taking the 3, 6 or 12 month assumptions for the
+central projection, with the higher and flat scenarios being logged in
+the risk register. The communication stressed that there was no
+information that would allow us to tell which scenario was more likely.
 </li>
 <li>
-Decision makers agreed that the range of scenarios considered reflected the range of reasonable outcomes.
+Decision makers agreed that the range of scenarios considered reflected
+the range of reasonable outcomes.
 </li>
 <li>
-As no information was available on the which scenario was mostly likely, discussion focused on the risks that were associated with taking each scenario through for planning purposes, such as over or underspending against the overall budget.
+As no information was available on the which scenario was mostly likely,
+discussion focused on the risks that were associated with taking each
+scenario through for planning purposes, such as over or underspending
+against the overall budget.
 </li>
 <li>
-Scenario analysis was used to provide a range of values to illustrate the large amounts of uncertainty around the forecast without giving the impression that any particular outcome was more likely, allowing a decision to be made with the understanding of the risks involved.
+Scenario analysis was used to provide a range of values to illustrate
+the large amounts of uncertainty around the forecast without giving the
+impression that any particular outcome was more likely, allowing a
+decision to be made with the understanding of the risks involved.
 </li>
 </ul>
 </div>
@@ -651,7 +681,8 @@ Scenario analysis was used to provide a range of values to illustrate the large 
 
 </div>
 </div>
-<div id="estimating-uncertainty-in-prison-population-projections" class="section level2">
+<div id="estimating-uncertainty-in-prison-population-projections"
+class="section level2">
 <h2>Estimating uncertainty in prison population projections</h2>
 <div style="clear: both;">
 
@@ -667,7 +698,11 @@ The situation:
 </div>
 <p><br></p>
 <div class="leftC2">
-<p>Prison population projections are the end result of a number of criminal justice system interconnected models. The uncertainty around each of these models had not been estimated, but understanding the uncertainty of prison projections was essential for capacity planning.</p>
+<p>Prison population projections are the end result of a number of
+criminal justice system interconnected models. The uncertainty around
+each of these models had not been estimated, but understanding the
+uncertainty of prison projections was essential for capacity
+planning.</p>
 </div>
 <div class="leftD1">
 <h4>
@@ -680,15 +715,19 @@ Asking the right question:
 </h4>
 </div>
 <div class="leftD2">
-<p>Court demand and sentencing and forecasts were used within a prison population microsimulation model, with policy forecasts overlaid.</p>
+<p>Court demand and sentencing and forecasts were used within a prison
+population microsimulation model, with policy forecasts overlaid.</p>
 </div>
 <div class="rightB2">
 <ul>
 <li>
-How confident are we that the prison population will not exceed a particular threshold?
+How confident are we that the prison population will not exceed a
+particular threshold?
 </li>
 <li>
-Was there sufficient resource to estimate uncertainty using a traditional bottom-up approach (i.e. combining the uncertainty from all constituent models)?
+Was there sufficient resource to estimate uncertainty using a
+traditional bottom-up approach (i.e. combining the uncertainty from all
+constituent models)?
 </li>
 </ul>
 </div>
@@ -709,7 +748,8 @@ Sentencing assumptions (custody rate)
 Impact estimates of future policy changes
 </li>
 <li>
-Unknown impacts such as exogenous system shocks or policy changes not known at time of projection
+Unknown impacts such as exogenous system shocks or policy changes not
+known at time of projection
 </li>
 <li>
 Estimation error (such as sampling bias) from simulation model
@@ -724,16 +764,22 @@ Understanding and measuring uncertainty:
 <div class="leftC2">
 <ul>
 <li>
-A top-down approach was chosen as the resource requirement for a traditional bottom-up approach would have been prohibitive.
+A top-down approach was chosen as the resource requirement for a
+traditional bottom-up approach would have been prohibitive.
 </li>
 <li>
-The variance of all the previous forecast errors after 1 time period were fitted to a chosen probability distribution (in this case a normal distribution was chosen). This distribution was used to estimate the uncertainty of the new forecast after 1 time period.
+The variance of all the previous forecast errors after 1 time period
+were fitted to a chosen probability distribution (in this case a normal
+distribution was chosen). This distribution was used to estimate the
+uncertainty of the new forecast after 1 time period.
 </li>
 <li>
-This process was repeated for the variance at each subsequent time period.
+This process was repeated for the variance at each subsequent time
+period.
 </li>
 <li>
-The rate of change of variance was used to extrapolate the variance for periods where no forecast error existed.
+The rate of change of variance was used to extrapolate the variance for
+periods where no forecast error existed.
 </li>
 </ul>
 </div>
@@ -744,10 +790,19 @@ The rate of change of variance was used to extrapolate the variance for periods 
 <div class="leftC2">
 <ul>
 <li>
-We presented our historical forecast errors, explaining their main drivers and how each contributes to our current uncertainty range. This helped our key customers to better understand the uncertainties inherent in the system we model, and therefore why we can’t produce more precise forecasts.
+We presented our historical forecast errors, explaining their main
+drivers and how each contributes to our current uncertainty range. This
+helped our key customers to better understand the uncertainties inherent
+in the system we model, and therefore why we can’t produce more precise
+forecasts.
 </li>
 <li>
-The other aspect was helping customers think about how they should use the uncertainty estimates. For example: for the prison estate, assessing the likelihood of prison population reaching different levels together with an assessment of risk appetite and contingency measures we could use. This allowed for an evidence based approach for how much capacity we should plan for, not simply planning to the central estimate.
+The other aspect was helping customers think about how they should use
+the uncertainty estimates. For example: for the prison estate, assessing
+the likelihood of prison population reaching different levels together
+with an assessment of risk appetite and contingency measures we could
+use. This allowed for an evidence based approach for how much capacity
+we should plan for, not simply planning to the central estimate.
 </li>
 </ul>
 </div>
@@ -755,8 +810,11 @@ The other aspect was helping customers think about how they should use the uncer
 
 </div>
 </div>
-<div id="estimating-changes-to-staff-travel-times-following-an-office-relocation" class="section level2">
-<h2>Estimating changes to staff travel times following an office relocation</h2>
+<div
+id="estimating-changes-to-staff-travel-times-following-an-office-relocation"
+class="section level2">
+<h2>Estimating changes to staff travel times following an office
+relocation</h2>
 <div style="clear: both;">
 
 </div>
@@ -771,7 +829,8 @@ The situation:
 </div>
 <p><br></p>
 <div class="leftC2">
-<p>Alternative government office locations were being considered and their on staff travel times.</p>
+<p>Alternative government office locations were being considered and
+their on staff travel times.</p>
 </div>
 <div class="leftD1">
 <h4>
@@ -784,7 +843,8 @@ Asking the right question:
 </h4>
 </div>
 <div class="leftD2">
-<p>Google maps API was used to estimate journey times from each home address to each potential location.</p>
+<p>Google maps API was used to estimate journey times from each home
+address to each potential location.</p>
 </div>
 <div class="rightB2">
 <ul>
@@ -792,7 +852,9 @@ Asking the right question:
 90 minutes was considered to be a ‘reasonable’ travel time.
 </li>
 <li>
-The distribution of journey times was an output of interest, but the key focus was “What proportion of staff will have a journey time of over 90 minutes?”
+The distribution of journey times was an output of interest, but the key
+focus was “What proportion of staff will have a journey time of over 90
+minutes?”
 </li>
 </ul>
 </div>
@@ -833,19 +895,31 @@ Understanding and measuring uncertainty:
 <div class="leftC4">
 <ul>
 <li>
-Through sensitivity analysis on each parameter, the use of partial postcodes was found to be the most significant source of uncertainty and so <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#focussing_on_the_dominant_uncertainty" style="color: DARKBLUE;"> <b>Dominant uncertainty</b></a> was chosen.
+Through sensitivity analysis on each parameter, the use of partial
+postcodes was found to be the most significant source of uncertainty and
+so
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#focussing_on_the_dominant_uncertainty" style="color: DARKBLUE;">
+<b>Dominant uncertainty</b></a> was chosen.
 </li>
 <li>
-A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques" style="color: DARKBLUE;"> <b>Monte Carlo</b></a> approach would have been a more complete analysis but was not viable in the available time.
+A
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques" style="color: DARKBLUE;">
+<b>Monte Carlo</b></a> approach would have been a more complete analysis
+but was not viable in the available time.
 </li>
 <li>
-A sample of postcode districts were reviewed to calculate: - The journey time from the centre of the postcode; - The shortest possible journey from within that postcode; - The longest possible journey from within that postcode.
+A sample of postcode districts were reviewed to calculate: - The journey
+time from the centre of the postcode; - The shortest possible journey
+from within that postcode; - The longest possible journey from within
+that postcode.
 </li>
 <li>
-The differences in these times were analysed across the sample to form distributions.
+The differences in these times were analysed across the sample to form
+distributions.
 </li>
 <li>
-Producing an uncertainty estimate of 90% of journey times to be within ± 25 minutes of the calculated durations.
+Producing an uncertainty estimate of 90% of journey times to be within ±
+25 minutes of the calculated durations.
 </li>
 </ul>
 </div>
@@ -857,19 +931,30 @@ Producing an uncertainty estimate of 90% of journey times to be within ± 25 min
 <div class="leftC2">
 <ul>
 <li>
-A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#cumulative_density_functions_(cdfs)" style="color: DARKBLUE;"> <b>cumulative distribution</b></a> of journey times along with uncertainty bounds clearly presented how many journey times were estimated to be within the crucial threshold of 90 minutes.
+A
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#cumulative_density_functions_(cdfs)" style="color: DARKBLUE;">
+<b>cumulative distribution</b></a> of journey times along with
+uncertainty bounds clearly presented how many journey times were
+estimated to be within the crucial threshold of 90 minutes.
 </li>
 <li>
-<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#error_bars" style="color: DARKBLUE;"> <b>Bar graph ranges</b></a> were presented to the senior move managers, to show how journey times compared between location – the central estimate wasn’t plotted to avoid the reader putting too much significance on it.
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#error_bars" style="color: DARKBLUE;">
+<b>Bar graph ranges</b></a> were presented to the senior move managers,
+to show how journey times compared between location – the central
+estimate wasn’t plotted to avoid the reader putting too much
+significance on it.
 </li>
 <li>
 Prose sentences were used to clearly present the key results.
 </li>
 <li>
-Unquantified uncertainties were communicated e.g. the assumption of no delays.
+Unquantified uncertainties were communicated e.g. the assumption of no
+delays.
 </li>
 <li>
-The communication of the uncertainty made clear the case for obtaining exact postcodes, allowing the analysis to be repeated with less postcode uncertainty.
+The communication of the uncertainty made clear the case for obtaining
+exact postcodes, allowing the analysis to be repeated with less postcode
+uncertainty.
 </li>
 </ul>
 </div>
@@ -893,7 +978,9 @@ The situation:
 </div>
 <p><br></p>
 <div class="leftC2">
-<p>Each department has to manage their pay costs to ensure they stay within their budget, making decisions to recruit (or not) in the face of uncertainty over staff turnover, pay rises, etc.</p>
+<p>Each department has to manage their pay costs to ensure they stay
+within their budget, making decisions to recruit (or not) in the face of
+uncertainty over staff turnover, pay rises, etc.</p>
 </div>
 <div class="leftD1">
 <h4>
@@ -906,15 +993,19 @@ Asking the right question:
 </h4>
 </div>
 <div class="leftD2">
-<p>Use a microsimulation to model staff members over time, with departures, promotions, and new recruits modelled stochastically.</p>
+<p>Use a microsimulation to model staff members over time, with
+departures, promotions, and new recruits modelled stochastically.</p>
 </div>
 <div class="rightB2">
 <ul>
 <li>
-Initially ‘What will our pay costs be at the end of the year for a given recruit plan?’
+Initially ‘What will our pay costs be at the end of the year for a given
+recruit plan?’
 </li>
 <li>
-Redefined as ‘how likely is it that our costs will exceed our budget?’, allowing a risk-based approach to decision-making, and also allowing uncertainty in the budget to be incorporated.
+Redefined as ‘how likely is it that our costs will exceed our budget?’,
+allowing a risk-based approach to decision-making, and also allowing
+uncertainty in the budget to be incorporated.
 </li>
 </ul>
 </div>
@@ -927,7 +1018,8 @@ Defining and identifying uncertainty:
 <b>Unknowns:</b>
 <ul>
 <li>
-The pay budget including additional sources of funding not known until the start of the year
+The pay budget including additional sources of funding not known until
+the start of the year
 </li>
 </ul>
 <b>Assumptions:</b>
@@ -952,13 +1044,23 @@ Understanding and measuring uncertainty:
 <div class="leftC2">
 <ul>
 <li>
-A <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques" style="color: DARKBLUE;"> <b>Monte Carlo</b></a> approach was used due to the large number of sources of uncertainty, its suitability in microsimulation, the (assumed) lack of correlation between sources, and availability of time. Given that the model was likely to be reused many times, it was worth investing the time to build a full probabilistic uncertainty assessment into the model.
+A
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html#monte_carlo_techniques" style="color: DARKBLUE;">
+<b>Monte Carlo</b></a> approach was used due to the large number of
+sources of uncertainty, its suitability in microsimulation, the
+(assumed) lack of correlation between sources, and availability of time.
+Given that the model was likely to be reused many times, it was worth
+investing the time to build a full probabilistic uncertainty assessment
+into the model.
 </li>
 <li>
-Most numerical assumptions in the model (including dates) can be entered as a distribution (exact, uniform, or triangular, along with some bespoke distributions for specific purposes).
+Most numerical assumptions in the model (including dates) can be entered
+as a distribution (exact, uniform, or triangular, along with some
+bespoke distributions for specific purposes).
 </li>
 <li>
-This resulted in a full probability distribution of the range of possible outcomes.
+This resulted in a full probability distribution of the range of
+possible outcomes.
 </li>
 </ul>
 </div>
@@ -969,19 +1071,29 @@ This resulted in a full probability distribution of the range of possible outcom
 <div class="leftC2">
 <ul>
 <li>
-All major uncertainties were quantified, and presented (with any unquantified sources noted elsewhere).
+All major uncertainties were quantified, and presented (with any
+unquantified sources noted elsewhere).
 </li>
 <li>
-The key output was simply the likelihood of remaining within budget, using positive and negative framing (e.g. “We have an 70% chance of staying within budget, and a 30% chance of exceeding our budget”)
+The key output was simply the likelihood of remaining within budget,
+using positive and negative framing (e.g. “We have an 70% chance of
+staying within budget, and a 30% chance of exceeding our budget”)
 </li>
 <li>
-As the budget holder was an analyst, we chose to present the full <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#probability_density_functions_(pdfs)" style="color: DARKBLUE;"> <b>probability density profile</b></a> to illustrate the range of possible over-/under-spends.
+As the budget holder was an analyst, we chose to present the full
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#probability_density_functions_(pdfs)" style="color: DARKBLUE;">
+<b>probability density profile</b></a> to illustrate the range of
+possible over-/under-spends.
 </li>
 <li>
-Alongside, simple prose descriptions of the 90% prediction intervals to describe the likely range of the over-/under-spend
+Alongside, simple prose descriptions of the 90% prediction intervals to
+describe the likely range of the over-/under-spend
 </li>
 <li>
-A further graph was used to show how performance against budget was predicted to evolve over the year, using <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#multiple_line_charts" style="color: DARKBLUE;"> <b>multiple line graphs</b></a> to show the 90% prediction intervals.
+A further graph was used to show how performance against budget was
+predicted to evolve over the year, using
+<a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_4.html#multiple_line_charts" style="color: DARKBLUE;">
+<b>multiple line graphs</b></a> to show the 90% prediction intervals.
 </li>
 </ul>
 </div>
@@ -989,7 +1101,9 @@ A further graph was used to show how performance against budget was predicted to
 
 </div>
 <div class="footer">
-<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here to see the accessibility statement</a> <br><br> <a href="index.html">Click here to return to home page</a></p>
+<p><b>Useful links:</b> <br><br> <a href="accessibility.html">Click here
+to see the accessibility statement</a> <br><br>
+<a href="index.html">Click here to return to home page</a></p>
 </div>
 </div>
 
