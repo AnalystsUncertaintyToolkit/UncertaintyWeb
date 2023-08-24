@@ -928,7 +928,7 @@ knitr::include_graphics("images/tornado.png")
 
 <div style="clear: both;"></div>
 
-## Hypothetical Outcome Plots (HOPs)
+## Hypothetical Outcome Plots (HOPs) test
 
 <div style="clear: both;"></div>
 
