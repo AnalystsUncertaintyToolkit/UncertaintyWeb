@@ -943,7 +943,7 @@ HOPs make uncertainty hard to ignore
 </div>
 
 <div class = "rightA">
-Hypothetical outcome plots display possible outcomes as frames in an animation. This technique can make uncertainty visceral and hard to ignore.
+Hypothetical outcome plots display possible outcomes as frames in an animation. This technique can make uncertainty visceral and harder to ignore.
 </div>
 
 <div class = "rightA">
@@ -959,7 +959,7 @@ HOPs provide a useful alternative to typical markers of uncertainty
 </div>
 
 <div class = "rightA">
-Studies indicate/show that people are able to infer the distribution of data from the frequency of occurrences with surprising accuracy and therefore estimate 
+Studies show that people are able to infer the distribution of data from the frequency of occurrences with surprising accuracy and therefore estimate 
 likelihoods without needing prior knowledge of typical markers of uncertainty, such as confidence intervals, which non-analysts can find difficult to interpret. 
 HOPs have also been shown to enable users to judge differences in probability between groups more accurately compared to error bars or violin plots. 
 However, be aware that people can have difficulty inferring information such as the mean when variance is high. 
@@ -973,8 +973,8 @@ Consider animation frame rate
 </div>
 
 <div class = "rightA">
-Frame rate is an important design consideration. The animation must be sufficiently fast enough to allow the audience to view enough samples to reduce sampling error, 
-but if too fast the audience will not have time to register what they have seen. 
+Frame rate is an important design consideration. The animation must be sufficiently fast to allow the audience to view enough samples to reduce sampling error, 
+but if too fast, the audience will not have time to register what they have seen. 
 The addition of interactive controls can enable users to pause the animation or control the speed of frames. 
 </div>
 
@@ -982,7 +982,7 @@ The addition of interactive controls can enable users to pause the animation or 
 Consider whether HOPs are the most appropriate choice for communicating uncertainty in your work as some formats might not easily support animation and especially if your analysis is likely to become part of printed material.
 </div>
 
-```{r fig.align="center", echo=FALSE, alt = "Example of Hypothetical Outcome Plot"}
+```{r fig.align="right", echo=FALSE, alt = "Example of Hypothetical Outcome Plot"}
 
 knitr::include_graphics("images/hop.gif")
 
@@ -990,8 +990,8 @@ knitr::include_graphics("images/hop.gif")
 
 <div class = "rightA">
 <i>Example: <a href="https://medium.com/hci-design-at-uw/hypothetical-outcomes-plots-experiencing-the-uncertain-b9ea60d7c740" style="color: DARKBLUE;"> 
-<b>Hypothetical Outcome Plots: Experiencing the Uncertain</b></a> . 
-How likely is it that B will be greater than A if more draws are taken? Error bars vs. HOPs. In the HOP, the lines tend to cluster around the mean, the most likely value, but show that more extreme values are still possible albeit less likely.</i>
+<b>Hypothetical Outcome Plots: Experiencing the Uncertain</b></a>.
+How likely is it that B will be greater than A if more draws are taken? Error bars vs. HOPs. In the HOP, the lines tend to cluster around the mean, the most likely value, but show that more extreme values are still possible, albeit less likely.</i>
 </div>
 
 <div style="clear: both;"></div>
