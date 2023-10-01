@@ -55,14 +55,11 @@ padding-top: 50px;
 </div>
 
 <h3 id="what-to-do-if-you-cannot-access-parts-of-this-website">What to do if you cannot access parts of this website</h3>
-<p>If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille:</p>
-<ul>
-<li>email: <a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE;"><b>AnalystsUncertaintyToolkit@homeoffice.gov.uk</b></a></li>
-</ul>
+<p>If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille, please contact: Ramesh Deonarine at ramesh.deonarine@theccc.org.uk, George Pickering at george.pickering@dsit.gov.uk and Zoe Slade zoe.slade1@justice.gov.uk.
 <p>We'll consider your request and get back to you as soon as is practicably possible.</p>
 
 <h3 id="reporting-accessibility-problems-with-this-website">Reporting accessibility problems with this website</h3>
-<p>We're always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we're not meeting accessibility requirements, contact us by email on: <a href= "mailto:AnalystsUncertaintyToolkit@homeoffice.gov.uk" style="color: DARKBLUE;"><b>AnalystsUncertaintyToolkit@homeoffice.gov.uk</b></a></p>
+<p>We're always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we're not meeting accessibility requirements, you can get in touch by emailing Ramesh Deonarine at ramesh.deonarine@theccc.org.uk, George Pickering at george.pickering@dsit.gov.uk and Zoe Slade zoe.slade1@justice.gov.uk.</p>
 
 <h3 id="enforcement-procedure">Enforcement procedure</h3>
 <p>The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the 'accessibility regulations'). If you're not happy with how we respond to your complaint, <a href="https://www.equalityadvisoryservice.com/" style="color: DARKBLUE;"><b>contact the Equality Advisory and Support Service (EASS)</b></a>.</p>

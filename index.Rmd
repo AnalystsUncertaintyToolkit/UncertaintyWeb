@@ -55,7 +55,7 @@ This toolkit sets out good, not best, practice, as analysis and communication mu
 
 <div class = "rightA">
 <br>
-We welcome feedback on the content You can get in touch by emailing Ramesh Deonarine at ramesh.deonarine@theccc.org.uk, George Pickering at george.pickering@dsit.gov.uk and Zoe Slade zoe.slade1@justice.gov.uk.
+We welcome feedback on the content. You can get in touch by emailing Ramesh Deonarine at ramesh.deonarine@theccc.org.uk, George Pickering at george.pickering@dsit.gov.uk and Zoe Slade zoe.slade1@justice.gov.uk.
 <br>
 </div>
 
